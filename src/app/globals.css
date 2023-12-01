@@ -23,7 +23,21 @@ body {
 .botao-projetos {
   background: 
     linear-gradient(#000, #000) padding-box,
-    linear-gradient(#FF005C, #430656) border-box;
+    linear-gradient(#ff005c, #430656) border-box;
+  filter: none;
+  z-index: 1;
+  color: #fff;
+  border: 3px solid transparent;
+  border-radius: 10px;
+  display: inline-block;
+  font-size: 28px;
+}
+.botao-projetos-glow {
+  background: 
+    linear-gradient(#000, #000) padding-box,
+    linear-gradient(#ff005c, #430656) border-box;
+  filter: blur(10px);
+  z-index: -1;
   color: #fff;
   border: 3px solid transparent;
   border-radius: 10px;
