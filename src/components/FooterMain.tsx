@@ -9,18 +9,20 @@ export function FooterMain(){
         <div className="grid grid-cols-3 gap-96 mt-10">
 
             <div>
-                <Image 
-                    src={logo}
-                    width={200}
-                    height={200}
-                    alt="Picture of a JellyFish"
-                />
+                <a href="#">
+                    <Image 
+                        src={logo}
+                        width={200}
+                        height={200}
+                        alt="Picture of a JellyFish"
+                    />
+                </a>
             </div>
 
             <div>
                 <h1></h1>
                 <ul className='text-center font-normal'>
-                    <li>Inicio</li>
+                    <li><a href="#">Inicio</a></li>
                     <li className='mt-5'>Projetos</li>
                     <li className='mt-5'>Contato</li>
                 </ul>
@@ -31,26 +33,31 @@ export function FooterMain(){
 
                 <div className='flex gap-4 justify-center'>
 
-                <Image
-                    src={instagramLogo}
-                    width={40}
-                    height={40}
-                    alt="instagram logo"
-                />
+                <a href="https://www.instagram.com/jellyfishdevelopment/" target="_blank">
+                    <Image
+                        src={instagramLogo}
+                        width={40}
+                        height={40}
+                        alt="instagram logo"
+                    />
+                </a>
+                <a href="https://www.linkedin.com/in/leticiaboza/" target='_blank'>
+                    <Image
+                        src={linkedinLogo}
+                        width={40}
+                        height={40}
+                        alt="linkedin logo"
+                    />
+                </a>
 
-                <Image
-                    src={linkedinLogo}
-                    width={40}
-                    height={40}
-                    alt="linkedin logo"
-                />
-
-                <Image
-                    src={whatsappLogo}
-                    width={40}
-                    height={40}
-                    alt="whatsapp logo"
-                />
+                <a href="https://wa.me/5513991063173" target='_blank'>
+                    <Image
+                        src={whatsappLogo}
+                        width={40}
+                        height={40}
+                        alt="whatsapp logo"
+                    />
+                </a>
             </div>
             </div>
 

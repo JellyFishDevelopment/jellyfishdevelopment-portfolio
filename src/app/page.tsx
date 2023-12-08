@@ -31,7 +31,7 @@ export default function Home() {
         <p className='text-zinc-400 text-center font-normal w-7/12 p-5'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
 
         <div className='p-10'>
-          <button className='botao-projetos-glow absolute text-white hover:bg-gray-900 focus:outline-none focus:ring-4 font-medium rounded-lg text-sm px-24 py-5 me-2 mb-2'><a href="#" className='text-2xl font-extrabold'>Projetos</a></button>
+          <button className='botao-projetos-glow absolute text-white hover:bg-gray-900 focus:outline-none focus:rinwg-4 font-medium rounded-lg text-sm px-24 py-5 me-2 mb-2'><a href="#" className='text-2xl font-extrabold'>Projetos</a></button>
           <button className='botao-projetos text-white hover:bg-gray-900 focus:outline-none focus:ring-4 font-medium rounded-lg text-sm px-24 py-5 me-2 mb-2'><a href="#" className='text-2xl font-extrabold'>Projetos</a></button>
         </div>
 
@@ -167,28 +167,32 @@ export default function Home() {
           <button className='botao-projetos text-white hover:bg-gray-900 focus:outline-none focus:ring-4 font-medium rounded-lg text-sm px-24 py-5 me-2 mb-2'><a href="#" className='text-2xl font-extrabold'>Veja mais</a></button>
         </div>
 
-        <div className='border w-full h-96 rounded-2xl'>
+        <div className='border w-full max-h-full rounded-2xl'>
             <div className='m-10'>
-              <h1>Vamos trabalhar juntos!</h1>
+              <h1 className='text-2xl'>Vamos trabalhar juntos!</h1>
             </div>
-              <div className='m-10 font-normal text-sm'>
-              <p className='text-center'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
-              The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,
-              content here', making it look like readable English. Many desktop publishing packages and web page editors now use 
-              Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. 
-              Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+              <div className='m-10 font-normal text-m'>
+              <p className='text-center'>Na <b>Jelly<span className='Fish'>Fish</span> Development</b>, acreditamos no poder da colaboração para criar soluções digitais excepcionais. 
+              
+              <p className='mb-4'>Oferecemos não apenas serviços, mas uma jornada colaborativa. Estamos comprometidos em entender suas necessidades e superar suas expectativas. Seja um projeto de desenvolvimento web, aplicativos móveis personalizados ou consultoria em transformação digital, estamos prontos para enfrentar desafios e alcançar resultados excepcionais.</p>
+
+              <hr />
+              <p className='mt-4'>
+              Se você tem uma visão, nós temos a ferramenta. Venha conosco transformar suas ideias em realidade.</p>
+              <p><span className='Fish'><b>Conecte-se</b></span> conosco e embarque nesta jornada.</p>
+
+              </p>
             </div>
 
             <div className="flex gap-10">
               <div>
-                <button className='mt-10 ml-10 text-black py-3 px-10 bg-white rounded-lg'><a href="#" className='text-sm font-extrabold'>Contate-nos</a></button>
+                <button className='mb-10 ml-10 text-black py-3 px-10 bg-white rounded-lg'><a href="mailto:jellyfishdevelop@gmail.com?subject=Olá, eu gostaria de entrar em contato com vocês!" className='text-sm font-extrabold'>Contate-nos</a></button>
               </div>
 
               <div>
 
-                <a href="#">
+                <a href="https://github.com/JellyFishDevelopment" target="_blank">
                   <Image
-                    className="mt-11"
                     src={githublogo}
                     width={40}
                     height={40}
@@ -198,9 +202,8 @@ export default function Home() {
               </div>
 
               <div>
-                <a href="#">
+                <a href="https://www.instagram.com/jellyfishdevelopment/" target="_blank">
                   <Image
-                    className="mt-11"
                     src={instagramlogo}
                     width={40}
                     height={40}
@@ -213,16 +216,14 @@ export default function Home() {
         </div>
 
         {/* SOBRE NÓS */}
-        <div className='border w-full h-full rounded-2xl mt-10'>
+        <div className='border w-full h-full rounded-3xl mt-10'>
             <div className='m-10'>
-              <h1 className='text-center'>Sobre nós</h1>
+              <h1 className='text-center text-2xl'>Sobre nós</h1>
+              <p className='text-center'>Moldando o novo futuro da tecnologia</p>
             </div>
-              <div className='m-10 font-normal text-sm'>
-              <p className='text-center'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
-              The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,
-              content here', making it look like readable English. Many desktop publishing packages and web page editors now use 
-              Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. 
-              Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+              <div className='m-10 font-normal text-m'>
+              
+              <p className='text-center'>Na <b>Jelly<span className='Fish'>Fish</span> Development</b>, somos mais do que uma desenvolvedora de softwares; somos arquitetos digitais dedicados a transformar suas ideias em soluções inovadoras. Com uma abordagem ágil e comprometimento com a excelência, oferecemos serviços de desenvolvimento web e mobile personalizados. Na vanguarda da tecnologia, estamos prontos para levar sua visão ao próximo nível. Conecte-se conosco e embarque na jornada da <span className='Fish'><b>transformação</b></span> digital.</p>
             </div>
           </div>
 
