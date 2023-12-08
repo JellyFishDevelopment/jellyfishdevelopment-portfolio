@@ -16,6 +16,7 @@ import githublogo from '../../public/svg-tec/githublogo.svg'
 import instagramlogo from '../../public/svg-tec/instagram_logo.svg'
 import { Texture } from "@/components/Texture";
 import { FooterMain } from "@/components/FooterMain"
+import sdsWikiProject from "../../public/sds-wiki.png"
 
 export default function Home() {
   return (
@@ -152,8 +153,14 @@ export default function Home() {
 
         <h4 className="text-base text-white text-center font-normal mt-3 mb-8">Nossos últimos projetos realizados</h4>
 
-        <div className='grid grid-cols-2 gap-16'>
-          <div className='border w-96 h-96 rounded-2xl'>
+        <div className='flex gap-16'>
+          <div className='border p-5 h-96 rounded-2xl'>
+            <Image 
+            src={sdsWikiProject}
+            height={300}
+            width={300}
+            alt="sds wiki project"
+            />
 
           </div>
 
