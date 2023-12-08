@@ -6,32 +6,32 @@ import whatsappLogo from '../../public/svg-tec/whatsapplogo.svg';
 
 export function FooterMain(){
     return (
-        <div className="grid grid-cols-3 mt-10">
+        <div className="grid grid-cols-3 gap-96 mt-10">
 
             <div>
                 <Image 
                     src={logo}
-                    width={100}
-                    height={100}
+                    width={200}
+                    height={200}
                     alt="Picture of a JellyFish"
                 />
             </div>
 
             <div>
-                <ul className='text-center'>
+                <h1></h1>
+                <ul className='text-center font-normal'>
                     <li>Inicio</li>
-                    <li>Projetos</li>
-                    <li>Contato</li>
+                    <li className='mt-5'>Projetos</li>
+                    <li className='mt-5'>Contato</li>
                 </ul>
             </div>
 
             <div className='flex-row'>
-                <p className='mb-3 text-center'>Redes sociais</p>
+                <p className='mb-3 text-center font-normal'>Redes Sociais</p>
 
-                <div className='flex gap-4'>
+                <div className='flex gap-4 justify-center'>
 
                 <Image
-                    className='justify-items-start'
                     src={instagramLogo}
                     width={40}
                     height={40}
@@ -39,7 +39,6 @@ export function FooterMain(){
                 />
 
                 <Image
-                    className='justify-items-start'
                     src={linkedinLogo}
                     width={40}
                     height={40}
@@ -47,7 +46,6 @@ export function FooterMain(){
                 />
 
                 <Image
-                    className='justify-items-end'
                     src={whatsappLogo}
                     width={40}
                     height={40}
