@@ -41,6 +41,7 @@ export default function Home() {
         <div className='mt-5 grid grid-cols-4 gap-4'>
           <div>
             <Image
+              className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'
               src={reactlogo}
               width={100}
               height={100}
@@ -50,6 +51,7 @@ export default function Home() {
 
           <div>
             <Image
+              className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'
               src={nextjslogo}
               width={100}
               height={100}
@@ -59,6 +61,7 @@ export default function Home() {
 
           <div>
             <Image
+              className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'
               src={tslogo}
               width={100}
               height={100}
@@ -68,6 +71,7 @@ export default function Home() {
 
           <div>
             <Image
+              className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'
               src={jslogo}
               width={100}
               height={100}
@@ -77,6 +81,7 @@ export default function Home() {
 
           <div>
             <Image
+              className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'
               src={exlogo}
               width={100}
               height={100}
@@ -86,6 +91,7 @@ export default function Home() {
 
           <div>
             <Image
+              className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'
               src={mysqllogo}
               width={100}
               height={100}
@@ -95,6 +101,7 @@ export default function Home() {
 
           <div>
             <Image
+              className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'
               src={mongodblogo}
               width={100}
               height={100}
@@ -104,6 +111,7 @@ export default function Home() {
 
           <div>
             <Image
+              className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'
               src={postgrelogo}
               width={100}
               height={100}
@@ -113,6 +121,7 @@ export default function Home() {
 
           <div>
             <Image
+              className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'
               src={phplogo}
               width={100}
               height={100}
@@ -122,6 +131,7 @@ export default function Home() {
 
           <div>
             <Image
+              className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'
               src={twlogo}
               width={100}
               height={100}
@@ -131,6 +141,7 @@ export default function Home() {
 
           <div>
             <Image
+              className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'
               src={pythonlogo}
               width={100}
               height={100}
@@ -140,6 +151,7 @@ export default function Home() {
 
           <div>
             <Image
+              className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'
               src={dockerlogo}
               width={100}
               height={100}
