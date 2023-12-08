@@ -179,16 +179,19 @@ export default function Home() {
               <h1 className='text-2xl'>Vamos trabalhar juntos!</h1>
             </div>
               <div className='m-10 font-normal text-m'>
-              <p className='text-center'>Na <b>Jelly<span className='Fish'>Fish</span> Development</b>, acreditamos no poder da colaboração para criar soluções digitais excepcionais. 
-              
-              <p className='mb-4'>Oferecemos não apenas serviços, mas uma jornada colaborativa. Estamos comprometidos em entender suas necessidades e superar suas expectativas. Seja um projeto de desenvolvimento web, aplicativos móveis personalizados ou consultoria em transformação digital, estamos prontos para enfrentar desafios e alcançar resultados excepcionais.</p>
+              <div className='text-center'>
+                <p>Na <b>Jelly<span className='Fish'>Fish</span> Development</b>, acreditamos no poder da colaboração para criar soluções digitais excepcionais. 
+                </p>
+                
+                <p className='mb-4'>Oferecemos não apenas serviços, mas uma jornada colaborativa. Estamos comprometidos em entender suas necessidades e superar suas expectativas. Seja um projeto de desenvolvimento web, aplicativos móveis personalizados ou consultoria em transformação digital, estamos prontos para enfrentar desafios e alcançar resultados excepcionais.</p>
 
-              <hr />
-              <p className='mt-4'>
-              Se você tem uma visão, nós temos a ferramenta. Venha conosco transformar suas ideias em realidade.</p>
-              <p><span className='Fish'><b>Conecte-se</b></span> conosco e embarque nesta jornada.</p>
+                <hr />
+                <p className='mt-4'>
+                Se você tem uma visão, nós temos a ferramenta. Venha conosco transformar suas ideias em realidade.</p>
+                <p><span className='Fish'><b>Conecte-se</b></span> conosco e embarque nesta jornada.</p>
 
-              </p>
+              </div>
+
             </div>
 
             <div className="flex gap-10">
@@ -230,9 +233,12 @@ export default function Home() {
             </div>
               <div className='m-10 font-normal text-m'>
               
-              <p className='text-center'>Na <b>Jelly<span className='Fish'>Fish</span> Development</b>, somos mais do que uma desenvolvedora de softwares; somos arquitetos digitais dedicados a transformar suas ideias em soluções inovadoras. Com uma abordagem ágil e comprometimento com a excelência, oferecemos serviços de desenvolvimento web e mobile personalizados. Na vanguarda da tecnologia, estamos prontos para levar sua visão ao próximo nível. Conecte-se conosco e embarque na jornada da <span className='Fish'><b>transformação</b></span> digital.</p>
+              <div>
+                <p className='text-center'>Na <b>Jelly<span className='Fish'>Fish</span> Development</b>, somos mais do que uma desenvolvedora de softwares; somos arquitetos digitais dedicados a transformar suas ideias em soluções inovadoras. Com uma abordagem ágil e comprometimento com a excelência, oferecemos serviços de desenvolvimento web e mobile personalizados. Na vanguarda da tecnologia, estamos prontos para levar sua visão ao próximo nível. Conecte-se conosco e embarque na jornada da <span className='Fish'><b>transformação</b></span> digital.</p>
+              </div>
             </div>
           </div>
+          
 
         <FooterMain
             
