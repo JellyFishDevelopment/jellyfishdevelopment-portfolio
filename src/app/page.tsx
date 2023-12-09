@@ -168,24 +168,26 @@ export default function Home() {
 
         <div className='flex gap-16'>
 
-          <div className='border p-5 rounded-2xl'>
+          <div className='border p-5 rounded-2xl max-w-xl'>
             <Image 
             src={sdsWikiProject}
             height={600}
             width={600}
             alt="sds wiki project"
             />
-          <p>Oi</p>
+          <p className='text-2xl p-3'>SDS Wiki</p>
+          <p className='font-normal p-3'>Site dinâmico e minimalista de busca e documentação sobre "Software Defined Storage" baseado em Astro, utilizando arquivos em markdown.</p>
           </div>
 
-          <div className='border p-5 rounded-2xl'>
+          <div className='border p-5 rounded-2xl max-w-xl'>
             <Image 
               src={jmSiteProject}
               height={600}
               width={600}
               alt="jm eletrica project"
               />
-              <p>Oi</p>
+            <p className='text-2xl p-3'>JM Elétrica</p>
+          <p className='font-normal p-3'>Site institucional sobre elétrica e soluções em energia, usando API de envio de e-mail, baseado em React.</p>
           </div>
 
         </div>

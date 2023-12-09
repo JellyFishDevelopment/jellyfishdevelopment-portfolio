@@ -43,6 +43,7 @@ hr {
   display: inline-block;
   font-size: 28px;
 }
+
 .botao-projetos-glow {
   background: 
     linear-gradient(#000, #000) padding-box,
@@ -54,6 +55,14 @@ hr {
   border-radius: 10px;
   display: inline-block;
   font-size: 28px;
+}
+
+.botao-projetos:focus{
+  outline: 0!important; 
+}
+
+.botao-projetos-glow:focus{
+  outline: 0!important;
 }
 
 .Fish {

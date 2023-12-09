@@ -6,9 +6,9 @@ import whatsappLogo from '../../public/svg-tec/whatsapplogo.svg';
 
 export function FooterMain(){
     return (
-        <div className="grid grid-cols-3 gap-96 mt-10">
+        <div className="grid grid-cols-3 mt-10">
 
-            <div>
+            <div className='mr-40'>
                 <a href="#">
                     <Image 
                         src={logo}
@@ -21,14 +21,14 @@ export function FooterMain(){
 
             <div>
                 <h1></h1>
-                <ul className='text-center font-normal'>
+                <ul className='font-normal text-center'>
                     <li><a href="#">Inicio</a></li>
                     <li className='mt-5'>Projetos</li>
                     <li className='mt-5'>Contato</li>
                 </ul>
             </div>
 
-            <div className='flex-row'>
+            <div className='flex-row ml-20'>
                 <p className='mb-3 text-center font-normal'>Redes Sociais</p>
 
                 <div className='flex gap-4 justify-center'>
