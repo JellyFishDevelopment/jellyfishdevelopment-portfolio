@@ -30,7 +30,11 @@ export default function Home() {
           alt="Picture of a JellyFish"
         />
         <h1 className='header-title text-8xl font-extrabold text-center pt-28'>Jelly<span className='Fish'>Fish</span> Development.</h1>
-        <p className='text-zinc-400 text-center font-normal w-7/12 p-5'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search fo will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+        <p className='text-zinc-400 text-center font-normal w-7/12 p-5'>Somos uma equipe apaixonada por transformar vidas. Nos construímos trilhas para o sucesso de nossos clientes por meio de softwares, websites e aplicativos móveis. Queremos dar vida às suas ideias, transformando-as em soluções inteligentes e ágeis para resolver seus problemas.</p>
+        
+        <p className='text-zinc-400 text-center font-normal w-7/12 p-5'>Cada projeto é único para nós. Nossa abordagem personalizada é como uma obra de arte, feita sob medida para suas necessidades. Reuniões, protótipos e feedback constante são o nosso caminho para o sucesso. </p>
+
+        <p className='font-normal'>Com você, somos capazes de moldar o futuro digital de forma inovadora e envolvente ✨</p>
 
         <div className='p-10'>
           <button className='botao-projetos-glow absolute text-white hover:bg-gray-900 focus:outline-none focus:rinwg-4 font-medium rounded-lg text-sm px-24 py-5 me-2 mb-2'><a href="#" className='text-2xl font-extrabold'>Projetos</a></button>
