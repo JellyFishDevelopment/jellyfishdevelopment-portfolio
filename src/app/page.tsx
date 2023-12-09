@@ -17,6 +17,7 @@ import instagramlogo from '../../public/svg-tec/instagram_logo.svg'
 import { Texture } from "@/components/Texture";
 import { FooterMain } from "@/components/FooterMain"
 import sdsWikiProject from "../../public/sds-wiki.png"
+import jmSiteProject from "../../public/jm-eletrica.png"
 
 export default function Home() {
   return (
@@ -29,7 +30,7 @@ export default function Home() {
           alt="Picture of a JellyFish"
         />
         <h1 className='header-title text-8xl font-extrabold text-center pt-28'>Jelly<span className='Fish'>Fish</span> Development.</h1>
-        <p className='text-zinc-400 text-center font-normal w-7/12 p-5'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+        <p className='text-zinc-400 text-center font-normal w-7/12 p-5'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search fo will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
 
         <div className='p-10'>
           <button className='botao-projetos-glow absolute text-white hover:bg-gray-900 focus:outline-none focus:rinwg-4 font-medium rounded-lg text-sm px-24 py-5 me-2 mb-2'><a href="#" className='text-2xl font-extrabold'>Projetos</a></button>
@@ -166,19 +167,27 @@ export default function Home() {
         <h4 className="text-base text-white text-center font-normal mt-3 mb-8">Nossos últimos projetos realizados</h4>
 
         <div className='flex gap-16'>
-          <div className='border p-5 h-96 rounded-2xl'>
+
+          <div className='border p-5 rounded-2xl'>
             <Image 
             src={sdsWikiProject}
-            height={300}
-            width={300}
+            height={600}
+            width={600}
             alt="sds wiki project"
             />
-
+          <p>Oi</p>
           </div>
 
-          <div className='border w-12/12 rounded-2xl'>
-
+          <div className='border p-5 rounded-2xl'>
+            <Image 
+              src={jmSiteProject}
+              height={600}
+              width={600}
+              alt="jm eletrica project"
+              />
+              <p>Oi</p>
           </div>
+
         </div>
 
         <div className='p-10'>
