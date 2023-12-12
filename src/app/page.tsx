@@ -52,11 +52,7 @@ export default function Home() {
         </section>
 
         <section className='h-screen flex flex-col items-center justify-center font-extrabold'>
-          <h2 className="Fish￼
-￼
-￼
-￼
- text-6xl leading-tight">Tecnologias</h2>
+          <h2 className="Fish text-6xl leading-tight">Tecnologias</h2>
           <h4 className="text-base text-white text-center font-normal">Desenvolvendo Projetos Inovadores com Tecnologia de Ponta</h4>
 
           <div className='mt-5 grid grid-cols-4 gap-4'>
