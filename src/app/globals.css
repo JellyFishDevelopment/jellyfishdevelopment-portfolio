@@ -58,11 +58,11 @@ hr {
 }
 
 .botao-projetos:focus{
-  outline: 0!important; 
+  outline: none; 
 }
 
 .botao-projetos-glow:focus{
-  outline: 0!important;
+  outline: none;
 }
 
 .Fish {
@@ -72,5 +72,9 @@ hr {
 }
 
 .border {
+  border-color: #412b32;
+}
+
+.color-border-footer{
   border-color: #412b32;
 }
