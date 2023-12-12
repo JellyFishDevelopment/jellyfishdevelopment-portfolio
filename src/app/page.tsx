@@ -52,7 +52,11 @@ export default function Home() {
         </section>
 
         <section className='h-screen flex flex-col items-center justify-center font-extrabold'>
-          <h2 className="Fish text-6xl leading-tight">Tecnologias</h2>
+          <h2 className="Fish￼
+￼
+￼
+￼
+ text-6xl leading-tight">Tecnologias</h2>
           <h4 className="text-base text-white text-center font-normal">Desenvolvendo Projetos Inovadores com Tecnologia de Ponta</h4>
 
           <div className='mt-5 grid grid-cols-4 gap-4'>
@@ -187,10 +191,11 @@ export default function Home() {
 
             <div className='hover:backdrop-brightness-150 hover:backdrop-blur-sm ease-in-out duration-300 border p-5 rounded-2xl max-w-xl'>
               <Image 
-              src={sdsWikiProject}
-              height={600}
-              width={600}
-              alt="sds wiki project"
+                className='rounded-lg'
+                src={sdsWikiProject}
+                height={600}
+                width={600}
+                alt="sds wiki project"
               />
             <p className='text-2xl p-3'>SDS Wiki</p>
             <p className='font-normal p-3'>Site dinâmico e minimalista de busca e documentação sobre "Software Defined Storage" baseado em Astro, utilizando arquivos em markdown.</p>
@@ -198,6 +203,7 @@ export default function Home() {
 
             <div className='hover:backdrop-brightness-150 hover:backdrop-blur-sm ease-in-out duration-300 border p-5 rounded-2xl max-w-xl'>
               <Image 
+                className='rounded-lg'
                 src={jmSiteProject}
                 height={600}
                 width={600}
