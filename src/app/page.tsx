@@ -1,4 +1,3 @@
-'use client'
 import Image from 'next/image'
 import logo from '../../public/Logo_Polvo.svg'
 import reactlogo from '../../public/svg-tec/reactlogo.svg'
@@ -19,12 +18,15 @@ import { Texture } from "@/components/Texture";
 import { FooterMain } from "@/components/FooterMain"
 import sdsWikiProject from "../../public/sds-wiki.png"
 import jmSiteProject from "../../public/jm-eletrica.png"
+import InfiniteLooper from '@/components/InfiniteLooper'
+import logo_jellyfish from '../../public/logo-jellyfish.png'
 
 export default function Home() {
   return (
     <div>
       <main>
 
+        {/* screen 1 - title */}
         <section className='h-screen flex flex-col items-center justify-between p-24 font-extrabold'>
 
           <Image
@@ -37,147 +39,143 @@ export default function Home() {
           <h1 className='header-title text-8xl font-extrabold text-center pt-28'>Jelly<span className='Fish'>Fish</span>Development.
           </h1>
 
-          <p className='text-zinc-400 text-center font-normal w-7/12 p-5'>Somos uma equipe apaixonada por transformar vidas. Nós construímos trilhas para o sucesso de nossos clientes por meio de softwares, websites e aplicativos móveis. Queremos dar vida às suas ideias, transformando-as em soluções inteligentes e ágeis para resolver seus problemas.</p>
-          
-          <p className='text-zinc-400 text-center font-normal w-7/12 p-5'>Cada projeto é único para nós. Nossa abordagem personalizada é como uma obra de arte, feita sob medida para suas necessidades. Reuniões, protótipos e feedback constante são o nosso caminho para o sucesso. </p>
-
           <p className='font-normal'>Com você, somos capazes de moldar o futuro digital de forma inovadora e envolvente ✨</p>
 
+          <InfiniteLooper speed="25" direction="left">
+            <div className='mt-11 gap-4 grid grid-flow-col gap-4'>
+              <div>
+                <Image
+                  className='transition ease-in-out duration-500 ml-4 react-logo hover:-translate-y-2'
+                  src={reactlogo}
+                  width={100}
+                  height={100}
+                  alt="react logo"
+                />
+              </div>
+
+              <div>
+                <Image
+                  className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'
+                  src={nextjslogo}
+                  width={100}
+                  height={100}
+                  alt="next logo"
+                />
+              </div>
+
+              <div>
+                <Image
+                  className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'
+                  src={tslogo}
+                  width={100}
+                  height={100}
+                  alt="typescript logo"
+                />
+              </div>
+
+              <div>
+                <Image
+                  className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'
+                  src={jslogo}
+                  width={100}
+                  height={100}
+                  alt="javascript logo"
+                />
+              </div>
+
+              <div>
+                <Image
+                  className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'
+                  src={exlogo}
+                  width={100}
+                  height={100}
+                  alt="express logo"
+                />
+              </div>
+
+              <div>
+                <Image
+                  className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'
+                  src={mysqllogo}
+                  width={100}
+                  height={100}
+                  alt="mysql logo"
+                />
+              </div>
+
+              <div>
+                <Image
+                  className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'
+                  src={mongodblogo}
+                  width={100}
+                  height={100}
+                  alt="mongodb logo"
+                />
+              </div>
+
+              <div>
+                <Image
+                  className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'
+                  src={postgrelogo}
+                  width={100}
+                  height={100}
+                  alt="postgre logo"
+                />
+              </div>
+
+              <div>
+                <Image
+                  className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'
+                  src={phplogo}
+                  width={100}
+                  height={100}
+                  alt="php logo"
+                />
+              </div>
+
+              <div>
+                <Image
+                  className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'
+                  src={twlogo}
+                  width={100}
+                  height={100}
+                  alt="tailwind logo"
+                />
+              </div>
+
+              <div>
+                <Image
+                  className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'
+                  src={pythonlogo}
+                  width={100}
+                  height={100}
+                  alt="python logo"
+                />
+              </div>
+
+              <div>
+                <Image
+                  className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'
+                  src={dockerlogo}
+                  width={100}
+                  height={100}
+                  alt="docker logo"
+                />
+              </div>
+            </div>
+          </InfiniteLooper>
+
+
           <div className='p-10'>
-            <button className='botao-projetos-glow absolute text-white hover:bg-gray-900 focus:outline-none focus:rinwg-4 font-medium rounded-lg text-sm px-24 py-5 me-2 mb-2'><a href="#" className='text-2xl font-extrabold'>Projetos</a></button>
-            <button className='botao-projetos text-white hover:bg-gray-900 focus:outline-none focus:ring-4 font-medium rounded-lg text-sm px-24 py-5 me-2 mb-2'><a href="#" className='text-2xl font-extrabold'>Projetos</a></button>
+            <button className='botao-projetos-glow absolute text-white hover:bg-gray-900 focus:outline-none font-medium rounded-lg text-sm px-24 py-5 me-2 mb-2'><a href="#" className='text-2xl font-extrabold'>Projetos</a></button>
+            
+            <button className='botao-projetos text-white hover:bg-gray-900 focus:outline-none font-medium rounded-lg text-sm px-24 py-5 me-2 mb-2'><a href="#" className='text-2xl font-extrabold'>Projetos</a></button>
             
           </div>
 
         </section>
 
-        <section className='h-screen flex flex-col items-center justify-center font-extrabold'>
-          <h2 className="Fish text-6xl leading-tight">Tecnologias</h2>
-          <h4 className="text-base text-white text-center font-normal">Desenvolvendo Projetos Inovadores com Tecnologia de Ponta</h4>
-
-          <div className='mt-5 grid grid-cols-4 gap-4'>
-            <div>
-              <Image
-                className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'
-                src={reactlogo}
-                width={100}
-                height={100}
-                alt="react logo"
-              />
-            </div>
-
-            <div>
-              <Image
-                className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'
-                src={nextjslogo}
-                width={100}
-                height={100}
-                alt="next logo"
-              />
-            </div>
-
-            <div>
-              <Image
-                className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'
-                src={tslogo}
-                width={100}
-                height={100}
-                alt="typescript logo"
-              />
-            </div>
-
-            <div>
-              <Image
-                className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'
-                src={jslogo}
-                width={100}
-                height={100}
-                alt="javascript logo"
-              />
-            </div>
-
-            <div>
-              <Image
-                className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'
-                src={exlogo}
-                width={100}
-                height={100}
-                alt="express logo"
-              />
-            </div>
-
-            <div>
-              <Image
-                className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'
-                src={mysqllogo}
-                width={100}
-                height={100}
-                alt="mysql logo"
-              />
-            </div>
-
-            <div>
-              <Image
-                className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'
-                src={mongodblogo}
-                width={100}
-                height={100}
-                alt="mongodb logo"
-              />
-            </div>
-
-            <div>
-              <Image
-                className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'
-                src={postgrelogo}
-                width={100}
-                height={100}
-                alt="postgre logo"
-              />
-            </div>
-
-            <div>
-              <Image
-                className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'
-                src={phplogo}
-                width={100}
-                height={100}
-                alt="php logo"
-              />
-            </div>
-
-            <div>
-              <Image
-                className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'
-                src={twlogo}
-                width={100}
-                height={100}
-                alt="tailwind logo"
-              />
-            </div>
-
-            <div>
-              <Image
-                className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'
-                src={pythonlogo}
-                width={100}
-                height={100}
-                alt="python logo"
-              />
-            </div>
-
-            <div>
-              <Image
-                className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'
-                src={dockerlogo}
-                width={100}
-                height={100}
-                alt="docker logo"
-              />
-            </div>
-          </div>
-        </section>
-
+        {/* screen 2 - projects */}
         <section className='h-screen flex flex-col items-center justify-center font-extrabold'>
           <h3 className="text-5xl mt-20 leading-tight">Projetos<span className='Fish'>.</span></h3>
 
@@ -194,7 +192,7 @@ export default function Home() {
                 alt="sds wiki project"
               />
             <p className='text-2xl p-3'>SDS Wiki</p>
-            <p className='font-normal p-3'>Site dinâmico e minimalista de busca e documentação sobre "Software Defined Storage" baseado em Astro, utilizando arquivos em markdown.</p>
+            <p className='font-normal p-3'>Site dinâmico e minimalista de busca e documentação sobre Software Defined Storage baseado em Astro, utilizando arquivos em markdown.</p>
             </div>
 
             <div className='hover:backdrop-brightness-150 hover:backdrop-blur-sm ease-in-out duration-300 border p-5 rounded-2xl max-w-xl'>
@@ -211,70 +209,67 @@ export default function Home() {
           </div>
 
           <div className='p-10'>
-            <button className='botao-projetos-glow absolute text-white hover:bg-gray-900 focus:outline-none focus:ring-4 font-medium rounded-lg text-sm px-24 py-5 me-2 mb-2'><a href="#" className='text-2xl font-extrabold'>Veja mais</a>
+            <button className='botao-projetos-glow absolute text-white hover:bg-gray-900 focus:outline-none font-medium rounded-lg text-sm px-24 py-5 me-2 mb-2'><a href="#" className='text-2xl font-extrabold'>Veja mais</a>
             </button>
 
-            <button className='botao-projetos text-white hover:bg-gray-900 focus:outline-none focus:ring-4 font-medium rounded-lg text-sm px-24 py-5 me-2 mb-2'><a href="#" className='text-2xl font-extrabold'>Veja mais</a>
+            <button className='botao-projetos text-white hover:bg-gray-900 focus:outline-none font-medium rounded-lg text-sm px-24 py-5 me-2 mb-2'><a href="#" className='text-2xl font-extrabold'>Veja mais</a>
             </button>
           </div>
         </section>
         
-      <section className='h-screen flex flex-col items-center justify-center font-extrabold'>
-        <div className='border w-full max-h-full rounded-2xl'>
-            <div className='m-10'>
-              <h1 className='text-2xl'>Vamos trabalhar juntos!</h1>
-            </div>
-              <div className='m-10 font-normal text-m'>
-              <div className='text-center'>
-                <p>Na <b>Jelly<span className='Fish'>Fish</span> Development</b>, acreditamos no poder da colaboração para criar soluções digitais excepcionais. 
-                </p>
-                
-                <p className='mb-4'>Oferecemos não apenas serviços, mas uma jornada colaborativa. Estamos comprometidos em entender suas necessidades e superar suas expectativas. Seja um projeto de desenvolvimento web, aplicativos móveis personalizados ou consultoria em transformação digital, estamos prontos para enfrentar desafios e alcançar resultados excepcionais.</p>
+        <section className='h-screen flex flex-col items-center justify-center font-extrabold'>
+          <div className='lets_work_logo hover:backdrop-brightness-150 hover:backdrop-blur-sm ease-in-out duration-300  border w-full max-h-full rounded-2xl'>
+              <div className='m-10'>
+                <h1 className='text-3xl'>Vamos trabalhar juntos!</h1>
+              </div>
+                <div className='m-10 font-normal text-xl'>
+                <div className='text-left'>
+                  <p>Na <strong>Jelly<span className='Fish'>Fish</span> </strong> acreditamos no poder da colaboração<br/>para criar soluções digitais excepcionais. 
+                  </p>
+                  
+                  <p className='text-right mt-4'>
+                  Se você tem uma visão, nós temos a ferramenta.<br/>Venha conosco transformar suas ideias em realidade.</p>
+                  <p className='text-right'><span className='Fish'><b>Conecte-se</b></span> conosco e embarque nesta jornada.</p>
 
-                <hr />
-                <p className='mt-4'>
-                Se você tem uma visão, nós temos a ferramenta. Venha conosco transformar suas ideias em realidade.</p>
-                <p><span className='Fish'><b>Conecte-se</b></span> conosco e embarque nesta jornada.</p>
+                </div>
 
               </div>
 
-            </div>
+              <div className="flex gap-10">
+                <div>
+                  <button className='mb-10 ml-10 text-black py-3 px-10 bg-white rounded-lg'><a href="mailto:jellyfishdevelop@gmail.com?subject=Olá, eu gostaria de entrar em contato com vocês!" className='text-l font-extrabold'>Contate-nos</a></button>
+                </div>
 
-            <div className="flex gap-10">
-              <div>
-                <button className='mb-10 ml-10 text-black py-3 px-10 bg-white rounded-lg'><a href="mailto:jellyfishdevelop@gmail.com?subject=Olá, eu gostaria de entrar em contato com vocês!" className='text-sm font-extrabold'>Contate-nos</a></button>
+                <div>
+
+                  <a href="https://github.com/JellyFishDevelopment" target="_blank">
+                    <Image
+                      src={githublogo}
+                      width={40}
+                      height={40}
+                      alt="github logo"
+                    />
+                  </a>
+                </div>
+
+                <div>
+                  <a href="https://www.instagram.com/jellyfishdevelopment/" target="_blank">
+                    <Image
+                      src={instagramlogo}
+                      width={40}
+                      height={40}
+                      alt="instagram logo"
+                    />
+                  </a>
+
+                </div>
               </div>
-
-              <div>
-
-                <a href="https://github.com/JellyFishDevelopment" target="_blank">
-                  <Image
-                    src={githublogo}
-                    width={40}
-                    height={40}
-                    alt="github logo"
-                  />
-                </a>
-              </div>
-
-              <div>
-                <a href="https://www.instagram.com/jellyfishdevelopment/" target="_blank">
-                  <Image
-                    src={instagramlogo}
-                    width={40}
-                    height={40}
-                    alt="instagram logo"
-                  />
-                </a>
-
-              </div>
-            </div>
-        </div>
-      </section>
+          </div>
+        </section>
 
         {/* SOBRE NÓS */}
       <section className='h-screen flex flex-col items-center justify-center font-extrabold'>
-        <div className='border rounded-3xl mt-10'>
+        <div className='hover:backdrop-brightness-150 hover:backdrop-blur-sm ease-in-out duration-300 border rounded-3xl mt-10'>
             <div className='m-10'>
               <h1 className='text-center text-2xl'>Sobre nós</h1>
               <p className='text-center'>Moldando o novo futuro da tecnologia</p>
