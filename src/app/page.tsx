@@ -33,9 +33,11 @@ export default function Home() {
 
 
           <div className='p-10'>
-            <button className='botao-projetos-glow absolute text-white hover:bg-gray-900 focus:outline-none font-medium rounded-lg text-sm px-24 py-5 me-2 mb-2'><a href="#" className='text-2xl font-extrabold'>Projetos</a></button>
-            
-            <button className='botao-projetos text-white hover:bg-gray-900 focus:outline-none font-medium rounded-lg text-sm px-24 py-5 me-2 mb-2'><a href="#" className='text-2xl font-extrabold'>Projetos</a></button>
+
+            <button className='rounded-3xl border-2 px-20 py-5 btn1'>
+              <a href="#" className='text-white text-2xl font-extrabold'>Projetos</a>
+            </button>
+
           </div>
 
         </section>
@@ -74,11 +76,11 @@ export default function Home() {
           </div>
 
           <div className='p-10'>
-            <button className='botao-projetos-glow absolute text-white hover:bg-gray-900 focus:outline-none font-medium rounded-lg text-sm px-24 py-5 me-2 mb-2'><a href="#" className='text-2xl font-extrabold'>Veja mais</a>
+
+            <button className='rounded-3xl border-2 px-20 py-5 btn1'>
+              <a href="#" className='text-white text-2xl font-extrabold'>Veja mais</a>
             </button>
 
-            <button className='botao-projetos text-white hover:bg-gray-900 focus:outline-none font-medium rounded-lg text-sm px-24 py-5 me-2 mb-2'><a href="#" className='text-2xl font-extrabold'>Veja mais</a>
-            </button>
           </div>
         </section>
         
