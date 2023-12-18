@@ -92,15 +92,17 @@ export default function Home() {
               <div className='m-10'>
                 <h1 className='text-3xl'>Vamos trabalhar juntos!</h1>
               </div>
-                <div className='m-10 font-normal text-xl'>
+                <div className='m-10 font-normal text-xl grid grid-cols-2'>
+
                 <div className='text-left'>
                   <p>Na <strong>Jelly<span className='Fish'>Fish</span> </strong> acreditamos no poder da colaboração<br/>para criar soluções digitais excepcionais. 
                   </p>
-                  
-                  <p className='text-right mt-4'>
-                  Se você tem uma visão, nós temos a ferramenta.<br/>Venha conosco transformar suas ideias em realidade.</p>
-                  <p className='text-right'><span className='Fish'><b>Conecte-se</b></span> conosco e embarque nesta jornada.</p>
+                </div>
 
+                <div>
+                  
+                  <p className='text-right'>
+                  Se você tem uma visão, nós temos a ferramenta.<br/>Venha conosco transformar suas ideias em realidade.<br/><span className='Fish'><b>Conecte-se</b></span> conosco e embarque nesta jornada.</p>
                 </div>
 
               </div>
