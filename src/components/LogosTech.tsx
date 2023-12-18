@@ -15,10 +15,10 @@ import Image from 'next/image'
 export default function LogosTech() {
     return (
         <>
-        <div className='mt-11 gap-4 grid grid-flow-col gap-4'>
+        <div className='mt-11 gap-4 grid grid-flow-col'>
               <div>
                 <Image
-                  className='transition ease-in-out duration-500 ml-4 react-logo hover:-translate-y-2'
+                  className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'
                   src={reactlogo}
                   width={100}
                   height={100}
