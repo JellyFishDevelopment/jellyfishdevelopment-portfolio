@@ -104,7 +104,12 @@ hr {
 .btn1:hover {
   inset: 6px 0 5.5px 0;
   transform: rotateX(5deg) rotateY(3deg) rotateZ(.25deg);
+  backdrop-filter: brightness(1.5);
   box-shadow: none;
+}
+
+.infinite-looper {
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%);
 }
 
 /* button-4

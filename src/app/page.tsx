@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
         {/* screen 1 - title */}
-        <section className='h-screen flex flex-col items-center p-24 font-extrabold'>
+        <section className='flex flex-col items-center p-14 font-extrabold'>
 
           <Image
             src={logo}
@@ -22,14 +22,16 @@ export default function Home() {
             alt="Picture of a JellyFish"
           />
 
-          <h1 className='header-title text-8xl font-extrabold text-center pt-28'>Jelly<span className='Fish'>Fish</span>Development.
+          <h1 className='header-title text-8xl font-extrabold text-center pt-16'>Jelly<span className='Fish'>Fish</span>Development.
           </h1>
 
-          <p className='font-normal'>Com você, somos capazes de moldar o futuro digital de forma inovadora e envolvente ✨</p>
+          <p className='text-neutral-400 pt-5 font-normal'>Com você, somos capazes de moldar o futuro digital de forma inovadora e envolvente ✨</p>
 
-          <InfiniteLooper speed={25} direction="left">
-            <LogosTech/>
-          </InfiniteLooper>
+          <div className='infinite-looper w-11/12'>
+            <InfiniteLooper speed={25} direction="left">
+              <LogosTech/>
+            </InfiniteLooper>
+          </div>
 
 
           <div className='p-10'>
@@ -50,7 +52,7 @@ export default function Home() {
 
           <div className='grid grid-cols-2 gap-16'>
 
-            <div className='hover:backdrop-brightness-150 hover:backdrop-blur-sm ease-in-out duration-300 border p-5 rounded-2xl max-w-xl'>
+            <div className='hover:backdrop-brightness-150 hover:cursor-pointer ease-in-out duration-300 border p-5 rounded-2xl max-w-xl'>
               <Image 
                 className='rounded-lg'
                 src={sdsWikiProject}
@@ -62,7 +64,7 @@ export default function Home() {
             <p className='font-normal p-3'>Site dinâmico e minimalista de busca e documentação sobre Software Defined Storage baseado em Astro, utilizando arquivos em markdown.</p>
             </div>
 
-            <div className='hover:backdrop-brightness-150 hover:backdrop-blur-sm ease-in-out duration-300 border p-5 rounded-2xl max-w-xl'>
+            <div className='hover:backdrop-brightness-150 hover:cursor-pointer ease-in-out duration-300 border p-5 rounded-2xl max-w-xl'>
               <Image 
                 className='rounded-lg'
                 src={jmSiteProject}
