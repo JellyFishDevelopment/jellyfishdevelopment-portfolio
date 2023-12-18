@@ -8,6 +8,13 @@ import sdsWikiProject from "../../public/sds-wiki.png"
 import jmSiteProject from "../../public/jm-eletrica.png"
 import InfiniteLooper from '@/components/InfiniteLooper'
 import LogosTech from '@/components/LogosTech'
+import astrologo from '../../public/svg-tec/astrologo.svg'
+import tslogo from '../../public/svg-tec/tslogo.svg'
+import twlogo from '../../public/svg-tec/twlogo.svg'
+import mdlogo from '../../public/svg-tec/markdownlogo.svg'
+import reactlogo from '../../public/svg-tec/reactlogo.svg'
+import vitelogo from '../../public/svg-tec/vitelogo.svg'
+import jslogo from '../../public/svg-tec/jslogo.svg'
 
 export default function Home() {
   return (
@@ -61,7 +68,57 @@ export default function Home() {
                 alt="sds wiki project"
               />
             <p className='text-2xl p-3'>SDS Wiki</p>
+
             <p className='font-normal p-3'>Site dinâmico e minimalista de busca e documentação sobre Software Defined Storage baseado em Astro, utilizando arquivos em markdown.</p>
+
+            <div className='grid grid-cols-7 mt-5'>
+              <div className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'>
+                <Image
+                  src={astrologo}
+                  width={40}
+                  height={40}
+                  alt="astro logo"
+                />
+              </div>
+
+              <div className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'>
+                <Image
+                  src={reactlogo}
+                  width={40}
+                  height={40}
+                  alt="markdown logo"
+                />
+              </div>
+
+              <div className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'>
+                <Image
+                    src={tslogo}
+                    width={40}
+                    height={40}
+                    alt="TS logo"
+                  />
+              </div>
+
+              <div className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'>
+                <Image
+                  src={twlogo}
+                  width={40}
+                  height={40}
+                  alt="TailWind logo"
+                />
+              </div>
+
+              <div className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'>
+                <Image
+                  src={mdlogo}
+                  width={40}
+                  height={40}
+                  alt="markdown logo"
+                />
+              </div>
+
+            </div>
+
             </div>
 
             <div className='hover:backdrop-brightness-150 hover:cursor-pointer ease-in-out duration-300 border p-5 rounded-2xl max-w-xl'>
@@ -73,7 +130,55 @@ export default function Home() {
                 alt="jm eletrica project"
                 />
               <p className='text-2xl p-3'>JM Elétrica</p>
-            <p className='font-normal p-3'>Site institucional sobre elétrica e soluções em energia, usando API de envio de e-mail, baseado em React.</p>
+            <p className='font-normal p-3 mb-11'>Site institucional sobre elétrica e soluções em energia, usando API de envio de e-mail, baseado em React.</p>
+
+            <div className='grid grid-cols-7 mt-5'>
+              <div className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'>
+                <Image
+                  src={reactlogo}
+                  width={40}
+                  height={40}
+                  alt="react logo"
+                />
+              </div>
+
+              <div className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'>
+                <Image
+                    src={tslogo}
+                    width={40}
+                    height={40}
+                    alt="TS logo"
+                  />
+              </div>
+
+              <div className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'>
+                <Image
+                  src={jslogo}
+                  width={40}
+                  height={40}
+                  alt="js logo"
+                />
+              </div>
+
+              <div className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'>
+                <Image
+                  src={twlogo}
+                  width={40}
+                  height={40}
+                  alt="TailWind logo"
+                />
+              </div>
+
+              <div className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'>
+                <Image
+                  src={vitelogo}
+                  width={40}
+                  height={40}
+                  alt="vite logo"
+                />
+              </div>
+
+            </div>
             </div>
           </div>
 
@@ -113,7 +218,6 @@ export default function Home() {
                 </div>
 
                 <div>
-
                   <a href="https://github.com/JellyFishDevelopment" target="_blank">
                     <Image
                       src={githublogo}
@@ -133,9 +237,9 @@ export default function Home() {
                       alt="instagram logo"
                     />
                   </a>
-
                 </div>
               </div>
+
           </div>
         </section>
 
