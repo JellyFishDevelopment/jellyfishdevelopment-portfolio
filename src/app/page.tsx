@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
         {/* screen 1 - title */}
-        <section className='h-screen flex flex-col items-center justify-between p-24 font-extrabold'>
+        <section className='h-screen flex flex-col items-center p-24 font-extrabold'>
 
           <Image
             src={logo}
