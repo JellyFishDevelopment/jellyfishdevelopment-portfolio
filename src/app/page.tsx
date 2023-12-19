@@ -200,7 +200,7 @@ export default function Home() {
                 <div className='m-10 font-normal text-xl grid'>
 
                 <div className='text-left'>
-                  <p className='w-7/12 xl:w-9/12 2xl:w-10/12'>A <strong>Jelly<span className='Fish'>Fish</span> </strong> valoriza a colaboração para desenvolver soluções digitais excepcionais. Se você possui uma visão, nós oferecemos a ferramenta necessária para transformar suas ideias em realidade. Conecte-se a eles e embarque nessa jornada conjunta.
+                  <p className='w-7/12 xl:w-9/12 2xl:w-10/12'>Se você possui uma visão, nós oferecemos a ferramenta necessária para transformar suas ideias em realidade. Conecte-se a nós e embarque nessa jornada conjunta.
                   </p>
                 </div>
               </div>
