@@ -193,7 +193,7 @@ export default function Home() {
         
         {/* screen 3 - work together */}
         <section className='h-screen flex flex-col items-center justify-center font-extrabold'>
-          <div className='lets_work_logo backdrop-blur-sm backdrop-brightness-150 hover:text-primary ease-in-out duration-300  border w-full rounded-2xl'>
+          <div className='lets_work_logo backdrop-blur-sm backdrop-brightness-150 hover:text-primary ease-in-out duration-300  border w-full 2xl:w-10/12 rounded-2xl'>
               <div className='m-10'>
                 <h1 className='text-3xl'>Vamos trabalhar juntos!</h1>
               </div>
