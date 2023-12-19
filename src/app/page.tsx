@@ -192,24 +192,17 @@ export default function Home() {
         </section>
         
         {/* screen 3 - work together */}
-        <section className='h-screen flex flex-col items-center justify-center font-extrabold'>
-          <div className='lets_work_logo backdrop-blur-sm backdrop-brightness-150 hover:text-primary ease-in-out duration-300  border w-full 2xl:w-10/12 rounded-2xl'>
+        <section className='sm:pt-32 2xl:pt-0 flex flex-col items-center justify-center font-extrabold'>
+          <div className='lets_work_logo backdrop-blur-sm backdrop-brightness-150 hover:text-primary ease-in-out duration-300 rounded-2xl border w-full 2xl:w-10/12'>
               <div className='m-10'>
                 <h1 className='text-3xl'>Vamos trabalhar juntos!</h1>
               </div>
                 <div className='m-10 font-normal text-xl grid'>
 
                 <div className='text-left'>
-                  <p>Na <strong>Jelly<span className='Fish'>Fish</span> </strong> acreditamos no poder da colaboração<br/>para criar soluções digitais excepcionais. 
+                  <p className='w-7/12 xl:w-9/12 2xl:w-10/12'>A <strong>Jelly<span className='Fish'>Fish</span> </strong> valoriza a colaboração para desenvolver soluções digitais excepcionais. Se você possui uma visão, nós oferecemos a ferramenta necessária para transformar suas ideias em realidade. Conecte-se a eles e embarque nessa jornada conjunta.
                   </p>
                 </div>
-
-                <div>
-                  
-                  <p className='text-left pt-7'>
-                  Se você tem uma visão, nós temos a ferramenta.<br/>Venha conosco transformar suas ideias em realidade.<br/><span className='Fish'><b>Conecte-se</b></span> conosco e embarque nesta jornada.</p>
-                </div>
-
               </div>
 
               <div className="flex gap-10">
