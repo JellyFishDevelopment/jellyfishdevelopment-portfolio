@@ -59,7 +59,7 @@ export default function Home() {
 
           <div className='grid grid-cols-2 gap-16'>
 
-            <div className='hover:backdrop-brightness-150 hover:cursor-pointer ease-in-out duration-300 border p-5 rounded-2xl max-w-xl'>
+            <div className='hover:backdrop-blur-sm hover:backdrop-brightness-150 hover:cursor-pointer ease-in-out duration-300 border p-5 rounded-2xl max-w-xl'>
               <Image 
                 className='rounded-lg'
                 src={sdsWikiProject}
@@ -121,7 +121,7 @@ export default function Home() {
 
             </div>
 
-            <div className='hover:backdrop-brightness-150 hover:cursor-pointer ease-in-out duration-300 border p-5 rounded-2xl max-w-xl'>
+            <div className='hover:backdrop-blur-sm hover:backdrop-brightness-150 hover:cursor-pointer ease-in-out duration-300 border p-5 rounded-2xl max-w-xl'>
               <Image 
                 className='rounded-lg'
                 src={jmSiteProject}
@@ -193,11 +193,11 @@ export default function Home() {
         
         {/* screen 3 - work together */}
         <section className='h-screen flex flex-col items-center justify-center font-extrabold'>
-          <div className='lets_work_logo hover:backdrop-brightness-150 hover:backdrop-blur-sm ease-in-out duration-300  border w-full max-h-full rounded-2xl'>
+          <div className='lets_work_logo backdrop-blur-sm backdrop-brightness-150 hover:text-primary ease-in-out duration-300  border w-full rounded-2xl'>
               <div className='m-10'>
                 <h1 className='text-3xl'>Vamos trabalhar juntos!</h1>
               </div>
-                <div className='m-10 font-normal text-xl grid grid-cols-2'>
+                <div className='m-10 font-normal text-xl grid'>
 
                 <div className='text-left'>
                   <p>Na <strong>Jelly<span className='Fish'>Fish</span> </strong> acreditamos no poder da colaboração<br/>para criar soluções digitais excepcionais. 
@@ -206,7 +206,7 @@ export default function Home() {
 
                 <div>
                   
-                  <p className='text-right'>
+                  <p className='text-left pt-7'>
                   Se você tem uma visão, nós temos a ferramenta.<br/>Venha conosco transformar suas ideias em realidade.<br/><span className='Fish'><b>Conecte-se</b></span> conosco e embarque nesta jornada.</p>
                 </div>
 
@@ -214,7 +214,7 @@ export default function Home() {
 
               <div className="flex gap-10">
                 <div>
-                  <button className='mb-10 ml-10 text-black py-3 px-10 bg-white rounded-lg'><a href="mailto:jellyfishdevelop@gmail.com?subject=Olá, eu gostaria de entrar em contato com vocês!" className='text-l font-extrabold'>Contate-nos</a></button>
+                  <button className='contate-nos-btn ease-in-out duration-300 mb-10 ml-10 text-white py-3 px-10 bg-rose-200 rounded-lg'><a href="mailto:jellyfishdevelop@gmail.com?subject=Olá, eu gostaria de entrar em contato com vocês!" className='font-bold text-l font-extrabold'>Contate-nos</a></button>
                 </div>
 
                 <div>

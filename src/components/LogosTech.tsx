@@ -18,7 +18,7 @@ export default function LogosTech() {
         <div className='mt-11 gap-4 grid grid-flow-col'>
               <div>
                 <Image
-                  className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'
+                  className='ml-2 transition ease-in-out duration-500 react-logo hover:-translate-y-2'
                   src={reactlogo}
                   width={100}
                   height={100}

@@ -73,9 +73,22 @@ hr {
 }
 
 .lets_work_logo {
-  background: url(../../public/logo-jellyfish.png) center center no-repeat;
+  background: url(../../public/logo-jellyfish.png) 125% 24% no-repeat;
 }
 
+.contate-nos-btn {
+  border: solid 1px;
+  border-color: #bb7b90;
+  background-color: #926171;
+}
+.contate-nos-btn:hover {
+  background-color: rgb(110, 73, 85);
+}
+
+::selection {
+  color: #cccccc;
+  background: #926171;
+}
 /* button-2 */
 
 .btn1 {
