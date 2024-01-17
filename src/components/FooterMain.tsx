@@ -21,10 +21,10 @@ export function FooterMain(){
 
             <div>
                 <h1></h1>
-                <ul className='font-normal text-center'>
-                    <li><a href="#">Inicio</a></li>
-                    <li className='mt-5'>Projetos</li>
-                    <li className='mt-5'>Contato</li>
+                <ul className='font-normal text-center grid'>
+                    <li> <a href="#" className='hover:scale-105 ease-in-out duration-300 inline-block'>Inicio</a></li>
+                    <li> <a href="#" className='hover:scale-105 ease-in-out duration-300 inline-block mt-2' >Projetos</a></li>
+                    <li> <a href="#" className='hover:scale-105 ease-in-out duration-300 inline-block mt-2'>Contato</a></li>
                 </ul>
             </div>
 
@@ -35,6 +35,7 @@ export function FooterMain(){
 
                 <a href="https://www.instagram.com/jellyfishdevelopment/" target="_blank">
                     <Image
+                        className='hover:scale-105 ease-in-out duration-300'
                         src={instagramLogo}
                         width={40}
                         height={40}
@@ -43,6 +44,7 @@ export function FooterMain(){
                 </a>
                 <a href="https://www.linkedin.com/in/leticiaboza/" target='_blank'>
                     <Image
+                        className='hover:scale-105 ease-in-out duration-300'
                         src={linkedinLogo}
                         width={40}
                         height={40}
@@ -52,6 +54,7 @@ export function FooterMain(){
 
                 <a href="https://wa.me/5513991063173" target='_blank'>
                     <Image
+                        className='hover:scale-105 ease-in-out duration-300'
                         src={whatsappLogo}
                         width={40}
                         height={40}
