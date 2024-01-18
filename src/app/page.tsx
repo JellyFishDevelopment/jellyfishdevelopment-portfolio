@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <>
         {/* screen 1 - title */}
-        <section className='flex flex-col items-center p-14 font-extrabold py-40'>
+        <section className='flex flex-col items-center font-extrabold pt-16'>
 
           <Image
             src={logo}
