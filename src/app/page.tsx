@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image'
 import logo from '../../public/Logo_Polvo.svg'
 import { Texture } from "@/components/Texture";
@@ -17,6 +18,7 @@ import { motion } from 'framer-motion'
 
 
 export default function Home() {
+  
   return (
     <>
         {/* screen 1 - title */}
@@ -57,12 +59,11 @@ export default function Home() {
 
           {/* Cards */}
           <motion.div
-            initial={{ opacity: 0, x: -90 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
-            transition={{ duration: 0.9 }}
+            transition={{ duration: 1 }}
           >
-
           
           <div className='grid grid-cols-2 gap-16'>
             {/* SDS Wiki */}
@@ -202,8 +203,15 @@ export default function Home() {
         </section>
         
         {/* screen 3 - about and contact */}
-        {/* <section className="h-screen"> */}
+
         <div className='flex flex-row py-16'>
+
+        <motion.div
+          initial={{ opacity: 0, x: -90 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: false }}
+          transition={{ duration: 0.9 }}
+        >
         <div className='w-5/6 border rounded-bl-3xl rounded-tr-3xl p-10'>
             <h1 className='text-2xl font-bold text-center'>Sobre nós</h1>
             <p className='pt-5 '>Na <b>Jelly<span className='Fish'>Fish</span> Development</b>, somos mais do que uma desenvolvedora de softwares; somos arquitetos digitais dedicados a transformar suas ideias em soluções inovadoras. <br /><br />Com uma abordagem ágil e comprometimento com a excelência, oferecemos serviços de desenvolvimento <b>mobile, desktop e web personalizados</b> especialmente para você.</p>
@@ -233,8 +241,16 @@ export default function Home() {
 
           <div className='w-1/2 rounded-xl p-10'>
           </div>
+          </motion.div>
         </div>
 
+
+        <motion.div
+          initial={{ opacity: 0, x: 90 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: false }}
+          transition={{ duration: 0.9 }}
+        >
         <div className='flex flex-row pb-20'>
           <div className='w-1/2 rounded-xl p-10' >
           
@@ -270,10 +286,9 @@ export default function Home() {
               </div>
           </div>
         </div>
-        {/* </section> */}
+        </motion.div>
 
-
-        {/* screen 5 - footer */}
+        {/* screen 4 - footer */}
         <section className='border-t color-border-footer'>
           <FooterMain/>
         </section>
