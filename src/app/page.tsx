@@ -15,6 +15,7 @@ import mdlogo from '../../public/svg-tec/markdownlogo.svg'
 import reactlogo from '../../public/svg-tec/reactlogo.svg'
 import vitelogo from '../../public/svg-tec/vitelogo.svg'
 import jslogo from '../../public/svg-tec/jslogo.svg'
+import Spotlight, { SpotlightCard } from '@/components/Spotlight';
 
 export default function Home() {
   return (
@@ -57,18 +58,27 @@ export default function Home() {
 
           {/* Cards */}
           <div className='grid grid-cols-2 gap-16'>
-            {/* SDS Wiki */}
-            <div className='hover:backdrop-blur-sm hover:backdrop-brightness-150 hover:cursor-pointer ease-in-out duration-300 border p-5 rounded-2xl max-w-xl'>
-              <Image 
-                className='rounded-lg'
-                src={sdsWikiProject}
-                height={600}
-                width={600}
-                alt="sds wiki project"
-              />
-            <p className='text-2xl p-3'>SDS Wiki</p>
-
-            <p className='font-normal p-3'>Site dinâmico e minimalista de busca e documentação sobre Software Defined Storage baseado em Astro, utilizando arquivos em markdown.</p>
+          </div>
+          <Spotlight className="mx-auto grid gap-24 lg:grid-cols-2 items-start group">
+  {/* Card #1 */}
+          <SpotlightCard>
+            <div className="relative h-full p-6 rounded-[inherit] z-20 overflow-hidden">
+              {/* Radial gradient */}
+              <div className="absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none -z-10 w-1/2 aspect-square" aria-hidden="true">
+                <div className="absolute inset-0 translate-z-0 rounded-full blur-[80px]"></div>
+              </div>
+              <div className="flex flex-col h-full text-left">
+                <Image 
+                  className='rounded-lg w-full'
+                  src={sdsWikiProject}
+                  height={600}
+                  width={600}
+                  alt="sds wiki project"
+                />
+                {/* Text */}
+                <div >
+                  <h2 className="text-2xl text-slate-200 font-bold mb-1 px-3 pt-5">SDS Wiki</h2>
+                 <p className='font-normal p-3'>Site dinâmico e minimalista de busca e documentação sobre Software Defined Storage baseado em Astro, utilizando arquivos em markdown.</p>
 
             <div className='grid grid-cols-7 mt-5'>
               <div className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'>
@@ -118,19 +128,29 @@ export default function Home() {
 
             </div>
 
+                </div>
+              </div>
             </div>
-            
-            {/* JM Elétrica */}
-            <div className='hover:backdrop-blur-sm hover:backdrop-brightness-150 hover:cursor-pointer ease-in-out duration-300 border p-5 rounded-2xl max-w-xl'>
-              <Image 
-                className='rounded-lg'
-                src={jmSiteProject}
-                height={600}
-                width={600}
-                alt="jm eletrica project"
+          </SpotlightCard>
+          {/* Card #2 */}
+          <SpotlightCard>
+            <div className="relative h-full p-6 rounded-[inherit] z-20 overflow-hidden">
+              {/* Radial gradient */}
+              <div className="absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none -z-10 w-1/2 aspect-square" aria-hidden="true">
+                <div className="absolute inset-0 translate-z-0 rounded-full blur-[80px]"></div>
+              </div>
+              <div className="flex flex-col h-full text-left">
+                <Image 
+                  className='rounded-lg w-full'
+                  src={jmSiteProject}
+                  height={600}
+                  width={600}
+                  alt="sds wiki project"
                 />
-              <p className='text-2xl p-3'>JM Elétrica</p>
-            <p className='font-normal p-3 mb-11'>Site institucional sobre elétrica e soluções em energia, usando API de envio de e-mail, baseado em React.</p>
+                {/* Text */}
+                <div >
+                  <h2 className="text-2xl text-slate-200 font-bold mb-1 px-3 pt-5">JM Elétrica</h2>
+                 <p className='font-normal p-3'>Site institucional sobre elétrica e soluções em energia, usando API de envio de e-mail, baseado em React.</p>
 
             <div className='grid grid-cols-7 mt-5'>
               <div className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'>
@@ -138,26 +158,26 @@ export default function Home() {
                   src={reactlogo}
                   width={40}
                   height={40}
-                  alt="react logo"
+                  alt="astro logo"
                 />
               </div>
 
               <div className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'>
                 <Image
-                    src={tslogo}
+                  src={tslogo}
+                  width={40}
+                  height={40}
+                  alt="markdown logo"
+                />
+              </div>
+
+              <div className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'>
+                <Image
+                    src={jslogo}
                     width={40}
                     height={40}
                     alt="TS logo"
                   />
-              </div>
-
-              <div className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'>
-                <Image
-                  src={jslogo}
-                  width={40}
-                  height={40}
-                  alt="js logo"
-                />
               </div>
 
               <div className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'>
@@ -174,13 +194,17 @@ export default function Home() {
                   src={vitelogo}
                   width={40}
                   height={40}
-                  alt="vite logo"
+                  alt="markdown logo"
                 />
               </div>
 
             </div>
+
+                </div>
+              </div>
             </div>
-          </div>
+          </SpotlightCard>
+          </Spotlight>
 
           <div className='p-10'>
 
@@ -269,7 +293,36 @@ export default function Home() {
         </section>
 
     <Texture />
+    
 
+<Spotlight className="max-w-sm mx-auto grid gap-6 lg:grid-cols-3 items-start lg:max-w-none group">
+  {/* Card #1 */}
+  <SpotlightCard>
+    <div className="relative h-full bg-slate-900 p-6 pb-8 rounded-[inherit] z-20 overflow-hidden">
+      {/* Radial gradient */}
+      <div className="absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none -z-10 w-1/2 aspect-square" aria-hidden="true">
+        <div className="absolute inset-0 translate-z-0 bg-slate-800 rounded-full blur-[80px]"></div>
+      </div>
+      <div className="flex flex-col h-full items-center text-center">
+        {/* Image */}
+        <div className="relative inline-flex">
+          <div className="w-[40%] h-[40%] absolute inset-0 m-auto -translate-y-[10%] blur-3xl -z-10 rounded-full bg-indigo-600" aria-hidden="true"></div>
+        </div>
+        {/* Text */}
+        <div className="grow mb-5">
+          <h2 className="text-xl text-slate-200 font-bold mb-1">Amazing Integration</h2>
+          <p className="text-sm text-slate-500">Quickly apply filters to refine your issues lists and create custom views.</p>
+        </div>
+        <a className="inline-flex justify-center items-center whitespace-nowrap rounded-lg bg-slate-800 hover:bg-slate-900 border border-slate-700 px-3 py-1.5 text-sm font-medium text-slate-300 focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 dark:focus-visible:ring-slate-600 transition-colors duration-150" href="#0">
+          <svg className="fill-slate-500 mr-2" xmlns="http://www.w3.org/2000/svg" width="16" height="14">
+            <path d="M12.82 8.116A.5.5 0 0 0 12 8.5V10h-.185a3 3 0 0 1-2.258-1.025l-.4-.457-1.328 1.519.223.255A5 5 0 0 0 11.815 12H12v1.5a.5.5 0 0 0 .82.384l3-2.5a.5.5 0 0 0 0-.768l-3-2.5ZM12.82.116A.5.5 0 0 0 12 .5V2h-.185a5 5 0 0 0-3.763 1.708L3.443 8.975A3 3 0 0 1 1.185 10H1a1 1 0 1 0 0 2h.185a5 5 0 0 0 3.763-1.708l4.609-5.267A3 3 0 0 1 11.815 4H12v1.5a.5.5 0 0 0 .82.384l3-2.5a.5.5 0 0 0 0-.768l-3-2.5ZM1 4h.185a3 3 0 0 1 2.258 1.025l.4.457 1.328-1.52-.223-.254A5 5 0 0 0 1.185 2H1a1 1 0 0 0 0 2Z" />
+          </svg>
+          <span>Connect</span>
+        </a>
+      </div>
+    </div>
+  </SpotlightCard>
+  </Spotlight>
     </>
   )
 }
