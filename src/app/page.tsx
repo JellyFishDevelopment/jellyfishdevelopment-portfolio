@@ -1,7 +1,5 @@
 import Image from 'next/image'
 import logo from '../../public/Logo_Polvo.svg'
-import githublogo from '../../public/svg-tec/githublogo.svg'
-import instagramlogo from '../../public/svg-tec/instagram_logo.svg'
 import { Texture } from "@/components/Texture";
 import { FooterMain } from "@/components/FooterMain"
 import sdsWikiProject from "../../public/sds-wiki.png"
@@ -15,6 +13,8 @@ import mdlogo from '../../public/svg-tec/markdownlogo.svg'
 import reactlogo from '../../public/svg-tec/reactlogo.svg'
 import vitelogo from '../../public/svg-tec/vitelogo.svg'
 import jslogo from '../../public/svg-tec/jslogo.svg'
+import { motion } from 'framer-motion'
+
 
 export default function Home() {
   return (
@@ -56,6 +56,14 @@ export default function Home() {
           <h4 className="text-base text-white text-center font-normal mt-3 mb-8">Nossos últimos projetos realizados</h4>
 
           {/* Cards */}
+          <motion.div
+            initial={{ opacity: 0, x: -90 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: false }}
+            transition={{ duration: 0.9 }}
+          >
+
+          
           <div className='grid grid-cols-2 gap-16'>
             {/* SDS Wiki */}
             <div className='hover:backdrop-blur-sm hover:backdrop-brightness-150 hover:cursor-pointer ease-in-out duration-300 border p-5 rounded-2xl max-w-xl'>
@@ -181,6 +189,8 @@ export default function Home() {
             </div>
             </div>
           </div>
+
+          </motion.div>
 
           <div className='p-10'>
 
