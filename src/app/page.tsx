@@ -5,6 +5,7 @@ import { Texture } from "@/components/Texture";
 import { FooterMain } from "@/components/FooterMain"
 import sdsWikiProject from "../../public/sds-wiki.png"
 import jmSiteProject from "../../public/jm-eletrica.png"
+import lucianaProject from "../../public/luciana-advogada.png"
 import InfiniteLooper from '@/components/InfiniteLooper'
 import LogosTech from '@/components/LogosTech'
 import astrologo from '../../public/svg-tec/astrologo.svg'
@@ -12,6 +13,7 @@ import tslogo from '../../public/svg-tec/tslogo.svg'
 import twlogo from '../../public/svg-tec/twlogo.svg'
 import mdlogo from '../../public/svg-tec/markdownlogo.svg'
 import reactlogo from '../../public/svg-tec/reactlogo.svg'
+import phplogo from '../../public/svg-tec/phplogo.svg'
 import vitelogo from '../../public/svg-tec/vitelogo.svg'
 import jslogo from '../../public/svg-tec/jslogo.svg'
 import { motion } from 'framer-motion'
@@ -53,7 +55,7 @@ export default function Home() {
         </section>
 
         {/* screen 2 - projects */}
-        <section className='flex flex-col items-center justify-center font-extrabold'>
+        <section className='pt-36 flex flex-col items-center justify-center font-extrabold'>
           <h3 className="text-5xl leading-tight">Projetos<span className='Fish'>.</span></h3>
 
           <h4 className="text-base text-white text-center font-normal mt-3 mb-8">Nossos últimos projetos realizados</h4>
@@ -66,10 +68,9 @@ export default function Home() {
             transition={{ duration: 1 }}
           >
           
-          <div className='grid grid-cols-2 gap-16'>
+          <div className='grid grid-cols-2'>
           </div>
-          <Spotlight className="mx-auto grid gap-24 lg:grid-cols-2 items-start group">
-  {/* Card #1 */}
+          <Spotlight className="grid gap-4 lg:grid-cols-3 items-start group">
           <SpotlightCard>
             <div className="relative h-full p-6 rounded-[inherit] z-20 overflow-hidden">
               {/* Radial gradient */}
@@ -78,7 +79,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col h-full text-left">
                 <Image 
-                  className='rounded-lg w-full'
+                  className='rounded-lg'
                   src={sdsWikiProject}
                   height={600}
                   width={600}
@@ -161,7 +162,7 @@ export default function Home() {
                   <h2 className="text-2xl text-slate-200 font-bold mb-1 px-3 pt-5">JM Elétrica</h2>
                  <p className='font-normal p-3'>Site institucional sobre elétrica e soluções em energia, usando API de envio de e-mail, baseado em React.</p>
 
-            <div className='grid grid-cols-7 mt-5'>
+            <div className='grid grid-cols-7 mt-10'>
               <div className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'>
                 <Image
                   src={reactlogo}
@@ -213,11 +214,64 @@ export default function Home() {
               </div>
             </div>
           </SpotlightCard>
+
+          {/* Card #3 */}
+          <SpotlightCard>
+            <div className="relative h-full p-6 rounded-[inherit] z-20 overflow-hidden">
+              {/* Radial gradient */}
+              <div className="absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none -z-10 w-1/2 aspect-square" aria-hidden="true">
+                <div className="absolute inset-0 translate-z-0 rounded-full blur-[80px]"></div>
+              </div>
+              <div className="flex flex-col h-full text-left">
+                <Image 
+                  className='rounded-lg w-full'
+                  src={lucianaProject}
+                  height={600}
+                  width={600}
+                  alt="sds wiki project"
+                />
+                {/* Text */}
+                <div >
+                  <h2 className="text-2xl text-slate-200 font-bold mb-1 px-3 pt-5">Luciana Advocacia</h2>
+                 <p className='font-normal p-3'>Site estático desenvolvido para site de Consultoria Jurídica.</p>
+
+              <div className='grid grid-cols-7 mt-16'>
+              <div className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><g fill="none"><g fill="#ffffff" clip-path="url(#akarIconsHtmlFill0)"><path d="M5.08 0h1.082v1.069h.99V0h1.082v3.236H7.152V2.153h-.99v1.083H5.081zm4.576 1.073h-.952V0h2.987v1.073h-.953v2.163H9.656zM12.165 0h1.128l.694 1.137L14.68 0h1.128v3.236h-1.077V1.632l-.744 1.151h-.019l-.745-1.15v1.603h-1.058zm4.181 0h1.083v2.167h1.52v1.07h-2.603z"></path><path fill-rule="evenodd" d="M5.046 22.072L3 4.717h18L18.953 22.07L11.99 24zm4.137-9.5l-.194-2.18h8.145l.19-2.128H6.664l.574 6.437h7.377l-.247 2.76l-2.374.642h-.002l-2.37-.64l-.152-1.697H7.332l.298 3.342l4.36 1.21l4.367-1.21l.532-5.964l.052-.571z" clip-rule="evenodd"></path></g><defs><clipPath id="akarIconsHtmlFill0"><path fill="#fff" d="M0 0h24v24H0z"></path></clipPath></defs></g></svg>
+              </div>
+
+              <div className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path fill="#ffffff" d="M7.502 0h2.578v1.078h-1.5v1.078h1.5v1.078H7.502zm3.093 0h2.579v.938h-1.5v.187h1.5v2.156h-2.579v-.984h1.5v-.188h-1.5zm3.095 0h2.577v.938h-1.5v.187h1.5v2.156H13.69v-.984h1.5v-.188h-1.5z"></path><path fill="#ffffff" fill-rule="evenodd" d="m11.991 24l-6.944-1.928L3 4.717h18L18.954 22.07zM7.047 12.573l.191 2.128h7.377l-.247 2.76l-2.374.642h-.002l-2.37-.64l-.152-1.697H7.333l.298 3.342l4.36 1.21l4.367-1.21l.532-5.964l.052-.571l.384-4.309H6.664l.194 2.129h8.136l-.194 2.18z" clip-rule="evenodd"></path></svg>
+              </div>
+
+              <div className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'>
+                <Image
+                    src={jslogo}
+                    width={40}
+                    height={40}
+                    alt="TS logo"
+                  />
+              </div>
+
+              <div className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'>
+                <Image
+                  src={phplogo}
+                  width={40}
+                  height={40}
+                  alt="TailWind logo"
+                />
+              </div>
+            </div>
+
+                </div>
+              </div>
+            </div>
+          </SpotlightCard>
           </Spotlight>
 
           </motion.div>
 
-          <div className='p-10'>
+          <div className='pt-10 pb-32'>
 
             <button className='rounded-3xl border-2 px-20 py-5 btn1'>
               <a href="#" className='text-white text-2xl font-extrabold'>Veja mais</a>
