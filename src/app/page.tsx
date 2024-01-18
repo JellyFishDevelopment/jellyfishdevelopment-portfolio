@@ -1,7 +1,6 @@
+'use client'
 import Image from 'next/image'
 import logo from '../../public/Logo_Polvo.svg'
-import githublogo from '../../public/svg-tec/githublogo.svg'
-import instagramlogo from '../../public/svg-tec/instagram_logo.svg'
 import { Texture } from "@/components/Texture";
 import { FooterMain } from "@/components/FooterMain"
 import sdsWikiProject from "../../public/sds-wiki.png"
@@ -15,9 +14,12 @@ import mdlogo from '../../public/svg-tec/markdownlogo.svg'
 import reactlogo from '../../public/svg-tec/reactlogo.svg'
 import vitelogo from '../../public/svg-tec/vitelogo.svg'
 import jslogo from '../../public/svg-tec/jslogo.svg'
+import { motion } from 'framer-motion'
+
 import Spotlight, { SpotlightCard } from '@/components/Spotlight';
 
 export default function Home() {
+  
   return (
     <>
         {/* screen 1 - title */}
@@ -57,6 +59,13 @@ export default function Home() {
           <h4 className="text-base text-white text-center font-normal mt-3 mb-8">Nossos últimos projetos realizados</h4>
 
           {/* Cards */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false }}
+            transition={{ duration: 1 }}
+          >
+          
           <div className='grid grid-cols-2 gap-16'>
           </div>
           <Spotlight className="mx-auto grid gap-24 lg:grid-cols-2 items-start group">
@@ -206,6 +215,8 @@ export default function Home() {
           </SpotlightCard>
           </Spotlight>
 
+          </motion.div>
+
           <div className='p-10'>
 
             <button className='rounded-3xl border-2 px-20 py-5 btn1'>
@@ -216,8 +227,15 @@ export default function Home() {
         </section>
         
         {/* screen 3 - about and contact */}
-        {/* <section className="h-screen"> */}
+
         <div className='flex flex-row py-16'>
+
+        <motion.div
+          initial={{ opacity: 0, x: -90 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: false }}
+          transition={{ duration: 0.9 }}
+        >
         <div className='w-5/6 border rounded-bl-3xl rounded-tr-3xl p-10'>
             <h1 className='text-2xl font-bold text-center'>Sobre nós</h1>
             <p className='pt-5 '>Na <b>Jelly<span className='Fish'>Fish</span> Development</b>, somos mais do que uma desenvolvedora de softwares; somos arquitetos digitais dedicados a transformar suas ideias em soluções inovadoras. <br /><br />Com uma abordagem ágil e comprometimento com a excelência, oferecemos serviços de desenvolvimento <b>mobile, desktop e web personalizados</b> especialmente para você.</p>
@@ -247,8 +265,16 @@ export default function Home() {
 
           <div className='w-1/2 rounded-xl p-10'>
           </div>
+          </motion.div>
         </div>
 
+
+        <motion.div
+          initial={{ opacity: 0, x: 90 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: false }}
+          transition={{ duration: 0.9 }}
+        >
         <div className='flex flex-row pb-20'>
           <div className='w-1/2 rounded-xl p-10' >
           
@@ -284,10 +310,9 @@ export default function Home() {
               </div>
           </div>
         </div>
-        {/* </section> */}
+        </motion.div>
 
-
-        {/* screen 5 - footer */}
+        {/* screen 4 - footer */}
         <section className='border-t color-border-footer'>
           <FooterMain/>
         </section>
