@@ -47,7 +47,7 @@ export default function Home() {
           <div className='p-10'>
 
             <button className='rounded-3xl border-2 px-20 py-5 btn1'>
-              <a href="#" className='text-white text-2xl font-extrabold'>Projetos</a>
+              <a href="/projects" className='text-white text-2xl font-extrabold'>Projetos</a>
             </button>
 
           </div>
@@ -274,7 +274,7 @@ export default function Home() {
           <div className='pt-10 pb-32'>
 
             <button className='rounded-3xl border-2 px-20 py-5 btn1'>
-              <a href="#" className='text-white text-2xl font-extrabold'>Veja mais</a>
+              <a href="/projects" className='text-white text-2xl font-extrabold'>Veja mais</a>
             </button>
 
           </div>
@@ -282,7 +282,7 @@ export default function Home() {
         
         {/* screen 3 - about and contact */}
 
-        <div className='flex flex-row py-16'>
+        <div className='flex flex-row'>
 
         <motion.div
           initial={{ opacity: 0, x: -90 }}
