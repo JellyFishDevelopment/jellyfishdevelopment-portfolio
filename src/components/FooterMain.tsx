@@ -22,9 +22,9 @@ export function FooterMain(){
             <div>
                 <h1></h1>
                 <ul className='font-normal text-center grid'>
-                    <li> <a href="#" className='hover:scale-105 ease-in-out duration-300 inline-block'>Inicio</a></li>
-                    <li> <a href="#" className='hover:scale-105 ease-in-out duration-300 inline-block mt-2' >Projetos</a></li>
-                    <li> <a href="#" className='hover:scale-105 ease-in-out duration-300 inline-block mt-2'>Contato</a></li>
+                    <li> <a href="/" className='hover:scale-105 ease-in-out duration-300 inline-block'>Inicio</a></li>
+                    <li> <a href="/projects" className='hover:scale-105 ease-in-out duration-300 inline-block mt-2' >Projetos</a></li>
+                    <li> <a href="/contact" className='hover:scale-105 ease-in-out duration-300 inline-block mt-2'>Contato</a></li>
                 </ul>
             </div>
 
