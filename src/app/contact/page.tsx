@@ -42,7 +42,7 @@ export default function Page() {
           <div className='texto-form'>
             <form action="#" method='POST' className='flex flex-col'>
               <label className='pt-5'>Texto:</label>
-              <textarea className='border rounded-xl bg-black p-3' id="" cols={30} rows={10} placeholder='Digite o texto aqui.'></textarea>
+              <textarea className='border rounded-xl bg-black p-3 resize-none' id="" cols={30} rows={10} placeholder='Digite o texto aqui.'></textarea>
             </form>
           </div>
           <div className='text-center pt-10'>
