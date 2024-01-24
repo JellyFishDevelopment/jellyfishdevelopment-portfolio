@@ -46,9 +46,11 @@ export default function Page() {
             </form>
           </div>
           <div className='text-center pt-10'>
-            <button className='rounded-3xl border-2 px-20 py-5 btn1'>
-              <a href="#" className='text-white text-2xl font-extrabold'>Enviar</a>
-            </button>
+            <a href="#" className='text-white text-2xl font-extrabold'>
+              <button className='rounded-3xl border-2 px-20 py-5 btn1'>
+                Enviar
+              </button>
+            </a>
           </div>
         </section>
 

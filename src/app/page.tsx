@@ -45,11 +45,11 @@ export default function Home() {
           </div>
 
           <div className='p-10'>
-
-            <button className='rounded-3xl border-2 px-20 py-5 btn1'>
-              <a href="/projects" className='text-white text-2xl font-extrabold'>Projetos</a>
-            </button>
-
+            <a href="/projects" className='text-white text-2xl font-extrabold'>
+              <button className='rounded-3xl border-2 px-20 py-5 btn1'>
+                Projetos
+              </button>
+            </a>
           </div>
 
         </section>
@@ -272,11 +272,11 @@ export default function Home() {
           </motion.div>
 
           <div className='pt-10 pb-32'>
-
-            <button className='rounded-3xl border-2 px-20 py-5 btn1'>
-              <a href="/projects" className='text-white text-2xl font-extrabold'>Veja mais</a>
-            </button>
-
+            <a href="/projects" className='text-white text-2xl font-extrabold'>
+              <button className='rounded-3xl border-2 px-20 py-5 btn1'>
+                Veja mais
+              </button>
+            </a>
           </div>
         </section>
         
