@@ -29,10 +29,7 @@ export function FooterMain(){
             </div>
 
             <div className='flex-row ml-20'>
-                <p className='mb-3 text-center font-normal'>Redes Sociais</p>
-
                 <div className='flex gap-4 justify-center'>
-
                 <a href="https://www.instagram.com/jellyfishdevelopment/" target="_blank">
                     <Image
                         className='hover:scale-105 ease-in-out duration-300'
