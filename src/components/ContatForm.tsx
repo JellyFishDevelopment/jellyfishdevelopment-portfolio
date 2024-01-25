@@ -3,7 +3,7 @@ import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 
 export function ContactForm() {
-  const [state, handleSubmit] = useForm("xleqgwbk");
+  const [state, handleSubmit] = useForm("xdoqalzy");
   if (state.succeeded) {
     return <p>Mensagem enviada!</p>;
   }
@@ -11,7 +11,7 @@ export function ContactForm() {
   return (
     <form onSubmit={handleSubmit}>
       <label htmlFor="email">
-        Seu E-mail de contato:
+        Seu e-mail de contato:
       </label>
       <div className='pt-2 pb-5'>
         <input
