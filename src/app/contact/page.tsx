@@ -2,6 +2,7 @@ import Image from 'next/image'
 import logo from '../../../public/Logo_Polvo.svg'
 import { Texture } from "@/components/Texture";
 import { FooterMain } from "@/components/FooterMain"
+import { ContactForm } from '@/components/ContatForm';
 
 export default function Page() {
   return (
@@ -17,31 +18,7 @@ export default function Page() {
 
       <div className='flex justify-center py-12'>
         <section className='bg-black px-20 py-10 border rounded-3xl w-4/6'>
-          {/* Formulário de E-mail */}
-          <div className=''>
-            <form action="#" className='flex flex-col'>
-              <label>Seu e-mail de contato:</label>
-              <div className='pt-2'>
-                <input type="email" name="Email" className='email bg-black p-3 border rounded-xl w-full' placeholder='Digite seu e-mail aqui.'/>
-              </div>
-              <label className='pt-5'>Assunto</label>
-              <div className='pt-2'>
-                <input type="subject" name="Subject" className='subject bg-black p-3 border rounded-xl w-full' placeholder='Digite o assunto aqui.'/>
-              </div>
-              <label className='pt-5'>Mensagem:</label>
-              <div className='pt-2'>
-                <textarea name="" id="" cols={30} rows={10} className='border rounded-xl bg-black p-3 resize-none w-full' placeholder='Digite a mensagem aqui.'></textarea>
-              </div>
-
-            </form>
-          </div>
-          <div className='text-center pt-10'>
-            <a href="#" className='text-white text-2xl font-extrabold'>
-              <button className='rounded-3xl border-2 px-20 py-5 btn1'>
-                Enviar
-              </button>
-            </a>
-          </div>
+          <ContactForm />
         </section>
 
       </div>
