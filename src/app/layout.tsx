@@ -1,6 +1,16 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import Hotjar from '@hotjar/browser'
+
+const siteId = Number(process.env.HORJAR_ID)
+const hotjarVersion = Number(process.env.HORJAR_V)
+const hotjarDebug = Boolean(process.env.HOTJAR_D)
+
+// Initializing with `debug` option:
+Hotjar.init(siteId, hotjarVersion, {
+  debug: hotjarDebug
+});
 
 const inter = Inter({ subsets: ['latin'] })
 
