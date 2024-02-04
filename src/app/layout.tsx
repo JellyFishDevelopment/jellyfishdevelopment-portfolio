@@ -5,6 +5,7 @@ import { Analytics } from '@vercel/analytics/react'
 
 const siteId = Number(process.env.HORJAR_ID)
 const hotjarVersion = Number(process.env.HORJAR_V)
+const google_tag = process.env.GOOGLE_TAG
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -30,6 +31,17 @@ export default function RootLayout({
                     r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
                     a.appendChild(r);
                 })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+            `}}
+          />
+          
+        {/* <!-- Google tag (gtag.js) --> */}
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${google_tag}`}></script>
+        <script dangerouslySetInnerHTML={{ __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', '${google_tag}');
             `}}
           />
       </head>
