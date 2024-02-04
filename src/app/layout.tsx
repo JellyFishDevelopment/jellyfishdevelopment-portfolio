@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import { Analytics } from '@vercel/analytics/react'
 
 const siteId = Number(process.env.HORJAR_ID)
 const hotjarVersion = Number(process.env.HORJAR_V)
@@ -32,7 +33,10 @@ export default function RootLayout({
             `}}
           />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   )
 }
