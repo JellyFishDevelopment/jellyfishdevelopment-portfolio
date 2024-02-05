@@ -1,5 +1,5 @@
-'use client'
 import { useCallback, useEffect, useRef, useState } from "react";
+import Image from "next/image";
 
 export default function InfiniteLooper({
   speed,
@@ -10,34 +10,34 @@ export default function InfiniteLooper({
   direction: "right" | "left";
   children: React.ReactNode;
 }) {
-  const [looperInstances, setLooperInstances] = useState(1);
   const outerRef = useRef<HTMLDivElement>(null);
   const innerRef = useRef<HTMLDivElement>(null);
+  const [looperInstances, setLooperInstances] = useState(1);
 
-  const setupInstances = useCallback(() => {
-      if (!innerRef?.current || !outerRef?.current) return;
+  const calculateInstances = useCallback(() => {
+    if (!innerRef.current || !outerRef.current) return;
 
-      const { width } = innerRef.current.getBoundingClientRect();
+    const innerWidth = innerRef.current.getBoundingClientRect().width;
+    const outerWidth = outerRef.current.getBoundingClientRect().width;
 
-      const { width: parentWidth } = outerRef.current.getBoundingClientRect();
-
-      const instanceWidth = width / innerRef.current.children.length;
-
-      if (width < parentWidth + instanceWidth) {
-          setLooperInstances(looperInstances + Math.ceil(parentWidth / width));
-      }
-}, [looperInstances]);
+    const instances = Math.ceil(outerWidth / innerWidth);
+    setLooperInstances(instances > 0 ? instances : 1);
+  }, []);
 
   useEffect(() => {
-      setupInstances();
-  }, []);
+    calculateInstances();
+    window.addEventListener("resize", calculateInstances);
+    return () => {
+      window.removeEventListener("resize", calculateInstances);
+    };
+  }, [calculateInstances]);
 
   return (
     <div className="looper" ref={outerRef}>
       <div className="looper__innerList" ref={innerRef}>
-        {[...Array(looperInstances)].map((_, ind) => (
+        {[...Array(looperInstances)].map((_, index) => (
           <div
-            key={ind}
+            key={index}
             className="looper__listInstance"
             style={{
               animationDuration: `${speed}s`,
