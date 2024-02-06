@@ -324,13 +324,22 @@ export default function Home() {
             </div>
 
             <p className='mt-3 text-center'><br></br> Estamos prontos para levar sua visão ao <b><span className='Fish'> próximo nível</span></b> 🚀</p>
+
+            <a href="/about" className='font-bold justify-center flex flex-row mt-5'>
+                <button
+                  className="ease-in-out duration-300 hover:scale-105 flex items-center bg-white rounded-lg shadow-md max-w-xs px-6 py-2 text-sm font-medium text-black hover:bg-zinc-200 focus:outline-none">
+                  Conheça quem somos
+                </button>
+              </a>
+
           </div>
+
+          
 
           <div className='w-1/2 rounded-xl p-10'>
           </div>
           </motion.div>
         </div>
-
 
         <motion.div
           initial={{ opacity: 0, x: 90 }}
