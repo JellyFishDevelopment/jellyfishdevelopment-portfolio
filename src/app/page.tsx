@@ -6,6 +6,7 @@ import { FooterMain } from "@/components/FooterMain"
 import sdsWikiProject from "../../public/sds-wiki.png"
 import jmSiteProject from "../../public/jm-eletrica.png"
 import lucianaProject from "../../public/luciana-advogada.png"
+import synapticsProject from "../../public/synaptics-magine.png"
 import InfiniteLooper from '@/components/InfiniteLooper'
 import LogosTech from '@/components/LogosTech'
 import astrologo from '../../public/svg-tec/astrologo.svg'
@@ -16,6 +17,7 @@ import reactlogo from '../../public/svg-tec/reactlogo.svg'
 import phplogo from '../../public/svg-tec/phplogo.svg'
 import vitelogo from '../../public/svg-tec/vitelogo.svg'
 import jslogo from '../../public/svg-tec/jslogo.svg'
+import nextjslogo from '../../public/svg-tec/nextjslogo.svg'
 import { motion } from 'framer-motion'
 
 import Spotlight, { SpotlightCard } from '@/components/Spotlight';
@@ -220,43 +222,55 @@ export default function Home() {
               <div className="flex flex-col h-full text-left">
                 <Image 
                   className='rounded-lg w-full'
-                  src={lucianaProject}
+                  src={synapticsProject}
                   height={600}
                   width={600}
-                  alt="sds wiki project"
+                  alt="synapitcs project"
                 />
                 {/* Text */}
                 <div >
-                  <h2 className="text-2xl text-slate-200 font-bold mb-1 px-3 pt-5">Luciana Advocacia</h2>
-                 <p className='font-normal p-3'>Site estático dedicado à Consultoria Jurídica, projetado para fornecer informações claras e acessíveis sobre os serviços jurídicos oferecidos.</p>
+                  <h2 className="text-2xl text-slate-200 font-bold mb-1 px-3 pt-5">Synaptics Machine</h2>
+                 <p className='font-normal p-3'>Site dinâmico de uma solução robusta de CRM e B2B, projetada para otimizar vendas complexas integrando análise avançada de dados.</p>
 
               <div className='grid grid-cols-7 mt-4'>
-              <div className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'>
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><g fill="none"><g fill="#ffffff" clip-path="url(#akarIconsHtmlFill0)"><path d="M5.08 0h1.082v1.069h.99V0h1.082v3.236H7.152V2.153h-.99v1.083H5.081zm4.576 1.073h-.952V0h2.987v1.073h-.953v2.163H9.656zM12.165 0h1.128l.694 1.137L14.68 0h1.128v3.236h-1.077V1.632l-.744 1.151h-.019l-.745-1.15v1.603h-1.058zm4.181 0h1.083v2.167h1.52v1.07h-2.603z"></path><path fill-rule="evenodd" d="M5.046 22.072L3 4.717h18L18.953 22.07L11.99 24zm4.137-9.5l-.194-2.18h8.145l.19-2.128H6.664l.574 6.437h7.377l-.247 2.76l-2.374.642h-.002l-2.37-.64l-.152-1.697H7.332l.298 3.342l4.36 1.21l4.367-1.21l.532-5.964l.052-.571z" clip-rule="evenodd"></path></g><defs><clipPath id="akarIconsHtmlFill0"><path fill="#fff" d="M0 0h24v24H0z"></path></clipPath></defs></g></svg>
-              </div>
-
-              <div className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'>
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path fill="#ffffff" d="M7.502 0h2.578v1.078h-1.5v1.078h1.5v1.078H7.502zm3.093 0h2.579v.938h-1.5v.187h1.5v2.156h-2.579v-.984h1.5v-.188h-1.5zm3.095 0h2.577v.938h-1.5v.187h1.5v2.156H13.69v-.984h1.5v-.188h-1.5z"></path><path fill="#ffffff" fill-rule="evenodd" d="m11.991 24l-6.944-1.928L3 4.717h18L18.954 22.07zM7.047 12.573l.191 2.128h7.377l-.247 2.76l-2.374.642h-.002l-2.37-.64l-.152-1.697H7.333l.298 3.342l4.36 1.21l4.367-1.21l.532-5.964l.052-.571l.384-4.309H6.664l.194 2.129h8.136l-.194 2.18z" clip-rule="evenodd"></path></svg>
-              </div>
-
-              <div className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'>
+              <div className='transition ease-in-out duration-500 p-1 react-logo hover:-translate-y-2'>
                 <Image
-                    src={jslogo}
+                    src={nextjslogo}
                     width={40}
                     height={40}
-                    alt="TS logo"
+                    alt="nextjs logo"
                   />
               </div>
 
               <div className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'>
                 <Image
-                  src={phplogo}
+                  src={tslogo}
+                  width={40}
+                  height={40}
+                  alt="Type logo"
+                />
+              </div>
+
+              <div className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'>
+                <Image
+                  src={reactlogo}
+                  width={40}
+                  height={40}
+                  alt="react logo"
+                />
+              </div>
+
+              <div className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'>
+                <Image
+                  src={twlogo}
                   width={40}
                   height={40}
                   alt="TailWind logo"
                 />
               </div>
+
             </div>
+
 
                 </div>
               </div>
