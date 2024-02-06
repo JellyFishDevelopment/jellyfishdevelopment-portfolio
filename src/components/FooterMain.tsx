@@ -6,8 +6,8 @@ import whatsappLogo from "../../public/svg-tec/whatsapplogo.svg";
 
 export function FooterMain() {
   return (
-    <div className="grid grid-cols-2 mt-10">
-      <div className="mr-40">
+    <div className="grid max-[768px]:grid-cols-1 max-[768px]:content-center	 grid-cols-3 mt-10">
+      <div className="min-[768px]:mr-40 max-[768px]:mx-auto ">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="200"
@@ -46,7 +46,7 @@ export function FooterMain() {
         </svg>
       </div>
 
-      <div>
+      <div className="max-[768px]:my-8">
         <h1></h1>
         <ul className="font-normal text-center grid">
           <li>
@@ -79,7 +79,7 @@ export function FooterMain() {
         </ul>
       </div>
 
-      <div className="flex-row ml-20">
+      <div className="flex-row min-[768px]:ml-20 max-[768px]:my-8">
         <div className="flex gap-4 justify-center">
           <a
             href="https://www.instagram.com/jellyfishdevelopment/"

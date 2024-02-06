@@ -31,9 +31,9 @@ export default function Home() {
 
     handleResize();
 
-    window.addEventListener("resize", handleResize);
+    // window.addEventListener("resize", handleResize);
 
-    return () => window.removeEventListener("resize", handleResize);
+    // return () => window.removeEventListener("resize", handleResize);
   }, []);
   return (
     <>
@@ -118,15 +118,15 @@ export default function Home() {
         <motion.div
           initial={{
             opacity: 0,
-            x: isMobile ? 0 : 90,
-            y: isMobile ? 90 : 0,
+            x: !isMobile ? 0 : 90,
+            y: !isMobile ? 90 : 0,
           }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false }}
           transition={{ duration: 1 }}
         >
-          <div className="grid grid-cols-2"></div>
-          <Spotlight className="grid gap-4 lg:grid-cols-3 items-start group">
+          {/* <div className="grid grid-cols-2"></div> */}
+          <Spotlight className="grid gap-4 justify-center lg:grid-cols-3 items-start group">
             <SpotlightCard>
               <div className="relative h-full p-6 rounded-[inherit] z-20 overflow-hidden">
                 {/* Radial gradient */}
