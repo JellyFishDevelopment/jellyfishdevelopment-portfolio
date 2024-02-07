@@ -4,6 +4,9 @@ import logo from '../../../public/Logo_Polvo.svg'
 import { Texture } from "@/components/Texture";
 import { FooterMain } from "@/components/FooterMain"
 import Leticia from "../../../public/leticia.jpg"
+import Mohan from "../../../public/mohan.png"
+import Luiz from "../../../public/luiz.jpg"
+import Felipe from "../../../public/felipe.jpg"
 import logoLinkedin from "../../../public/svg-tec/linkedin_logo.svg"
 import logoGithub from "../../../public/svg-tec/githublogo.svg"
 import React from "react";
@@ -33,60 +36,70 @@ export default function Page() {
         <div className='flex flex-row gap-4'>  
 
             {/* Leticia */}
-            <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow card-idealizadores">
 
                 <div className="flex flex-col items-center pb-10 pt-10">
 
                     <Image 
                     className='mb-3 rounded-full shadow-lg'
                     src={Leticia}
-                    height={600}
-                    width={600}
+                    height={300}
+                    width={300}
                     alt="sds wiki project"
                     />
 
                     <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">Leticia Boza</h5>
-                    <span className="text-sm text-gray-500 dark:text-gray-400">QA, Product Owner</span>
+                    <span className="text-sm text-gray-500 dark:text-gray-400">QA, Product Owner, Front-End Developer</span>
                     <div className="flex">
-                        <Image
-                        src={logoLinkedin}
-                        alt="Logo Insta"
-                        />
-                        
-                        <Image
-                        src={logoGithub}
-                        alt="Logo Insta"
-                        />
+
+                        <a href="https://www.linkedin.com/in/leticiaboza/" target="_blank">
+                            <Image
+                            src={logoLinkedin}
+                            alt="Logo linkedin"
+                            />
+                        </a>
+
+                        <a href="https://github.com/LeticiaBoza" target="_blank">
+                            <Image
+                            src={logoGithub}
+                            alt="Logo github"
+                            />
+                        </a>
 
                     </div>
                 </div>
             </div>
 
-            {/* Felipe */}
-            <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            {/* Mohan */}
+            <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow card-idealizadores">
 
                 <div className="flex flex-col items-center pb-10 pt-10">
 
                     <Image 
                     className='mb-3 rounded-full shadow-lg'
-                    src={Leticia}
-                    height={600}
-                    width={600}
+                    src={Mohan}
+                    height={300}
+                    width={300}
                     alt="sds wiki project"
                     />
 
-                    <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">Leticia Boza</h5>
-                    <span className="text-sm text-gray-500 dark:text-gray-400">QA, Product Owner</span>
+                    <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">Mohan Elias</h5>
+                    <span className="text-sm text-gray-500 dark:text-gray-400">Full Stack Developer</span>
                     <div className="flex">
+
+                    <a href="https://www.linkedin.com/in/mohanelias/" target="_blank">
                         <Image
-                        src={logoLinkedin}
-                        alt="Logo Insta"
+                            src={logoLinkedin}
+                            alt="Logo linkedin"
                         />
-                        
+                    </a>
+
+                    <a href="https://github.com/mdxv" target="_blank">
                         <Image
-                        src={logoGithub}
-                        alt="Logo Insta"
+                            src={logoGithub}
+                            alt="Logo github"
                         />
+                    </a>
 
                     </div>
                 </div>
@@ -95,61 +108,71 @@ export default function Page() {
 
             {/* Luiz */}
 
-            <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow card-idealizadores">
 
                 <div className="flex flex-col items-center pb-10 pt-10">
 
                     <Image 
                     className='mb-3 rounded-full shadow-lg'
-                    src={Leticia}
-                    height={600}
-                    width={600}
+                    src={Luiz}
+                    height={300}
+                    width={300}
                     alt="sds wiki project"
                     />
 
-                    <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">Leticia Boza</h5>
-                    <span className="text-sm text-gray-500 dark:text-gray-400">QA, Product Owner</span>
+                    <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">Luiz Mateus</h5>
+                    <span className="text-sm text-gray-500 dark:text-gray-400">DevOps, Infra, Back-End Developer</span>
                     <div className="flex">
+
+                    <a href="https://www.linkedin.com/in/luiz-mateus/" target="_blank">
                         <Image
-                        src={logoLinkedin}
-                        alt="Logo Insta"
+                            src={logoLinkedin}
+                            alt="Logo linkedin"
                         />
-                        
+                    </a>
+
+                    <a href="https://github.com/LuizMateuss" target="_blank">
                         <Image
-                        src={logoGithub}
-                        alt="Logo Insta"
+                            src={logoGithub}
+                            alt="Logo github"
                         />
+                    </a>
 
                     </div>
                 </div>
             </div>
 
-                {/* Mohan */}
+                {/* Felipe */}
 
-            <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow card-idealizadores">
 
                 <div className="flex flex-col items-center pb-10 pt-10">
 
                     <Image 
                     className='mb-3 rounded-full shadow-lg'
-                    src={Leticia}
-                    height={600}
-                    width={600}
+                    src={Felipe}
+                    height={300}
+                    width={300}
                     alt="sds wiki project"
                     />
 
-                    <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">Leticia Boza</h5>
-                    <span className="text-sm text-gray-500 dark:text-gray-400">QA, Product Owner</span>
+                    <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">Felipe Souza</h5>
+                    <span className="text-sm text-gray-500 dark:text-gray-400">Back-End Developer, Data Base</span>
                     <div className="flex">
+
+                    <a href="https://www.linkedin.com/in/felipe-r-souza-444b17205/" target="_blank">
                         <Image
-                        src={logoLinkedin}
-                        alt="Logo Insta"
+                            src={logoLinkedin}
+                            alt="Logo linkedin"
                         />
-                        
+                    </a>
+
+                    <a href="https://github.com/felipe-souza17" target="_blank">
                         <Image
-                        src={logoGithub}
-                        alt="Logo Insta"
+                            src={logoGithub}
+                            alt="Logo github"
                         />
+                    </a>
 
                     </div>
                 </div>    

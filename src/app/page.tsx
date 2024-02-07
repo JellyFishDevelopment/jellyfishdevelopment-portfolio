@@ -402,8 +402,151 @@ export default function Home() {
           </motion.div>
         </div>
 
+      {/* screen 2 - projects */}
+      <section className="pt-36 flex flex-col items-center justify-center font-extrabold">
+        <h3 className="text-5xl leading-tight">
+          Projetos<span className="Fish">.</span>
+        </h3>
+
+        <h4 className="text-base text-white text-center font-normal mt-3 mb-8">
+          Nossos últimos projetos realizados
+        </h4>
+
+
+        <div className="max-[768px]:pt-8 max-[768px]:pb-24 pt-10 pb-32">
+          <a href="/projects" className="text-white text-2xl font-extrabold">
+            <button className="rounded-3xl border-2 px-20 py-5 btn1">
+              Veja mais
+            </button>
+          </a>
+        </div>
+      </section>
 
       {/* screen 3 - about and contact */}
+
+      <div className="flex flex-row max-[768px]:flex-col justify-center">
+        <motion.div
+          initial={{
+            opacity: 0,
+            x: isMobile ? 0 : 90,
+            y: isMobile ? 90 : 0,
+          }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: false }}
+          transition={{ duration: 0.9 }}
+          className="mx-auto w-full"
+        >
+          <div className="w-5/6 max-[768px]:mx-auto border rounded-bl-3xl max-[768px]:rounded-3xl rounded-tr-3xl p-10">
+            <h1 className="text-2xl font-bold text-center">Sobre nós</h1>
+            <p className="pt-5 ">
+              Na{" "}
+              <b>
+                Jelly<span className="Fish">Fish</span> Development
+              </b>
+              , somos mais do que uma desenvolvedora de softwares; somos
+              arquitetos digitais dedicados a transformar suas ideias em
+              soluções inovadoras. <br />
+              <br />
+              Com uma abordagem ágil e comprometimento com a excelência,
+              oferecemos serviços de desenvolvimento{" "}
+              <b>mobile, desktop e web personalizados</b> especialmente para
+              você.
+            </p>
+
+            {!isMobile ? (
+              <div className="flex flex-row gap-10 items-center justify-center font-extrabold">
+                <span className="Fish">
+                  <p className="font-light text-5xl mt-3 select-none">{"{"}</p>
+                </span>
+                <div className="mt-5">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="60"
+                    height="60"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill="#ffffff"
+                      d="M15 0a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm.6 15.388H4.4V18a.6.6 0 0 0 .6.6h10a.6.6 0 0 0 .6-.6zM10 16a1 1 0 1 1 0 2a1 1 0 0 1 0-2m5-14.6H5a.6.6 0 0 0-.6.6v11.988h11.2V2a.6.6 0 0 0-.6-.6"
+                    ></path>
+                  </svg>
+                </div>
+
+                <div className="mt-5">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="60"
+                    height="60"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="#ffffff"
+                      d="M19 3H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h6v2H7a1 1 0 0 0 0 2h10a1 1 0 0 0 0-2h-4v-2h6a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3m1 11a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1Z"
+                    ></path>
+                  </svg>
+                </div>
+
+                <div className="mt-5">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="60"
+                    height="60"
+                    viewBox="0 0 16 16"
+                  >
+                    <ellipse
+                      cx="3.72"
+                      cy="4.02"
+                      fill="#ffffff"
+                      rx=".67"
+                      ry=".62"
+                    ></ellipse>
+                    <path
+                      fill="#ffffff"
+                      d="M6.29 4.65A.65.65 0 0 0 7 4a.67.67 0 0 0-1.38 0a.65.65 0 0 0 .67.65"
+                    ></path>
+                    <ellipse
+                      cx="8.87"
+                      cy="4.02"
+                      fill="#ffffff"
+                      rx=".67"
+                      ry=".63"
+                    ></ellipse>
+                    <path
+                      fill="#ffffff"
+                      d="M14.25 1.5H1.75A1.25 1.25 0 0 0 .5 2.75v10.5a1.25 1.25 0 0 0 1.25 1.25h12.5a1.25 1.25 0 0 0 1.25-1.25V2.75a1.25 1.25 0 0 0-1.25-1.25M1.75 2.75h12.5v2.5H1.75zm0 10.5V6.5h12.5v6.75z"
+                    ></path>
+                  </svg>
+                </div>
+
+                <span className="Fish">
+                  <p className="font-light text-5xl mt-3 select-none">{"}"}</p>
+                </span>
+              </div>
+            ) : (
+              <></>
+            )}
+
+            <p className="mt-3 text-center">
+              <br></br> Estamos prontos para levar sua visão ao{" "}
+              <b>
+                <span className="Fish"> próximo nível</span>
+              </b>{" "}
+              🚀
+            </p>
+
+            <a href="/about" className='font-bold justify-center flex flex-row mt-5'>
+              <button
+                className="ease-in-out duration-300 hover:scale-105 flex items-center bg-white rounded-lg shadow-md max-w-xs px-6 py-2 text-sm font-medium text-black hover:bg-zinc-200 focus:outline-none">
+                Conheça quem somos
+              </button>
+            </a>
+
+
+          </div>
+
+          <div className="w-1/2 rounded-xl p-10"></div>
+        </motion.div>
+      </div>
 
       <motion.div
         initial={{
