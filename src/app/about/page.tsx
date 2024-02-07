@@ -5,7 +5,7 @@ import { Texture } from "@/components/Texture";
 import { FooterMain } from "@/components/FooterMain"
 import Leticia from "../../../public/leticia.jpg"
 import Mohan from "../../../public/mohan.jpg"
-import Luiz from "../../../public/luiz.jpg"
+import Luiz from "../../../public/luiz.png"
 import Felipe from "../../../public/felipe.jpg"
 import logoLinkedin from "../../../public/svg-tec/linkedin_logo.svg"
 import logoGithub from "../../../public/svg-tec/githublogo.svg"
