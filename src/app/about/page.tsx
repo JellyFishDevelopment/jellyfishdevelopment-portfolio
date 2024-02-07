@@ -84,7 +84,7 @@ export default function Page() {
                     />
 
                     <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">Mohan Elias</h5>
-                    <span className="text-sm text-gray-500 dark:text-gray-400">Full Stack Developer</span>
+                    <span className="text-sm text-gray-500 dark:text-gray-400">Front-end Developer</span>
                     <div className="flex">
 
                     <a href="https://www.linkedin.com/in/mohanelias/" target="_blank">
