@@ -4,7 +4,7 @@ import logo from '../../../public/Logo_Polvo.svg'
 import { Texture } from "@/components/Texture";
 import { FooterMain } from "@/components/FooterMain"
 import Leticia from "../../../public/leticia.jpg"
-import Mohan from "../../../public/mohan.png"
+import Mohan from "../../../public/mohan.jpg"
 import Luiz from "../../../public/luiz.jpg"
 import Felipe from "../../../public/felipe.jpg"
 import logoLinkedin from "../../../public/svg-tec/linkedin_logo.svg"
