@@ -2,21 +2,23 @@
 import Image from "next/image";
 import logo from "../../public/Logo_Polvo.svg";
 import { Texture } from "@/components/Texture";
-import { FooterMain } from "@/components/FooterMain";
-import sdsWikiProject from "../../public/sds-wiki.png";
-import jmSiteProject from "../../public/jm-eletrica.png";
-import lucianaProject from "../../public/luciana-advogada.png";
-import InfiniteLooper from "@/components/InfiniteLooper";
-import LogosTech from "@/components/LogosTech";
-import astrologo from "../../public/svg-tec/astrologo.svg";
-import tslogo from "../../public/svg-tec/tslogo.svg";
-import twlogo from "../../public/svg-tec/twlogo.svg";
-import mdlogo from "../../public/svg-tec/markdownlogo.svg";
-import reactlogo from "../../public/svg-tec/reactlogo.svg";
-import phplogo from "../../public/svg-tec/phplogo.svg";
-import vitelogo from "../../public/svg-tec/vitelogo.svg";
-import jslogo from "../../public/svg-tec/jslogo.svg";
-import { motion } from "framer-motion";
+import { FooterMain } from "@/components/FooterMain"
+import sdsWikiProject from "../../public/sds-wiki.png"
+import jmSiteProject from "../../public/jm-eletrica.png"
+import lucianaProject from "../../public/luciana-advogada.png"
+import synapticsProject from "../../public/synaptics-magine.png"
+import InfiniteLooper from '@/components/InfiniteLooper'
+import LogosTech from '@/components/LogosTech'
+import astrologo from '../../public/svg-tec/astrologo.svg'
+import tslogo from '../../public/svg-tec/tslogo.svg'
+import twlogo from '../../public/svg-tec/twlogo.svg'
+import mdlogo from '../../public/svg-tec/markdownlogo.svg'
+import reactlogo from '../../public/svg-tec/reactlogo.svg'
+import phplogo from '../../public/svg-tec/phplogo.svg'
+import vitelogo from '../../public/svg-tec/vitelogo.svg'
+import jslogo from '../../public/svg-tec/jslogo.svg'
+import nextjslogo from '../../public/svg-tec/nextjslogo.svg'
+import { motion } from 'framer-motion'
 
 import Spotlight, { SpotlightCard } from "@/components/Spotlight";
 import { useLayoutEffect, useState } from "react";
@@ -95,14 +97,305 @@ export default function Home() {
           <></>
         )}
 
-        <div className="max-[768px]:p-4 p-10">
-          <a href="/projects" className="text-white text-2xl font-extrabold">
-            <button className="rounded-3xl border-2 px-20 py-5 btn1">
-              Projetos
-            </button>
-          </a>
+          <div className='p-10'>
+            <a href="/projects" className='text-white text-2xl font-extrabold'>
+              <button className='rounded-3xl border-2 px-20 py-5 btn1'>
+                Projetos
+              </button>
+            </a>
+          </div>
+
+        </section>
+
+        {/* screen 2 - projects */}
+        <section className='pt-36 flex flex-col items-center justify-center font-extrabold'>
+          <h3 className="text-5xl leading-tight">Projetos<span className='Fish'>.</span></h3>
+
+          <h4 className="text-base text-white text-center font-normal mt-3 mb-8">Nossos últimos projetos realizados</h4>
+
+          {/* Cards */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false }}
+            transition={{ duration: 1 }}
+          >
+          
+          <div className='grid grid-cols-2'>
+          </div>
+          <Spotlight className="grid gap-4 lg:grid-cols-3 items-start group">
+          <SpotlightCard>
+            <div className="relative h-full p-6 rounded-[inherit] z-20 overflow-hidden">
+              {/* Radial gradient */}
+              <div className="absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none -z-10 w-1/2 aspect-square" aria-hidden="true">
+                <div className="absolute inset-0 translate-z-0 rounded-full blur-[80px]"></div>
+              </div>
+              <div className="flex flex-col h-full text-left">
+                <Image 
+                  className='rounded-lg'
+                  src={sdsWikiProject}
+                  height={600}
+                  width={600}
+                  alt="sds wiki project"
+                />
+                {/* Text */}
+                <div >
+                  <h2 className="text-2xl text-slate-200 font-bold mb-1 px-3 pt-5">SDS Wiki</h2>
+                 <p className='font-normal p-3'>Site dinâmico e minimalista de busca e documentação sobre Software Defined Storage baseado em Astro, utilizando arquivos em markdown.</p>
+
+            <div className='grid grid-cols-7 mt-5'>
+              <div className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'>
+                <Image
+                  src={astrologo}
+                  width={40}
+                  height={40}
+                  alt="astro logo"
+                />
+              </div>
+
+              <div className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'>
+                <Image
+                  src={reactlogo}
+                  width={40}
+                  height={40}
+                  alt="markdown logo"
+                />
+              </div>
+
+              <div className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'>
+                <Image
+                    src={tslogo}
+                    width={40}
+                    height={40}
+                    alt="TS logo"
+                  />
+              </div>
+
+              <div className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'>
+                <Image
+                  src={twlogo}
+                  width={40}
+                  height={40}
+                  alt="TailWind logo"
+                />
+              </div>
+
+              <div className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'>
+                <Image
+                  src={mdlogo}
+                  width={40}
+                  height={40}
+                  alt="markdown logo"
+                />
+              </div>
+
+            </div>
+
+                </div>
+              </div>
+            </div>
+          </SpotlightCard>
+          {/* Card #2 */}
+          <SpotlightCard>
+            <div className="relative h-full p-6 rounded-[inherit] z-20 overflow-hidden">
+              {/* Radial gradient */}
+              <div className="absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none -z-10 w-1/2 aspect-square" aria-hidden="true">
+                <div className="absolute inset-0 translate-z-0 rounded-full blur-[80px]"></div>
+              </div>
+              <div className="flex flex-col h-full text-left">
+                <Image 
+                  className='rounded-lg w-full'
+                  src={jmSiteProject}
+                  height={600}
+                  width={600}
+                  alt="sds wiki project"
+                />
+                {/* Text */}
+                <div >
+                  <h2 className="text-2xl text-slate-200 font-bold mb-1 px-3 pt-5">JM Elétrica</h2>
+                 <p className='font-normal p-3'>Site institucional sobre elétrica e soluções em energia, usando API de envio de e-mail, baseado em React.</p>
+
+            <div className='grid grid-cols-7 mt-10'>
+              <div className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'>
+                <Image
+                  src={reactlogo}
+                  width={40}
+                  height={40}
+                  alt="astro logo"
+                />
+              </div>
+
+              <div className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'>
+                <Image
+                  src={tslogo}
+                  width={40}
+                  height={40}
+                  alt="markdown logo"
+                />
+              </div>
+
+              <div className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'>
+                <Image
+                    src={jslogo}
+                    width={40}
+                    height={40}
+                    alt="TS logo"
+                  />
+              </div>
+
+              <div className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'>
+                <Image
+                  src={twlogo}
+                  width={40}
+                  height={40}
+                  alt="TailWind logo"
+                />
+              </div>
+
+              <div className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'>
+                <Image
+                  src={vitelogo}
+                  width={40}
+                  height={40}
+                  alt="markdown logo"
+                />
+              </div>
+
+            </div>
+
+                </div>
+              </div>
+            </div>
+          </SpotlightCard>
+
+          {/* Card #3 */}
+          <SpotlightCard>
+            <div className="relative h-full p-6 rounded-[inherit] z-20 overflow-hidden">
+              {/* Radial gradient */}
+              <div className="absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none -z-10 w-1/2 aspect-square" aria-hidden="true">
+                <div className="absolute inset-0 translate-z-0 rounded-full blur-[80px]"></div>
+              </div>
+              <div className="flex flex-col h-full text-left">
+                <Image 
+                  className='rounded-lg w-full'
+                  src={synapticsProject}
+                  height={600}
+                  width={600}
+                  alt="synapitcs project"
+                />
+                {/* Text */}
+                <div >
+                  <h2 className="text-2xl text-slate-200 font-bold mb-1 px-3 pt-5">Synaptics Machine</h2>
+                 <p className='font-normal p-3'>Site dinâmico de uma solução robusta de CRM e B2B, projetada para otimizar vendas complexas integrando análise avançada de dados.</p>
+
+              <div className='grid grid-cols-7 mt-4'>
+              <div className='transition ease-in-out duration-500 p-1 react-logo hover:-translate-y-2'>
+                <Image
+                    src={nextjslogo}
+                    width={40}
+                    height={40}
+                    alt="nextjs logo"
+                  />
+              </div>
+
+              <div className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'>
+                <Image
+                  src={tslogo}
+                  width={40}
+                  height={40}
+                  alt="Type logo"
+                />
+              </div>
+
+              <div className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'>
+                <Image
+                  src={reactlogo}
+                  width={40}
+                  height={40}
+                  alt="react logo"
+                />
+              </div>
+
+              <div className='transition ease-in-out duration-500 react-logo hover:-translate-y-2'>
+                <Image
+                  src={twlogo}
+                  width={40}
+                  height={40}
+                  alt="TailWind logo"
+                />
+              </div>
+
+            </div>
+
+
+                </div>
+              </div>
+            </div>
+          </SpotlightCard>
+          </Spotlight>
+
+          </motion.div>
+
+          <div className='pt-10 pb-32'>
+            <a href="/projects" className='text-white text-2xl font-extrabold'>
+              <button className='rounded-3xl border-2 px-20 py-5 btn1'>
+                Veja mais
+              </button>
+            </a>
+          </div>
+        </section>
+        
+        {/* screen 3 - about and contact */}
+
+        <div className='flex flex-row'>
+
+        <motion.div
+          initial={{ opacity: 0, x: -90 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: false }}
+          transition={{ duration: 0.9 }}
+        >
+        <div className='w-5/6 border rounded-bl-3xl rounded-tr-3xl p-10'>
+            <h1 className='text-2xl font-bold text-center'>Sobre nós</h1>
+            <p className='pt-5 '>Na <b>Jelly<span className='Fish'>Fish</span> Development</b>, somos mais do que uma desenvolvedora de softwares; somos arquitetos digitais dedicados a transformar suas ideias em soluções inovadoras. <br /><br />Com uma abordagem ágil e comprometimento com a excelência, oferecemos serviços de desenvolvimento <b>mobile, desktop e web personalizados</b> especialmente para você.</p>
+
+            <div className='flex flex-row gap-10 items-center justify-center font-extrabold'>
+
+            <span className='Fish'><p className='font-light text-5xl mt-3 select-none'>{'{'}</p></span>
+            <div className='mt-5'>
+              
+              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 20 20"><path fill="#ffffff" d="M15 0a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm.6 15.388H4.4V18a.6.6 0 0 0 .6.6h10a.6.6 0 0 0 .6-.6zM10 16a1 1 0 1 1 0 2a1 1 0 0 1 0-2m5-14.6H5a.6.6 0 0 0-.6.6v11.988h11.2V2a.6.6 0 0 0-.6-.6"></path></svg>
+            </div>
+            
+            <div className='mt-5'> 
+              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24"><path fill="#ffffff" d="M19 3H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h6v2H7a1 1 0 0 0 0 2h10a1 1 0 0 0 0-2h-4v-2h6a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3m1 11a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1Z"></path></svg>
+            </div>
+  
+            <div className='mt-5'> 
+              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 16 16"><ellipse cx="3.72" cy="4.02" fill="#ffffff" rx=".67" ry=".62"></ellipse><path fill="#ffffff" d="M6.29 4.65A.65.65 0 0 0 7 4a.67.67 0 0 0-1.38 0a.65.65 0 0 0 .67.65"></path><ellipse cx="8.87" cy="4.02" fill="#ffffff" rx=".67" ry=".63"></ellipse><path fill="#ffffff" d="M14.25 1.5H1.75A1.25 1.25 0 0 0 .5 2.75v10.5a1.25 1.25 0 0 0 1.25 1.25h12.5a1.25 1.25 0 0 0 1.25-1.25V2.75a1.25 1.25 0 0 0-1.25-1.25M1.75 2.75h12.5v2.5H1.75zm0 10.5V6.5h12.5v6.75z"></path></svg>
+            </div>
+
+            <span className='Fish'><p className='font-light text-5xl mt-3 select-none'>{'}'}</p></span>
+            
+            </div>
+
+            <p className='mt-3 text-center'><br></br> Estamos prontos para levar sua visão ao <b><span className='Fish'> próximo nível</span></b> 🚀</p>
+
+            <a href="/about" className='font-bold justify-center flex flex-row mt-5'>
+                <button
+                  className="ease-in-out duration-300 hover:scale-105 flex items-center bg-white rounded-lg shadow-md max-w-xs px-6 py-2 text-sm font-medium text-black hover:bg-zinc-200 focus:outline-none">
+                  Conheça quem somos
+                </button>
+              </a>
+
+          </div>
+
+          
+
+          <div className='w-1/2 rounded-xl p-10'>
+          </div>
+          </motion.div>
         </div>
-      </section>
 
       {/* screen 2 - projects */}
       <section className="pt-36 flex flex-col items-center justify-center font-extrabold">
