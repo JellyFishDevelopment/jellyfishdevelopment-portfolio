@@ -49,7 +49,7 @@ export default function Page() {
                     />
 
                     <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">Leticia Boza</h5>
-                    <span className="text-sm text-gray-500 dark:text-gray-400">QA, Product Owner, Front-End Developer</span>
+                    <span className="text-sm text-center text-gray-500 dark:text-gray-400">QA, Product Owner, Front-End Developer</span>
                     <div className="flex">
 
                         <a href="https://www.linkedin.com/in/leticiaboza/" target="_blank">
