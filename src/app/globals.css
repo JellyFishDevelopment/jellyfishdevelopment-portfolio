@@ -46,6 +46,7 @@ hr {
   background: linear-gradient(180deg, #ff005c 0%, rgba(200, 60, 96, 0.5) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
 }
 
 .border {
@@ -145,6 +146,11 @@ hr {
   background:#412b32;
   border-color:#926171;
 } 
+
+.footer-section {
+ background: linear-gradient(180deg, rgba(0,0,0,0) 17%, rgba(0,0,0,1) 68%);
+}
+
 
 /* button-4
 

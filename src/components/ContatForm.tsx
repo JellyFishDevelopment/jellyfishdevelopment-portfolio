@@ -11,15 +11,15 @@ export function ContactForm() {
   return (
     <form onSubmit={handleSubmit}>
       <label htmlFor="email">
-        Seu e-mail de contato:
+        E-mail de contato:
       </label>
       <div className='pt-2 pb-5'>
         <input
           id="email"
           type="email" 
           name="email"
-          className='email bg-black p-3 border rounded-xl w-full'
-          placeholder='Digite seu e-mail aqui.'
+          className='email p-3 border rounded-xl w-full'
+          placeholder='Seu melhor e-mail para contatarmos 📧'
         />
         <ValidationError 
           prefix="Email" 
@@ -33,8 +33,8 @@ export function ContactForm() {
           id="subject"
           type="subject" 
           name="subject"
-          className='subject bg-black p-3 border rounded-xl w-full'
-          placeholder='Digite o assunto aqui.'
+          className='subject p-3 border rounded-xl w-full'
+          placeholder='Diga o nome do seu sonho e por onde ele será realizado ☁️'
         />
         <ValidationError 
           prefix="Subject" 
@@ -43,14 +43,15 @@ export function ContactForm() {
         />
 
       </div>
-      <label htmlFor="message">Mensagem: </label>
+      <label htmlFor="message">Nos diga no que nós podemos te ajudar: </label>
       <div className='pt-2'>
         <textarea
           id="message"
           name="message"
-          className='border rounded-xl bg-black p-3 resize-none w-full'
+          className='border rounded-xl p-3 resize-none w-full'
           cols={30}
-          rows={10}
+          rows={7}
+          placeholder='Nos dê informações sobre suas ideias 💡'
         />
         <ValidationError 
           prefix="Message" 
