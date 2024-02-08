@@ -90,8 +90,7 @@ export default function Home() {
 
         {!isMobile ? (
           <div className="infinite-looper w-11/12">
-            <InfiniteLooper speed={25} direction="left">
-              <LogosTech />
+            <InfiniteLooper>
             </InfiniteLooper>
           </div>
         ) : (
