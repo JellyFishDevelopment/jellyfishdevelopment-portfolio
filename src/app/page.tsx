@@ -79,8 +79,8 @@ export default function Home() {
           </a>
         </svg>
 
-        <h1 className="header-title max-[425px]:text-xl max-[768px]:text-3xl text-8xl font-extrabold text-center pt-16">
-          Jelly<span className="Fish">Fish</span>Development.
+        <h1 className="header-title font-extrabold max-[425px]:text-xl max-[768px]:text-3xl text-8xl text-center pt-16">
+          Jelly<span className="Fish ">Fish</span><span className="text-4xl">.dev</span>
         </h1>
 
         <p className="text-neutral-400 pt-5 font-normal max-[768px]:text-sm max-[768px]:text-center">
