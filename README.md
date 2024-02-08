@@ -7,7 +7,7 @@
   <br>
 </p>
 
-# Bem-vindos ao Portfólio da JellyFish Development 🚀
+# Bem-vindos ao Portfólio da JellyFish.dev 🚀
 
 Na JellyFish Development, nós vivemos e respiramos inovação. Nosso portfólio é o lar de projetos que refletem nossa paixão por transformar ideias em realidade digital. Explore nosso repositório e descubra o conteúdo necessário para apresentar nosso trabalho com orgulho e confiança.
 
