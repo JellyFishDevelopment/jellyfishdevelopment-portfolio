@@ -13,7 +13,29 @@ import {
 } from "@/components/ui/dropdown-menu"
 
 export function ModeToggle() {
-  const { setTheme } = useTheme()
+  const { setTheme, theme } = useTheme()
+  const [isDark, setIsDark] = React.useState(theme === 'dark');
+
+  // Observar mudanças no tema e atualizar o estado isDark
+  React.useEffect(() => {
+    setIsDark(theme === 'dark');
+  }, [theme]);
+
+  const handleThemeChange = (newTheme: string) => {
+    const overlay = document.querySelector('.rfm-overlay') as HTMLDivElement;
+    if (newTheme === "dark") {
+      // Definir gradiente para escuro
+      overlay.style.setProperty('--gradient-color', '#09090b');
+    } else if (newTheme == "light") {
+      // Definir gradiente para claro
+      overlay.style.setProperty('--gradient-color', '#ffffff');
+    } else {
+      overlay.style.setProperty('--gradient-color', '#ffffff');
+    }
+    // Alterar o tema
+    setTheme(newTheme);
+  };
+  
 
   return (
     <DropdownMenu>
@@ -25,14 +47,11 @@ export function ModeToggle() {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
-        <DropdownMenuItem onClick={() => setTheme("light")}>
+        <DropdownMenuItem onClick={() => handleThemeChange("light")}>
           Light
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("dark")}>
+        <DropdownMenuItem onClick={() => handleThemeChange("dark")}>
           Dark
-        </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("system")}>
-          System
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

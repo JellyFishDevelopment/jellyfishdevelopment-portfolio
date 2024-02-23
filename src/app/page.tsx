@@ -4,16 +4,8 @@ import { Button } from "@/components/ui/button";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { ChevronDown } from "lucide-react";
 
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-
 export default function Home() {
+
   return (
     <main className="antialiased">
       <Nav />
@@ -32,7 +24,7 @@ export default function Home() {
             GitHub
           </Button>
         </div>
-        <div className="mt-12">
+        <div className="mt-12 w-3/4">
           <MarqueeLooper />
         </div>
         <div className="pt-12">

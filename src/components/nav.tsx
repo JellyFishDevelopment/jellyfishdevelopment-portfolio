@@ -3,6 +3,7 @@ import { ModeToggle } from "./mode-toggle";
 import { GitHubLogoIcon, InstagramLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 
 export default function Nav() {
+
   return (
     <header className="sticky">
       <nav className="flex justify-between py-2 px-8 border-b max-w-screen-2xl items-center">
@@ -38,7 +39,7 @@ export default function Nav() {
             <InstagramLogoIcon />
           </li>
           <li>
-            <ModeToggle />
+            <ModeToggle/>
           </li>
         </ul>
       </nav>
