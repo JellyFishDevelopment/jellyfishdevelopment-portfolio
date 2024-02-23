@@ -3,7 +3,7 @@ import LogosTech from "@/components/logos-tech";
 
 export default function MarqueeLooper() {
   return (
-    <Marquee autoFill gradient gradientColor="#09090b" className="min-w-0">
+    <Marquee autoFill speed={20}>
       <LogosTech />
     </Marquee>
   )

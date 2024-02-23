@@ -10,6 +10,7 @@ import postgrelogo from "../../public/svg-tec/postgrelogo.svg";
 import mysqllogo from "../../public/svg-tec/mysqllogo.svg";
 import pythonlogo from "../../public/svg-tec/pythonlogo.svg";
 import dockerlogo from "../../public/svg-tec/dockerlogo.svg";
+import astrologo from "../../public/svg-tec/astrologo.svg";
 import Image from "next/image";
 
 export default function LogosTech() {
@@ -18,7 +19,7 @@ export default function LogosTech() {
       <div className="mt-11 gap-4 grid grid-flow-col">
         <div className="">
           <Image
-            className="ml-2 object-cover transition ease-in-out duration-500 react-logo hover:-translate-y-2"
+            className="ml-2 object-cover transition ease-in-out duration-500 react-logo hover:-translate-y-2 dark:invert"
             src={reactlogo}
             width={70}
             height={70}
@@ -28,7 +29,7 @@ export default function LogosTech() {
 
         <div>
           <Image
-            className="transition ease-in-out duration-500 react-logo hover:-translate-y-2"
+            className="transition ease-in-out duration-500 react-logo hover:-translate-y-2 dark:invert"
             src={nextjslogo}
             width={70}
             height={70}
@@ -38,7 +39,17 @@ export default function LogosTech() {
 
         <div>
           <Image
-            className="transition ease-in-out duration-500 react-logo hover:-translate-y-2"
+            className="transition ease-in-out duration-500 react-logo hover:-translate-y-2 dark:invert"
+            src={astrologo}
+            width={70}
+            height={70}
+            alt="astro logo"
+          />
+        </div>
+
+        <div>
+          <Image
+            className="transition ease-in-out duration-500 react-logo hover:-translate-y-2 dark:invert"
             src={tslogo}
             width={70}
             height={70}
@@ -48,7 +59,7 @@ export default function LogosTech() {
 
         <div>
           <Image
-            className="transition ease-in-out duration-500 react-logo hover:-translate-y-2"
+            className="transition ease-in-out duration-500 react-logo hover:-translate-y-2 dark:invert"
             src={jslogo}
             width={70}
             height={70}
@@ -58,7 +69,7 @@ export default function LogosTech() {
 
         <div>
           <Image
-            className="transition ease-in-out duration-500 react-logo hover:-translate-y-2"
+            className="transition ease-in-out duration-500 react-logo hover:-translate-y-2 dark:invert"
             src={exlogo}
             width={70}
             height={70}
@@ -68,7 +79,7 @@ export default function LogosTech() {
 
         <div>
           <Image
-            className="transition ease-in-out duration-500 react-logo hover:-translate-y-2"
+            className="transition ease-in-out duration-500 react-logo hover:-translate-y-2 dark:invert"
             src={mysqllogo}
             width={70}
             height={70}
@@ -78,7 +89,7 @@ export default function LogosTech() {
 
         <div>
           <Image
-            className="transition ease-in-out duration-500 react-logo hover:-translate-y-2"
+            className="transition ease-in-out duration-500 react-logo hover:-translate-y-2 dark:invert"
             src={mongodblogo}
             width={70}
             height={70}
@@ -88,7 +99,7 @@ export default function LogosTech() {
 
         <div>
           <Image
-            className="transition ease-in-out duration-500 react-logo hover:-translate-y-2"
+            className="transition ease-in-out duration-500 react-logo hover:-translate-y-2 dark:invert"
             src={postgrelogo}
             width={70}
             height={70}
@@ -98,7 +109,7 @@ export default function LogosTech() {
 
         <div>
           <Image
-            className="transition ease-in-out duration-500 react-logo hover:-translate-y-2"
+            className="transition ease-in-out duration-500 react-logo hover:-translate-y-2 dark:invert"
             src={phplogo}
             width={70}
             height={70}
@@ -108,7 +119,7 @@ export default function LogosTech() {
 
         <div>
           <Image
-            className="transition ease-in-out duration-500 react-logo hover:-translate-y-2"
+            className="transition ease-in-out duration-500 react-logo hover:-translate-y-2 dark:invert"
             src={twlogo}
             width={70}
             height={70}
@@ -118,7 +129,7 @@ export default function LogosTech() {
 
         <div>
           <Image
-            className="transition ease-in-out duration-500 react-logo hover:-translate-y-2"
+            className="transition ease-in-out duration-500 react-logo hover:-translate-y-2 dark:invert"
             src={pythonlogo}
             width={70}
             height={70}
@@ -128,7 +139,7 @@ export default function LogosTech() {
 
         <div>
           <Image
-            className="transition ease-in-out duration-500 react-logo hover:-translate-y-2"
+            className="transition ease-in-out duration-500 react-logo hover:-translate-y-2 dark:invert"
             src={dockerlogo}
             width={70}
             height={70}
