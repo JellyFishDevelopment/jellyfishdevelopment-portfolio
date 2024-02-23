@@ -18,8 +18,8 @@ export default function Home() {
     <main className="antialiased">
       <Nav />
       <div className="flex mx-auto flex-col place-items-center justify-center gap-2 py-8 md:py-12 md:pb-8 lg:py-24 lg:pb-20">
-        <h1 className="text-center text-3xl font-bold leading-tight tracking-tighter md:text-6xl lg:leading-[1.1]">
-          JellyFish<span className="text-3xl font-normal">.dev</span>
+        <h1 className="text-center text-8xl font-bold leading-tight tracking-tighter">
+          JellyFish<span className="text-6xl font-normal">.dev</span>
         </h1>
         <h2 className="text-muted-foreground text-lg">
           Com você, somos capazes de moldar o futuro digital de forma inovadora
@@ -50,6 +50,7 @@ export default function Home() {
         </div>
 
         <div>
+          Imagem
         </div>
         
       </div>
