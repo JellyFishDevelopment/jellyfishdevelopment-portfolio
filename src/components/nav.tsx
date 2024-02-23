@@ -5,8 +5,8 @@ import { GitHubLogoIcon, InstagramLogoIcon, LinkedInLogoIcon } from "@radix-ui/r
 export default function Nav() {
 
   return (
-    <header className="sticky">
-      <nav className="flex justify-between py-2 px-8 border-b max-w-screen-2xl items-center">
+      <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+        <nav className="flex justify-between py-2 px-8 items-center">
         <ul className="flex flex-row place-content-center items-center gap-5">
           <li className="flex flex-row place-content-center items-center gap-1">
             <Image 
