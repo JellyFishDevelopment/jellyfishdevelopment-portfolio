@@ -1,8 +1,10 @@
 import MarqueeLooper from "@/components/marquee-looper";
 import Nav from "@/components/nav";
+import { ProjectsCard } from "@/components/projects-card";
 import { Button } from "@/components/ui/button";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { ChevronDown } from "lucide-react";
+import Image from "next/image";
 
 export default function Home() {
 
@@ -29,22 +31,35 @@ export default function Home() {
         </div>
         <div className="pt-12">
           <Button variant={"ghost"}>
-            <ChevronDown />
             Conheça mais do nosso trabalho
+            <ChevronDown className="animate-bounce"/>
           </Button>
         </div>
       </div>
 
-      <div className="flex justify-center place-items-center p-12">
-        <div >
-          <h1 className="scroll-m-20 text-4xl font-bold tracking-tight w-2/4">Desenvolvimento de Sites Dinâmicos</h1>
-          <h2 className="text-muted-foreground">Planejados para sua empresa conquistar novos clientes.</h2>        
+      <div className="flex justify-center px-48">
+        <div className="w-2/4">
+          <h1 className="scroll-m-20 text-4xl font-bold tracking-tight pb-2">Desenvolvimento de Sites Dinâmicos</h1>
+          <h2 className="text-muted-foreground pb-4">Planejados para sua empresa conquistar novos clientes.</h2>        
+          <h3 className="text-foreground">Na <span className="font-bold">JellyFish</span>, somos mais do que uma desenvolvedora de softwares; somos arquitetos digitais dedicados a transformar suas ideias em soluções inovadoras.</h3>
         </div>
 
         <div>
-          Imagem
+          <Image 
+            src={"/development-image.png"}
+            width={500}
+            height={50}
+            alt="development image"
+            className="dark:invert development-image"
+          />
         </div>
-        
+      </div>
+
+      <h1 className="scroll-m-20 text-4xl font-bold tracking-tight text-center pt-32">Portfólio</h1>
+      <div className="flex justify-center *:gap-4">
+        <ProjectsCard />
+        <ProjectsCard />
+        <ProjectsCard />
       </div>
     </main>
   );

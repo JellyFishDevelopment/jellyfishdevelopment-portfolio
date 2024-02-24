@@ -58,3 +58,16 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Development-image floater */
+@keyframes float {
+  0%{transform: translateY(0);transition: ease 0.5s;}
+  50%{transform: translateY(-20px);transition: ease 0.5s;}
+  100%{transform: translateY(0px);transition: ease 0.5s;}
+}
+
+.development-image {
+  transform: translateY(-10%);
+  animation: float 5s infinite;
+  transition: ease 0.5s;
+}
