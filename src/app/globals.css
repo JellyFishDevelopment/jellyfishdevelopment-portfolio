@@ -6,8 +6,8 @@
     :root {
       --background: 341 59% 98%;
       --foreground: 341 58% 5%;
-      --muted: 161 33% 88%;
-      --muted-foreground: 161 11% 30%;
+      --muted: 240 4.8% 95.9%;
+      --muted-foreground: 240 3.8% 46.1%;
       --popover: 341 59% 98%;
       --popover-foreground: 341 58% 5%;
       --card: 341 59% 98%;
@@ -29,8 +29,8 @@
     .dark {
       --background: 341 59% 1%;
       --foreground: 341 21% 98%;
-      --muted: 161 33% 12%;
-      --muted-foreground: 161 11% 70%;
+      --muted: 0 0% 15%;
+      --muted-foreground: 240 5% 64.9%;
       --popover: 341 59% 1%;
       --popover-foreground: 341 21% 98%;
       --card: 341 59% 1%;
