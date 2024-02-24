@@ -32,7 +32,7 @@ export default function Home() {
         <div className="pt-12">
           <Button variant={"ghost"}>
             Conheça mais do nosso trabalho
-            <ChevronDown className="animate-bounce"/>
+            <ChevronDown strokeWidth={0.75} />
           </Button>
         </div>
       </div>

@@ -14,7 +14,7 @@ export default function MarqueeLooper() {
   }, []);
 
   return (
-    <Marquee autoFill gradient gradientColor={darkMode ? "#09090b" : "#FFFFFF"} speed={20}>
+    <Marquee autoFill gradient gradientColor={darkMode ? "#040102" : "#fdf7f9"} speed={20}>
       <LogosTech />
     </Marquee>
   )

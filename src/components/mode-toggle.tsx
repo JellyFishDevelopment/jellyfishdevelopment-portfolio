@@ -25,12 +25,12 @@ export function ModeToggle() {
     const overlay = document.querySelector('.rfm-overlay') as HTMLDivElement;
     if (newTheme === "dark") {
       // Definir gradiente para escuro
-      overlay.style.setProperty('--gradient-color', '#09090b');
+      overlay.style.setProperty('--gradient-color', '#040102');
     } else if (newTheme == "light") {
       // Definir gradiente para claro
-      overlay.style.setProperty('--gradient-color', '#ffffff');
+      overlay.style.setProperty('--gradient-color', '#fdf7f9');
     } else {
-      overlay.style.setProperty('--gradient-color', '#ffffff');
+      overlay.style.setProperty('--gradient-color', '#fdf7f9');
     }
     // Alterar o tema
     setTheme(newTheme);
