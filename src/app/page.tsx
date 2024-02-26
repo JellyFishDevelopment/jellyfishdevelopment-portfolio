@@ -379,10 +379,10 @@ export default function Home() {
               <a href="https://github.com/JellyFishDevelopment">
                 <button className="ease-in-out duration-300 hover:scale-105 flex items-center bg-black rounded-lg shadow-md max-w-xs px-6 py-2 text-sm font-medium text-white hover:bg-gray-950 focus:outline-none">
                   <svg
-                    className="mr-2"
+                    className=""
                     xmlns="http://www.w3.org/2000/svg"
                     width="30"
-                    height="30"
+                    height="20"
                     viewBox="0 0 24 24"
                   >
                     <path
