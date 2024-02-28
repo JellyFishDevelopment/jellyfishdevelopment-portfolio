@@ -18,42 +18,70 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
+import Image from "next/image"
+import MarqueeLooper from "./marquee-looper"
 
 export function ProjectsCard() {
   return (
-    <Card className="w-[350px]">
-      <CardHeader>
-        <CardTitle>Create project</CardTitle>
-        <CardDescription>Deploy your new project in one-click.</CardDescription>
-      </CardHeader>
-      <CardContent>
-        <form>
-          <div className="grid w-full items-center gap-4">
-            <div className="flex flex-col space-y-1.5">
-              <Label htmlFor="name">Name</Label>
-              <Input id="name" placeholder="Name of your project" />
-            </div>
-            <div className="flex flex-col space-y-1.5">
-              <Label htmlFor="framework">Framework</Label>
-              <Select>
-                <SelectTrigger id="framework">
-                  <SelectValue placeholder="Select" />
-                </SelectTrigger>
-                <SelectContent position="popper">
-                  <SelectItem value="next">Next.js</SelectItem>
-                  <SelectItem value="sveltekit">SvelteKit</SelectItem>
-                  <SelectItem value="astro">Astro</SelectItem>
-                  <SelectItem value="nuxt">Nuxt.js</SelectItem>
-                </SelectContent>
-              </Select>
-            </div>
-          </div>
-        </form>
-      </CardContent>
-      <CardFooter className="flex justify-between">
-        <Button variant="outline">Cancel</Button>
-        <Button>Deploy</Button>
-      </CardFooter>
-    </Card>
+    <div className="flex flex-row">
+      <Card className="w-[350px]">
+        <CardHeader>
+        </CardHeader>
+        <CardContent>
+          <Image 
+            src={"/sds-wiki.png"}
+            width={500}
+            height={500}
+            alt="sds wiki project"
+            className="rounded"
+          />
+          <CardTitle className="text-2xl font-extrabold pt-4">SDS Wiki</CardTitle>
+          <CardDescription className="py-2">Site dinâmico e minimalista de busca e documentação sobre Software Defined Storage baseado em Astro, utilizando arquivos em markdown.</CardDescription>
+          <MarqueeLooper/>
+          
+        </CardContent>
+        <CardFooter className="flex justify-between">
+        </CardFooter>
+      </Card>
+
+      <Card className="w-[350px]">
+        <CardHeader>
+          <CardTitle className="text-2xl font-extrabold">JM Elétrica</CardTitle>
+          <CardDescription>Site institucional sobre elétrica e soluções em energia, usando API de envio de e-mail, baseado em React.</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <Image 
+            src={"/jm-eletrica.png"}
+            width={500}
+            height={500}
+            alt="jm eletrica project"
+            className="rounded"
+          />
+        </CardContent>
+        <CardFooter className="flex justify-center">
+        </CardFooter>
+      </Card>
+
+      <Card className="w-[350px]">
+        <CardHeader>
+        </CardHeader>
+        <CardContent>
+          <Image 
+            src={"/luciana-advogada.png"}
+            width={500}
+            height={500}
+            alt="luciana advogada project"
+            className="rounded"
+          />
+          <CardTitle className="text-2xl font-extrabold pt-4">Luciana Advocacia</CardTitle>
+          <CardDescription>Site estático desenvolvido para assessoria e consultoria de advocacia jurídica.</CardDescription>
+        </CardContent>
+        <CardFooter className="flex justify-between">
+          <Button variant="outline">Cancel</Button>
+          <Button>Deploy</Button>
+        </CardFooter>
+      </Card>
+    </div>
+
   )
 }

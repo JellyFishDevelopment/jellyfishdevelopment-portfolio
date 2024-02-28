@@ -22,19 +22,26 @@ export function ModeToggle() {
   }, [theme]);
 
   const handleThemeChange = (newTheme: string) => {
-    const overlay = document.querySelector('.rfm-overlay') as HTMLDivElement;
-    if (newTheme === "dark") {
-      // Definir gradiente para escuro
-      overlay.style.setProperty('--gradient-color', '#040102');
-    } else if (newTheme == "light") {
-      // Definir gradiente para claro
-      overlay.style.setProperty('--gradient-color', '#fdf7f9');
-    } else {
-      overlay.style.setProperty('--gradient-color', '#fdf7f9');
-    }
+    // Selecionar todas as divs com a classe '.rfm-overlay'
+    const overlays = document.querySelectorAll('.rfm-overlay') as NodeListOf<HTMLDivElement>;
+    
+    // Iterar sobre cada div e aplicar o estilo desejado
+    overlays.forEach(overlay => {
+        if (newTheme === "dark") {
+            // Definir gradiente para escuro
+            overlay.style.setProperty('--gradient-color', '#040102');
+        } else if (newTheme === "light") {
+            // Definir gradiente para claro
+            overlay.style.setProperty('--gradient-color', '#fdf7f9');
+        } else {
+            overlay.style.setProperty('--gradient-color', '#fdf7f9');
+        }
+    });
+
     // Alterar o tema
     setTheme(newTheme);
-  };
+}
+
   
 
   return (

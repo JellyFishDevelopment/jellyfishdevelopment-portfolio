@@ -55,10 +55,9 @@ export default function Home() {
         </div>
       </div>
 
-      <h1 className="scroll-m-20 text-4xl font-bold tracking-tight text-center pt-32">Portfólio</h1>
-      <div className="flex justify-center *:gap-4">
-        <ProjectsCard />
-        <ProjectsCard />
+      <h1 className="scroll-m-20 text-4xl font-bold tracking-tight text-center pt-32">Alguns de nossos trabalhos</h1>
+
+      <div className="pt-7 flex justify-center *:gap-4">
         <ProjectsCard />
       </div>
     </main>
