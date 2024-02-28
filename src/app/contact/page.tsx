@@ -10,12 +10,13 @@ export default function Page() {
       {/* screen 1 - title */}
       <section className='flex flex-col items-center font-extrabold pt-10'>
 
+      <a href="#">
         <Image 
-          className="ml-10"
           src={logo}
           width="80"
-          alt="Logo jellyfish"
+          alt="logo"
         />
+      </a>
         
 
         <h1 className='header-title text-6xl font-extrabold text-center pt-10'>Contato<span className='Fish select-none'>.</span></h1>
