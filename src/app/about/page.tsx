@@ -45,8 +45,8 @@ export default function Page() {
       {/* Screen 2 - Cards */}
       <div className="pb-16 flex flex-row gap-4">
         {/* Leticia */}
-        <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow card-idealizadores">
-          <div className="flex flex-col items-center pb-10 pt-10">
+        <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow card-idealizadores transition hover:-translate-y-2 hover:shadow-xl">
+          <div className="flex flex-col items-center pb-11 pt-10 ">
             <Image
               className="mb-3 rounded-full shadow-lg"
               src={Leticia}
@@ -77,7 +77,7 @@ export default function Page() {
         </div>
 
         {/* Mohan */}
-        <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow card-idealizadores">
+        <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow card-idealizadores transition hover:-translate-y-1 hover:shadow-xl">
           <div className="flex flex-col items-center pb-10 pt-10">
             <Image
               className="mb-3 rounded-full shadow-lg"
@@ -107,7 +107,7 @@ export default function Page() {
 
         {/* Luiz */}
 
-        <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow card-idealizadores">
+        <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow card-idealizadores transition hover:-translate-y-1 hover:shadow-xl">
           <div className="flex flex-col items-center pb-10 pt-10">
             <Image
               className="mb-3 rounded-full shadow-lg"
@@ -140,7 +140,7 @@ export default function Page() {
 
         {/* Felipe */}
 
-        <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow card-idealizadores">
+        <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow card-idealizadores transition hover:-translate-y-1 hover:shadow-xl">
           <div className="flex flex-col items-center pb-10 pt-10">
             <Image
               className="mb-3 rounded-full shadow-lg"
