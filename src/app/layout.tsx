@@ -1,8 +1,10 @@
 
+import '@radix-ui/themes/styles.css';
 import { Inter } from 'next/font/google'
 import type { Metadata } from 'next'
 import './globals.css'
 import { ThemeProvider } from '@/components/theme-provider'
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -25,7 +27,7 @@ export default function RootLayout({
             attribute='class'
             defaultTheme='system'
           >
-            {children}
+              {children}
           </ThemeProvider>
       </body>
     </html>
