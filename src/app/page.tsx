@@ -17,7 +17,7 @@ export default function Home() {
             <span className="animate-ping absolute right-1 inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
             <span className="relative inline-flex right-1 rounded-full h-3 w-3 bg-green-500"></span>
           </span>
-          Estamos disponível para negócios
+          Estamos disponíveis para negócios
         </Badge>
         <h1 className="text-center text-8xl font-bold leading-tight tracking-tighter">
           JellyFish<span className="text-6xl font-normal">.dev</span>
