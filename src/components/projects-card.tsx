@@ -20,7 +20,7 @@ import {
 } from "@/components/ui/select"
 import Image from "next/image"
 import MarqueeLooper from "./marquee-looper"
-import { ExternalLinkIcon } from "@radix-ui/react-icons"
+import { ExternalLink } from "lucide-react"
 
 export function ProjectsCard() {
   return (
@@ -43,7 +43,7 @@ export function ProjectsCard() {
         <CardFooter className="flex">
           <Button className="" variant="outline">
             Visitar o Website
-            <ExternalLinkIcon className="ml-2"/>
+            <ExternalLink className="ml-2" size={16} strokeWidth={1.5} />
           </Button>
         </CardFooter>
       </Card>
@@ -65,7 +65,7 @@ export function ProjectsCard() {
         <CardFooter className="flex">
           <Button className="" variant="outline">
             Visitar o Website
-            <ExternalLinkIcon className="ml-2"/>
+            <ExternalLink className="ml-2" size={16} strokeWidth={1.5} />
           </Button>
         </CardFooter>
       </Card>
@@ -87,7 +87,7 @@ export function ProjectsCard() {
         <CardFooter className="flex">
           <Button className="" variant="outline">
             Visitar o Website
-            <ExternalLinkIcon className="ml-2"/>
+            <ExternalLink className="ml-2" size={16} strokeWidth={1.5} />
           </Button>
         </CardFooter>
       </Card>
