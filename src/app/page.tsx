@@ -44,7 +44,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex justify-center px-48">
+      <div className="flex justify-center px-48 pb-16">
         <div className="w-2/4">
           <h1 className="scroll-m-20 text-4xl font-bold tracking-tight pb-2">
             Desenvolvimento de Sites Dinâmicos
@@ -70,12 +70,15 @@ export default function Home() {
         </div>
       </div>
 
-      <h1 className="scroll-m-20 text-4xl font-bold tracking-tight text-center pt-32">
-        Alguns de nossos trabalhos
-      </h1>
+      <div className="border-t-2 rounded-3xl pt-16">
+        <h1 className="scroll-m-20 text-4xl font-bold tracking-tight text-center">
+            Alguns de nossos trabalhos
+          </h1>
 
-      <div className="pt-7 flex justify-center *:gap-4">
-        <ProjectsCard />
+          <div className="pt-7 flex justify-center *:gap-4">
+            <ProjectsCard />
+          </div>
+
       </div>
     </main>
   );
