@@ -2,7 +2,7 @@
 import Image from "next/image";
 import logo from "../../public/jellyfishlogo.svg";
 import logo_footer from "../../public/jellyfish_footer.svg"
-import { Texture } from "@/components/texture";
+import { Texture } from "@/components/Texture";
 import InfiniteLooper from '@/components/infinite-looper'
 import { motion } from 'framer-motion'
 import { ChevronDownIcon, GitHubLogoIcon, InstagramLogoIcon } from "@radix-ui/react-icons";
