@@ -2,7 +2,7 @@
 import Image from "next/image";
 import logo from "../../../public/jellyfishlogo.svg";
 import { Texture } from "@/components/Texture";
-import { FooterMain } from "@/components/footer";
+import { Footer } from "@/components/footer";
 import Leticia from "../../../public/leticia.jpg";
 import Mohan from "../../../public/mohan.jpg";
 import Luiz from "../../../public/luiz.png";
