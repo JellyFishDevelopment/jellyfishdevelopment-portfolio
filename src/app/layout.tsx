@@ -9,7 +9,7 @@ const siteId = Number(process.env.HORJAR_ID)
 const hotjarVersion = Number(process.env.HORJAR_V)
 const google_tag = process.env.GOOGLE_TAG
 import Hotjar from '@hotjar/browser'
-import Nav from '@/components/nav'
+import Nav from '@/components/Nav'
 const hotjarDebug = Boolean(process.env.HOTJAR_D)
 
 // Initializing with `debug` option:
