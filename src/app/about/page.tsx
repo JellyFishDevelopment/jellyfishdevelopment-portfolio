@@ -171,11 +171,6 @@ export default function Page() {
           </div>
         </div>
       </div>
-      
-      <section className='border-t color-border-footer'>
-        <FooterMain/>
-      </section>
-
 
       <Texture />
     </main>

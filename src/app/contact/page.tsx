@@ -34,10 +34,6 @@ export default function Page() {
 
       </div>
       <Texture />
-      {/* screen 4 - footer */}
-      <section className='border-t color-border-footer'>
-        <FooterMain/>
-      </section>
     </>
   )
 }

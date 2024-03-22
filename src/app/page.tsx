@@ -3,7 +3,6 @@ import Image from "next/image";
 import logo from "../../public/jellyfishlogo.svg";
 import logo_footer from "../../public/jellyfish_footer.svg"
 import { Texture } from "@/components/Texture";
-import { FooterMain } from "@/components/FooterMain"
 import sdsWikiProject from "../../public/sds-wiki.png"
 import jmSiteProject from "../../public/jm-eletrica.png"
 import lucianaProject from "../../public/luciana-advogada.png";
@@ -45,7 +44,6 @@ export default function Home() {
   return (
     <>
       {/* screen 1 - title */}
-      <Nav />
       <section className="flex justify-center flex-col items-center font-extrabold pt-16">
 
         <h1 className="header-title font-extrabold max-[425px]:text-xl max-[768px]:text-3xl text-8xl text-center pt-16">
@@ -68,11 +66,15 @@ export default function Home() {
 
 
       <div className="flex flex-row gap-4 mt-10">
-          <Button>Nossos serviços</Button>
-          <Button variant={"outline"} className="hover:text-white">
-            <GitHubLogoIcon className="w-4 h-4 mr-2" />
-            GitHub
-          </Button>
+          <a href="/projects">
+            <Button>Nossos serviços</Button>
+          </a>
+          <a href="https://github.com/JellyFishDevelopment">
+            <Button variant={"outline"} className="hover:text-white">
+              <GitHubLogoIcon className="w-4 h-4 mr-2" />
+              GitHub
+            </Button>
+          </a>
         </div>
         <div className="pt-12">
           <Button variant={"ghost"} className="hover:text-white">
@@ -416,10 +418,6 @@ export default function Home() {
           />
         </div>
 
-        <div className="border-t border bg-black">
-          <FooterMain />
-        </div>
-        
       </section>
 
       <Texture />

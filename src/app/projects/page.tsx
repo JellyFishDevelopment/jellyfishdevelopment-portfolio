@@ -223,10 +223,6 @@ export default function Page() {
           </h1>
         </section>
       </section>
-      {/* screen 4 - footer */}
-      <section className="border-t color-border-footer">
-        <FooterMain />
-      </section>
 
       <Texture />
     </>

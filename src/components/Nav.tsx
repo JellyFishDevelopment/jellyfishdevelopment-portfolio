@@ -8,34 +8,44 @@ export default function Nav() {
         <nav className="flex justify-between py-2 px-8 items-center">
         <ul className="flex flex-row place-content-center items-center gap-5">
           <li className="flex flex-row place-content-center items-center gap-1">
-            <Image
-            src={"/jellyfishlogo.svg"}
-            width={25}
-            height={24}
-            alt="jellyfish logo"
-            className="dark:invert"
-          />
-            <h1 className="font-extrabold">JellyFish<span className="text-sm font-normal">.dev</span></h1>
+            <a href="/">
+              <Image
+              src={"/jellyfishlogo.svg"}
+              width={25}
+              height={24}
+              alt="jellyfish logo"
+              className="dark:invert"
+              />
+            </a>
+            <a href="/">
+              <h1 className="font-extrabold">JellyFish<span className="text-sm font-normal">.dev</span></h1>
+            </a>
           </li>
 
           <li>
-            <a className="text-sm hover:text-muted" href="#">Projetos</a>
+            <a className="text-sm hover:text-muted" href="/projects">Projetos</a>
           </li>
 
           <li>
-            <a className="text-sm hover:text-muted" href="#">Quem Somos</a>
+            <a className="text-sm hover:text-muted" href="/about">Quem Somos</a>
           </li>
 
           <li>
-            <a className="text-sm hover:text-muted" href="#">Contato</a>
+            <a className="text-sm hover:text-muted" href="/contact">Contato</a>
           </li>
         </ul>
 
         <ul className="flex flex-row place-content-center items-center gap-5">
           <li className="flex flex-row place-content-center items-center gap-5">
-            <GitHubLogoIcon />
-            <LinkedInLogoIcon/>
-            <InstagramLogoIcon />
+            <a href="https://github.com/JellyFishDevelopment">
+              <GitHubLogoIcon />
+            </a>
+            <a href="#">
+              <LinkedInLogoIcon/>
+            </a>
+            <a href="https://www.instagram.com/jellyfishdevelopment/">
+              <InstagramLogoIcon />
+            </a>
           </li>
         </ul>
       </nav>

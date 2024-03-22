@@ -3,10 +3,13 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import { Analytics } from '@vercel/analytics/react'
 
+import { FooterMain } from "@/components/FooterMain"
+
 const siteId = Number(process.env.HORJAR_ID)
 const hotjarVersion = Number(process.env.HORJAR_V)
 const google_tag = process.env.GOOGLE_TAG
 import Hotjar from '@hotjar/browser'
+import Nav from '@/components/Nav'
 const hotjarDebug = Boolean(process.env.HOTJAR_D)
 
 // Initializing with `debug` option:
@@ -53,8 +56,12 @@ export default function RootLayout({
           />
       </head>
       <body className={inter.className}>
+        <Nav />
         {children}
         <Analytics />
+        <div className="border-t border bg-black">
+          <FooterMain />
+        </div>
       </body>
     </html>
   )
