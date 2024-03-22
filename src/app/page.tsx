@@ -26,6 +26,7 @@ import {Instagram, Mail } from 'lucide-react';
 import Spotlight, { SpotlightCard } from "@/components/Spotlight";
 import { useLayoutEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
+import Nav from "@/components/Nav";
 
 export default function Home() {
   const [isMobile, setIsMobile] = useState(false);
@@ -44,15 +45,8 @@ export default function Home() {
   return (
     <>
       {/* screen 1 - title */}
+      <Nav />
       <section className="flex justify-center flex-col items-center font-extrabold pt-16">
-
-      <a href="#">
-        <Image 
-          src={logo}
-          width="80"
-          alt="sds wiki project"
-        />
-      </a>
 
         <h1 className="header-title font-extrabold max-[425px]:text-xl max-[768px]:text-3xl text-8xl text-center pt-16">
           Jelly<span className="Fish select-none">Fish</span><span className="text-4xl">.dev</span>
@@ -75,13 +69,13 @@ export default function Home() {
 
       <div className="flex flex-row gap-4 mt-10">
           <Button>Nossos serviços</Button>
-          <Button variant={"outline"} className="text-black">
+          <Button variant={"outline"} className="hover:text-white">
             <GitHubLogoIcon className="w-4 h-4 mr-2" />
             GitHub
           </Button>
         </div>
         <div className="pt-12">
-          <Button variant={"ghost"}>
+          <Button variant={"ghost"} className="hover:text-white">
             Conheça mais do nosso trabalho
             <ChevronDownIcon strokeWidth={0.75} className="animate-bounce ml-2"/>
           </Button>

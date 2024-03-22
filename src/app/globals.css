@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --background: 341 59% 98%;
+    --background: 345 28% 14%;
     --foreground: 341 58% 5%;
     --muted: 240 4.8% 95.9%;
     --muted-foreground: 240 3.8% 46.1%;
@@ -18,7 +18,7 @@
     --primary-foreground: 0 0% 100%;
     --secondary: 342, 56%, 23%;
     --secondary-foreground: 0 0% 100%;
-    --accent: 240, 5%, 96%;
+    --accent: 345 38% 21%;
     --accent-foreground: 240 5.9% 10%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
@@ -81,7 +81,6 @@ body {
     no-repeat;
   background-color: black;
   width: 100%;
-  max-width: 80%;
   margin: 0 auto;
 }
 
