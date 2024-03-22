@@ -1,5 +1,5 @@
 import Marquee from "react-fast-marquee";
-import LogosTech from "./LogosTech";
+import LogosTech from "./logos-tech";
 
 export default function InfiniteLooper() {
   return (

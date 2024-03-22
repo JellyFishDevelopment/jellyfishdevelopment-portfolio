@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { Texture } from "@/components/Texture";
+import { Texture } from "@/components/texture";
 import sdsWikiProject from "../../../public/sds-wiki.png";
-import { FooterMain } from "@/components/FooterMain";
+import { FooterMain } from "@/components/footer";
 import jmSiteProject from "../../../public/jm-eletrica.png";
 import lucianaProject from "../../../public/luciana-advogada.png";
 import astrologo from "../../../public/svg-tec/astrologo.svg";
