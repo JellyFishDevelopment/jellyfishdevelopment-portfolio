@@ -3,7 +3,7 @@ import LogosTech from "./logos-tech";
 
 export default function InfiniteLooper() {
   return (
-    <Marquee>
+    <Marquee speed={20}>
       <LogosTech />
     </Marquee>
   )

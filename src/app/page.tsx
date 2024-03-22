@@ -4,24 +4,11 @@ import logo from "../../public/jellyfishlogo.svg";
 import logo_footer from "../../public/jellyfish_footer.svg"
 import { Texture } from "@/components/texture";
 import InfiniteLooper from '@/components/infinite-looper'
-import LogosTech from '@/components/logos-tech'
-import astrologo from '../../public/svg-tec/astrologo.svg'
-import tslogo from '../../public/svg-tec/tslogo.svg'
-import twlogo from '../../public/svg-tec/twlogo.svg'
-import mdlogo from '../../public/svg-tec/markdownlogo.svg'
-import reactlogo from '../../public/svg-tec/reactlogo.svg'
-import phplogo from '../../public/svg-tec/phplogo.svg'
-import vitelogo from '../../public/svg-tec/vitelogo.svg'
-import jslogo from '../../public/svg-tec/jslogo.svg'
-import nextjslogo from '../../public/svg-tec/nextjslogo.svg'
 import { motion } from 'framer-motion'
-
 import { ChevronDownIcon, GitHubLogoIcon, InstagramLogoIcon } from "@radix-ui/react-icons";
-import { Instagram, Mail } from 'lucide-react';
-
+import { Mail } from 'lucide-react';
 import { useLayoutEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
-import Nav from "@/components/nav";
 import Cards from "@/components/cards";
 
 export default function Home() {
@@ -80,7 +67,7 @@ export default function Home() {
       <section className='pt-36 flex flex-col items-center justify-center font-extrabold'>
         <h3 className="text-5xl leading-tight">Projetos<span className='Fish select-none'>.</span></h3>
 
-        <h4 className="text-base text-white text-center font-normal mt-3 mb-8">Nossos últimos projetos realizados</h4>
+        <h4 className="text-base text-muted text-center font-normal mt-3 mb-8">Nossos últimos projetos realizados</h4>
 
         {/* Cards */}
         <motion.div
@@ -93,9 +80,8 @@ export default function Home() {
           <div className='grid grid-cols-2'>
           </div>
 
-          {/* Card #1 */}
+          {/* Cards */}
           <Cards />
-
 
         </motion.div>
 
