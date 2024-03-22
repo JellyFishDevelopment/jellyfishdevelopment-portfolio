@@ -6,7 +6,7 @@ import { Texture } from "@/components/Texture";
 import InfiniteLooper from '@/components/infinite-looper'
 import { motion } from 'framer-motion'
 import { ChevronDownIcon, GitHubLogoIcon, InstagramLogoIcon } from "@radix-ui/react-icons";
-import { Mail } from 'lucide-react';
+import { Eye, Mail } from 'lucide-react';
 import { useLayoutEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import Cards from "@/components/cards";
@@ -83,22 +83,22 @@ export default function Home() {
           {/* Cards */}
           <Cards />
 
-        </motion.div>
 
-        <div className='pt-10 pb-32'>
-          <a href="/projects" className='text-white text-2xl font-extrabold'>
-            <button className='rounded-3xl border-2 px-20 py-5 btn1'>
-              Veja mais
-            </button>
-          </a>
-        </div>
+          <div className='pt-10 pb-32 flex justify-center'>
+            <a href="/projects" className='text-white text-2xl font-extrabold ease-in-out duration-300 hover:scale-105'>
+              <Button className="w-80">
+                <Eye strokeWidth={1} className="mr-2" />
+                Veja mais
+              </Button>
+            </a>
+          </div>
+        </motion.div>
       </section>
 
       {/* screen 3 - about and contact */}
-
       <div className='flex flex-row'>
 
-        <div className='w-5/6 border rounded-bl-3xl rounded-tr-3xl p-10 backdrop-blur-xl'>
+        <div className='ml-12 w-5/6 border rounded-bl-3xl rounded-tr-3xl p-10 backdrop-blur-xl'>
           <h1 className='text-2xl font-bold text-center'>Sobre nós</h1>
           <p className='pt-5 '>Na <b>Jelly<span className='Fish select-none'>Fish</span> Development</b>, somos mais do que uma desenvolvedora de softwares; somos arquitetos digitais dedicados a transformar suas ideias em soluções inovadoras. <br /><br />Com uma abordagem ágil e comprometimento com a excelência, oferecemos serviços de desenvolvimento <b>mobile, desktop e web personalizados</b> especialmente para você.</p>
 
@@ -142,7 +142,7 @@ export default function Home() {
 
 
 
-      <div className="flex flex-row pt-20 pb-20">
+      <div className="mr-12 flex flex-row pt-20 pb-20">
         {!isMobile ? <div className="w-1/2 rounded-xl p-10"></div> : <></>}
 
         <div className="w-5/6 border max-[768px]:mx-auto max-[768px]:rounded-3xl rounded-tl-3xl rounded-br-3xl p-10 backdrop-blur-xl">
