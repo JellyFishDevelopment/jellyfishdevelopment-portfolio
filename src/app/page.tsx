@@ -20,11 +20,12 @@ import jslogo from '../../public/svg-tec/jslogo.svg'
 import nextjslogo from '../../public/svg-tec/nextjslogo.svg'
 import { motion } from 'framer-motion'
 
-import { GitHubLogoIcon, InstagramLogoIcon } from "@radix-ui/react-icons";
+import { ChevronDownIcon, GitHubLogoIcon, InstagramLogoIcon } from "@radix-ui/react-icons";
 import {Instagram, Mail } from 'lucide-react';
 
 import Spotlight, { SpotlightCard } from "@/components/Spotlight";
 import { useLayoutEffect, useState } from "react";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
   const [isMobile, setIsMobile] = useState(false);
@@ -71,14 +72,23 @@ export default function Home() {
           <></>
         )}
 
-          <div className='p-10'>
-            <a href="/projects" className='text-white text-2xl font-extrabold'>
-              <button className='rounded-3xl border-2 px-20 py-5 btn1'>
-                Projetos
-              </button>
-            </a>
-          </div>
 
+      <div className="flex flex-row gap-4 mt-10">
+          <Button>Nossos serviços</Button>
+          <Button variant={"outline"} className="text-black">
+            <GitHubLogoIcon className="w-4 h-4 mr-2" />
+            GitHub
+          </Button>
+        </div>
+        <div className="pt-12">
+          <Button variant={"ghost"}>
+            Conheça mais do nosso trabalho
+            <ChevronDownIcon strokeWidth={0.75} className="animate-bounce ml-2"/>
+          </Button>
+      </div>
+
+        
+        
         </section>
 
         {/* screen 2 - projects */}

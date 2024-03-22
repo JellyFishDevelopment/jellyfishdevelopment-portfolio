@@ -2,6 +2,62 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --background: 341 59% 98%;
+    --foreground: 341 58% 5%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --popover: 341 59% 98%;
+    --popover-foreground: 341 58% 5%;
+    --card: 341 59% 98%;
+    --card-foreground: 341 58% 5%;
+    --border: 341 10% 90%;
+    --input: 341 10% 90%;
+    --primary: 341 55% 40%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 342, 56%, 23%;
+    --secondary-foreground: 0 0% 100%;
+    --accent: 240, 5%, 96%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --ring: 342, 56%, 42%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 341 59% 1%;
+    --foreground: 341 21% 98%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 240 5% 64.9%;
+    --popover: 341 59% 1%;
+    --popover-foreground: 341 21% 98%;
+    --card: 341 59% 1%;
+    --card-foreground: 341 21% 98%;
+    --border: 341 10% 15%;
+    --input: 341 10% 15%;
+    --primary: 341 55% 40%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 342, 56%, 23%;
+    --secondary-foreground: 0 0% 100%;
+    --accent: 12 6.5% 15.1%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 85.7% 97.3%;
+    --ring: 342, 56%, 42%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 html {
@@ -46,7 +102,6 @@ hr {
   background: linear-gradient(180deg, #ff005c 0%, rgba(200, 60, 96, 0.5) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
 }
 
 .border {
@@ -142,15 +197,18 @@ hr {
   }
 }
 
-.card-idealizadores{
-  background:#412b32;
-  border-color:#926171;
-} 
-
-.footer-section {
- background: linear-gradient(180deg, rgba(0,0,0,0) 17%, rgba(0,0,0,1) 68%);
+.card-idealizadores {
+  background: #412b32;
+  border-color: #926171;
 }
 
+.footer-section {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 17%,
+    rgba(0, 0, 0, 1) 68%
+  );
+}
 
 /* button-4
 
