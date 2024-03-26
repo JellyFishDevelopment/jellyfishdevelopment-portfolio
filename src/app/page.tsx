@@ -55,16 +55,18 @@ export default function Home() {
           </a>
         </div>
         <div className="pt-12">
-          <Button variant={"ghost"} className="hover:text-white">
-            Conheça mais do nosso trabalho
-            <ChevronDownIcon strokeWidth={0.75} className="animate-bounce ml-2" />
-          </Button>
+          <a href="#projetos">
+            <Button variant={"ghost"} className="hover:text-white">
+              Conheça mais do nosso trabalho
+              <ChevronDownIcon strokeWidth={0.75} className="animate-bounce ml-2" />
+            </Button>
+          </a>
         </div>
 
       </section>
 
       {/* screen 2 - projects */}
-      <section className='pt-36 flex flex-col items-center justify-center font-extrabold'>
+      <section id="projetos" className='pt-36 flex flex-col items-center justify-center font-extrabold'>
         <h3 className="text-5xl leading-tight">Projetos<span className='Fish select-none'>.</span></h3>
 
         <h4 className="text-base text-muted text-center font-normal mt-3 mb-8">Nossos últimos projetos realizados</h4>
