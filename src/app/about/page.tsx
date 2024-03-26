@@ -12,7 +12,7 @@ import React from "react";
 
 export default function Page() {
   return (
-    <main>
+    <main className="">
       {/* Screen 1 - Title */}
       <section className="flex flex-col items-center font-extrabold pt-10">
         
@@ -42,7 +42,7 @@ export default function Page() {
       </section>
 
       {/* Screen 2 - Cards */}
-      <div className="pb-16 flex flex-row gap-4">
+      <div className="pb-16 flex flex-row justify-center gap-4">
         {/* Leticia */}
         <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow card-idealizadores transition hover:-translate-y-2 hover:shadow-xl">
           <div className="flex flex-col items-center pb-11 pt-10 ">
@@ -54,7 +54,7 @@ export default function Page() {
               alt="sds wiki project"
             />
 
-            <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+            <h5 className="mb-1 text-xl font-medium text-white">
               Leticia Boza
             </h5>
             <span className="text-sm text-center text-gray-500 dark:text-gray-400">
@@ -86,7 +86,7 @@ export default function Page() {
               alt="sds wiki project"
             />
 
-            <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+            <h5 className="mb-1 text-xl font-mediumtext-white">
               Mohan Elias
             </h5>
             <span className="text-sm text-gray-500 dark:text-gray-400">
@@ -116,7 +116,7 @@ export default function Page() {
               alt="sds wiki project"
             />
 
-            <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+            <h5 className="mb-1 text-xl font-medium text-white">
               Luiz Mateus
             </h5>
             <span className="text-sm text-gray-500 dark:text-gray-400">
@@ -149,7 +149,7 @@ export default function Page() {
               alt="sds wiki project"
             />
 
-            <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+            <h5 className="mb-1 text-xl font-medium text-white">
               Felipe Souza
             </h5>
             <span className="text-sm text-gray-500 dark:text-gray-400">
