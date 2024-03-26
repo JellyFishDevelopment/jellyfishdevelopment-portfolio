@@ -57,7 +57,7 @@ export default function Page() {
             <h5 className="mb-1 text-xl font-medium text-white">
               Leticia Boza
             </h5>
-            <span className="text-sm text-center text-gray-500 dark:text-gray-400">
+            <span className="text-sm text-center text-gray-300">
               QA, Product Owner, Front-End Developer
             </span>
             <div className="flex">
@@ -89,7 +89,7 @@ export default function Page() {
             <h5 className="mb-1 text-xl font-mediumtext-white">
               Mohan Elias
             </h5>
-            <span className="text-sm text-gray-500 dark:text-gray-400">
+            <span className="text-sm text-gray-300">
               Front-end Developer
             </span>
             <div className="flex">
@@ -119,7 +119,7 @@ export default function Page() {
             <h5 className="mb-1 text-xl font-medium text-white">
               Luiz Mateus
             </h5>
-            <span className="text-sm text-gray-500 dark:text-gray-400">
+            <span className="text-sm text-gray-300">
               DevOps, Infra, Back-End Developer
             </span>
             <div className="flex">
@@ -152,7 +152,7 @@ export default function Page() {
             <h5 className="mb-1 text-xl font-medium text-white">
               Felipe Souza
             </h5>
-            <span className="text-sm text-gray-500 dark:text-gray-400">
+            <span className="text-sm text-gray-300">
               Back-End Developer, Data Base
             </span>
             <div className="flex">
