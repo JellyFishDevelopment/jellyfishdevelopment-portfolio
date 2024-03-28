@@ -4,18 +4,11 @@ import './globals.css'
 import { Analytics } from '@vercel/analytics/react'
 
 import { Footer } from "@/components/footer"
+import Nav from '@/components/Nav'
 
 const siteId = Number(process.env.HORJAR_ID)
 const hotjarVersion = Number(process.env.HORJAR_V)
 const google_tag = process.env.GOOGLE_TAG
-import Hotjar from '@hotjar/browser'
-import Nav from '@/components/Nav'
-const hotjarDebug = Boolean(process.env.HOTJAR_D)
-
-// Initializing with `debug` option:
-Hotjar.init(siteId, hotjarVersion, {
-  debug: hotjarDebug
-});
 
 const inter = Inter({ subsets: ['latin'] })
 
