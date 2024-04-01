@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import logo from '../../../public/jellyfishlogo.svg'
+import logo from '../../../../public/jellyfishlogo.svg'
 import { Texture } from "@/components/Texture";
 import { ContactForm } from '@/components/contact-form';
 
