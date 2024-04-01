@@ -3,8 +3,12 @@ import Image from "next/image";
 import instagramLogo from "../../public/svg-tec/instagram_logo.svg";
 import linkedinLogo from "../../public/svg-tec/linkedin_logo.svg";
 import whatsappLogo from "../../public/svg-tec/whatsapplogo.svg";
+import { Locale } from "@/config/i18n.config";
+import { getDictionaryServerOnly } from "@/dictionaries/default-dictionary-server-only";
 
-export function Footer() {
+export function Footer({params}: {params: {lang: Locale}}) {
+  const dict = getDictionaryServerOnly(params.lang)
+
   return (
     <div className="pl-56 pr-56 grid max-[768px]:grid-cols-1 max-[768px]:content-center	grid-cols-3 mt-10">
       <div className="min-[768px]:mr-40 max-[768px]:mx-auto ">
@@ -26,28 +30,28 @@ export function Footer() {
           <li>
             {" "}
             <a
-              href="/"
+              href={`/${params.lang}/`}
               className="hover:scale-105 ease-in-out duration-300 inline-block"
             >
-              Inicio
+              {dict.site.common.home}
             </a>
           </li>
           <li>
             {" "}
             <a
-              href="/projects"
+              href={`/${params.lang}/projects`}
               className="hover:scale-105 ease-in-out duration-300 inline-block mt-2"
             >
-              Projetos
+              {dict.site.common.projects}
             </a>
           </li>
           <li>
             {" "}
             <a
-              href="/contact"
+              href={`/${params.lang}/contact`}
               className="hover:scale-105 ease-in-out duration-300 inline-block mt-2"
             >
-              Contato
+              {dict.site.common.contact}
             </a>
           </li>
         </ul>

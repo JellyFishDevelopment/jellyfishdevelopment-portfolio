@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import logo from "../../public/jellyfishlogo.svg";
-import logo_footer from "../../public/jellyfish_footer.svg"
+import logo_footer from "../../../public/jellyfish_footer.svg"
 import { Texture } from "@/components/Texture";
 import InfiniteLooper from '@/components/infinite-looper'
 import { motion } from 'framer-motion'
@@ -10,8 +10,12 @@ import { Eye, Mail } from 'lucide-react';
 import { useLayoutEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import Cards from "@/components/cards";
+import { Locale } from "@/config/i18n.config";
+import { getDictionaryUseClient } from "@/dictionaries/default-dictionary-use-client";
 
-export default function Home() {
+export default function Home({ params }: { params: { lang: Locale } }) {
+  // const dict = getDictionaryServerOnly(params.lang)
+  const dict = getDictionaryUseClient(params.lang)
   const [isMobile, setIsMobile] = useState(false);
 
   useLayoutEffect(() => {
@@ -30,8 +34,7 @@ export default function Home() {
         </h1>
 
         <p className="text-neutral-400 pt-5 font-normal max-[768px]:text-sm max-[768px]:text-center">
-          Com você, somos capazes de moldar o futuro digital de forma inovadora
-          e envolvente ✨
+          {dict.site.page.home.screen1.slogan}
         </p>
 
         {!isMobile ? (
@@ -44,20 +47,20 @@ export default function Home() {
         )}
 
         <div className="flex flex-row gap-4 mt-10">
-          <a href="/projects">
-            <Button>Nossos serviços</Button>
+          <a href={`/${params.lang}/projects`}>
+            <Button>{dict.site.page.home.screen1.ourServicesButton}</Button>
           </a>
           <a href="https://github.com/JellyFishDevelopment">
             <Button variant={"outline"} className="hover:text-white">
               <GitHubLogoIcon className="w-4 h-4 mr-2" />
-              GitHub
+              {dict.site.common.github}
             </Button>
           </a>
         </div>
         <div className="pt-12">
           <a href="#projetos">
             <Button variant={"ghost"} className="hover:text-white">
-              Conheça mais do nosso trabalho
+              {dict.site.page.home.screen1.moreButton}
               <ChevronDownIcon strokeWidth={0.75} className="animate-bounce ml-2" />
             </Button>
           </a>
@@ -67,9 +70,9 @@ export default function Home() {
 
       {/* screen 2 - projects */}
       <section id="projetos" className='pt-36 flex flex-col items-center justify-center font-extrabold'>
-        <h3 className="text-5xl leading-tight">Projetos<span className='Fish select-none'>.</span></h3>
+        <h3 className="text-5xl leading-tight">{dict.site.common.projects}<span className='Fish select-none'>.</span></h3>
 
-        <h4 className="text-base text-muted text-center font-normal mt-3 mb-8">Nossos últimos projetos realizados</h4>
+        <h4 className="text-base text-muted text-center font-normal mt-3 mb-8">{dict.site.page.home.screen2.lastProjects}</h4>
 
         {/* Cards */}
         <motion.div
@@ -83,14 +86,14 @@ export default function Home() {
           </div>
 
           {/* Cards */}
-          <Cards />
+          <Cards params={{ lang: params.lang }} />
 
 
           <div className='pt-10 pb-32 flex justify-center'>
-            <a href="/projects" className='text-white text-2xl font-extrabold ease-in-out duration-300 hover:scale-105'>
+            <a href={`/${params.lang}/projects`} className='text-white text-2xl font-extrabold ease-in-out duration-300 hover:scale-105'>
               <Button className="w-80">
                 <Eye strokeWidth={1} className="mr-2" />
-                Veja mais
+                {dict.site.page.home.screen2.moreButton}
               </Button>
             </a>
           </div>
@@ -101,8 +104,8 @@ export default function Home() {
       <div className='flex flex-row'>
 
         <div className='ml-12 w-5/6 border rounded-bl-3xl rounded-tr-3xl p-10 backdrop-blur-xl'>
-          <h1 className='text-2xl font-bold text-center'>Sobre nós</h1>
-          <p className='pt-5 '>Na <b>Jelly<span className='Fish select-none'>Fish</span> Development</b>, somos mais do que uma desenvolvedora de softwares; somos arquitetos digitais dedicados a transformar suas ideias em soluções inovadoras. <br /><br />Com uma abordagem ágil e comprometimento com a excelência, oferecemos serviços de desenvolvimento <b>mobile, desktop e web personalizados</b> especialmente para você.</p>
+          <h1 className='text-2xl font-bold text-center'>{dict.site.page.home.screen3.about.title}</h1>
+          <p className='pt-5 ' dangerouslySetInnerHTML={{ __html: dict.site.page.home.screen3.about.body }}></p>
 
           <div className='flex flex-row gap-10 items-center justify-center font-extrabold'>
 
@@ -126,12 +129,12 @@ export default function Home() {
 
           </div>
 
-          <p className='mt-3 text-center'><br></br> Estamos prontos para levar sua visão ao <b><span className='Fish select-none'> próximo nível</span></b> 🚀</p>
+          <p className='mt-3 text-center' dangerouslySetInnerHTML={{ __html: dict.site.page.home.screen3.about.footer }}></p>
 
-          <a href="/about" className='font-bold justify-center flex flex-row mt-5'>
+          <a href={`/${params.lang}/about`} className='font-bold justify-center flex flex-row mt-5'>
             <button
               className="ease-in-out duration-300 hover:scale-105 flex items-center bg-white rounded-lg shadow-md max-w-xs px-6 py-2 text-sm font-medium text-black hover:bg-zinc-200 focus:outline-none">
-              Conheça quem somos
+              {dict.site.page.home.screen3.about.button}
             </button>
           </a>
 
@@ -149,27 +152,17 @@ export default function Home() {
 
         <div className="w-5/6 border max-[768px]:mx-auto max-[768px]:rounded-3xl rounded-tl-3xl rounded-br-3xl p-10 backdrop-blur-xl">
           <h2 className="text-2xl font-bold text-center">
-            Vamos trabalhar juntos
+            {dict.site.page.home.screen3.workTogether.title}
           </h2>
-          <p className="pt-5 pb-5">
-            Nós acreditamos no poder da colaboração para criar soluções
-            digitais revolucionárias 🌟
-            <br></br>Se você tem uma visão, nós temos a ferramenta pra te
-            levar além. Venha transformar seus em realidade.{" "}
-          </p>
+          <p className="pt-5 pb-5" dangerouslySetInnerHTML={{ __html: dict.site.page.home.screen3.workTogether.body }}></p>
 
-          <p className="mb-5">
-            <b>
-              <span className="Fish select-none">Conecte-se</span>
-            </b>{" "}
-            agora conosco e embarque nesta jornada
-          </p>
+          <p className="mb-5" dangerouslySetInnerHTML={{ __html: dict.site.page.home.screen3.workTogether.footer }}></p>
 
           <div className="flex max-[768px]:flex-col gap-5">
             <a href="/contact" className="font-bold">
               <button className="ease-in-out duration-300 hover:scale-105 flex items-center bg-white rounded-lg shadow-md max-w-xs px-6 py-2 text-sm font-medium text-black hover:bg-zinc-200 focus:outline-none">
                 <Mail size={16} className="mr-2" />
-                Contate-nos
+                {dict.site.page.home.screen3.workTogether.button}
               </button>
             </a>
 
@@ -177,7 +170,7 @@ export default function Home() {
               <button className="ease-in-out duration-300 hover:scale-105 flex items-center bg-black rounded-lg shadow-md max-w-xs px-6 py-2 text-sm font-medium text-white hover:bg-gray-950 focus:outline-none">
                 <GitHubLogoIcon className="mr-2" />
 
-                GitHub
+                {dict.site.common.github}
               </button>
             </a>
 
@@ -185,7 +178,7 @@ export default function Home() {
             <a href="https://www.instagram.com/jellyfishdevelopment/">
               <button className="ease-in-out duration-300 hover:scale-105 flex items-center bg-pink-800 rounded-lg shadow-md max-w-xs px-6 py-2 text-sm font-medium text-white hover:bg-pink-900 focus:outline-none">
                 <InstagramLogoIcon className="mr-2" />
-                Instagram
+                {dict.site.common.instagram}
               </button>
             </a>
           </div>
@@ -201,7 +194,7 @@ export default function Home() {
             src={logo_footer}
             width="750"
             height="750"
-            alt="sds wiki project"
+            alt="Jellyfish"
           />
         </div>
 

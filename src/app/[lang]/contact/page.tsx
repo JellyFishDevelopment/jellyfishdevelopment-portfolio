@@ -1,9 +1,13 @@
 import Image from 'next/image'
-import logo from '../../../public/jellyfishlogo.svg'
+import logo from '../../../../public/jellyfishlogo.svg'
 import { Texture } from "@/components/Texture";
 import { ContactForm } from '@/components/contact-form';
+import { Locale } from '@/config/i18n.config';
+import { getDictionaryServerOnly } from '@/dictionaries/default-dictionary-server-only';
 
-export default function Page() {
+export default function Page({ params }: { params: { lang: Locale } }) {
+  const dict = getDictionaryServerOnly(params.lang)
+
   return (
     <>
       {/* screen 1 - title */}
@@ -18,17 +22,14 @@ export default function Page() {
         </a>
 
 
-        <h1 className='header-title text-6xl font-extrabold text-center pt-10'>Contato<span className='Fish select-none'>.</span></h1>
+        <h1 className='header-title text-6xl font-extrabold text-center pt-10'>{dict.site.common.contact}<span className='Fish select-none'>.</span></h1>
 
-        <p className="text-neutral-400 pt-5 font-normal">
-          entre em contato agora para te ajudarmos a <strong>acontecer</strong>{" "}
-          ❇️
-        </p>
+        <p className="text-neutral-400 pt-5 font-normal" dangerouslySetInnerHTML={{ __html: dict.site.page.contact.description }}></p>
       </section>
 
       <div className='flex justify-center py-10'>
         <section className='card-idealizadores px-20 py-10 border rounded-3xl w-4/6'>
-          <ContactForm />
+          <ContactForm params={{ lang: params.lang }} />
         </section>
 
       </div>
