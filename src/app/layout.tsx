@@ -4,7 +4,7 @@ import './globals.css'
 import { Analytics } from '@vercel/analytics/react'
 
 import { Footer } from "@/components/footer"
-import Nav from '@/components/Nav'
+import Nav from '@/components/navbar'
 
 const siteId = Number(process.env.HORJAR_ID)
 const hotjarVersion = Number(process.env.HORJAR_V)

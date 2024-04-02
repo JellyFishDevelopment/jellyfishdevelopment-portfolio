@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import logo from "../../public/jellyfishlogo.svg";
 import logo_footer from "../../public/jellyfish_footer.svg"
 import { Texture } from "@/components/Texture";
 import InfiniteLooper from '@/components/infinite-looper'
