@@ -1,4 +1,4 @@
-import Spotlight, { SpotlightCard } from "@/components/Spotlight";
+import Spotlight, { SpotlightCard } from "@/components/spotlights";
 import Image from "next/image";
 import sdsWikiProject from "../../public/sds-wiki.png";
 import jmSiteProject from "../../public/jm-eletrica.png";

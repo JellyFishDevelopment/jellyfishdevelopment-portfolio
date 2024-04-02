@@ -1,14 +1,19 @@
 "use client";
 import Image from "next/image";
-import logo_footer from "../../public/jellyfish_footer.svg"
-import { Texture } from "@/components/Texture";
-import InfiniteLooper from '@/components/infinite-looper'
-import { motion } from 'framer-motion'
-import { ChevronDownIcon, GitHubLogoIcon, InstagramLogoIcon } from "@radix-ui/react-icons";
-import { Eye, Mail } from 'lucide-react';
+import logo_footer from "../../public/jellyfish_footer.svg";
+import { Texture } from "@/components/textures";
+import InfiniteLooper from "@/components/infinite-looper";
+import { motion } from "framer-motion";
+import {
+  ChevronDownIcon,
+  GitHubLogoIcon,
+  InstagramLogoIcon,
+} from "@radix-ui/react-icons";
+import { ArrowRight, Eye, Mail } from "lucide-react";
 import { useLayoutEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import Cards from "@/components/cards";
+import Jelly from "../../public/jelly.png";
 
 export default function Home() {
   const [isMobile, setIsMobile] = useState(false);
@@ -19,13 +24,14 @@ export default function Home() {
     }
     handleResize();
   }, []);
+
   return (
     <>
       {/* screen 1 - title */}
       <section className="flex justify-center flex-col items-center font-extrabold pt-16">
-
         <h1 className="select-none header-title font-extrabold max-[425px]:text-xl max-[768px]:text-3xl text-8xl text-center pt-16">
-          Jelly<span className="Fish">Fish</span><span className="text-4xl">.dev</span>
+          Jelly<span className="Fish">Fish</span>
+          <span className="text-4xl">.dev</span>
         </h1>
 
         <p className="text-neutral-400 pt-5 font-normal max-[768px]:text-sm max-[768px]:text-center">
@@ -35,8 +41,7 @@ export default function Home() {
 
         {!isMobile ? (
           <div className="infinite-looper min-w-0 max-w-screen-xl">
-            <InfiniteLooper>
-            </InfiniteLooper>
+            <InfiniteLooper></InfiniteLooper>
           </div>
         ) : (
           <></>
@@ -57,18 +62,27 @@ export default function Home() {
           <a href="#projetos">
             <Button variant={"ghost"} className="hover:text-white">
               Conheça mais do nosso trabalho
-              <ChevronDownIcon strokeWidth={0.75} className="animate-bounce ml-2" />
+              <ChevronDownIcon
+                strokeWidth={0.75}
+                className="animate-bounce ml-2"
+              />
             </Button>
           </a>
         </div>
-
       </section>
 
       {/* screen 2 - projects */}
-      <section id="projetos" className='pt-36 flex flex-col items-center justify-center font-extrabold'>
-        <h3 className="text-5xl leading-tight">Projetos<span className='Fish select-none'>.</span></h3>
+      <section
+        id="projetos"
+        className="pt-36 flex flex-col items-center justify-center font-extrabold"
+      >
+        <h3 className="text-5xl leading-tight">
+          Projetos<span className="Fish select-none">.</span>
+        </h3>
 
-        <h4 className="text-base text-muted text-center font-normal mt-3 mb-8">Nossos últimos projetos realizados</h4>
+        <h4 className="text-base text-muted text-center font-normal mt-3 mb-8">
+          Nossos últimos projetos realizados
+        </h4>
 
         {/* Cards */}
         <motion.div
@@ -77,16 +91,16 @@ export default function Home() {
           viewport={{ once: false }}
           transition={{ duration: 1 }}
         >
-
-          <div className='grid grid-cols-2'>
-          </div>
+          <div className="grid grid-cols-2"></div>
 
           {/* Cards */}
           <Cards />
 
-
-          <div className='pt-10 pb-32 flex justify-center'>
-            <a href="/projects" className='text-white text-2xl font-extrabold ease-in-out duration-300 hover:scale-105'>
+          <div className="pt-10 pb-32 flex justify-center">
+            <a
+              href="/projects"
+              className="text-white text-2xl font-extrabold ease-in-out duration-300 hover:scale-105"
+            >
               <Button className="w-80">
                 <Eye strokeWidth={1} className="mr-2" />
                 Veja mais
@@ -97,51 +111,49 @@ export default function Home() {
       </section>
 
       {/* screen 3 - about and contact */}
-      <div className='flex flex-row'>
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false }}
+        transition={{ duration: 1 }}
+      >
+        <div className="flex row-auto px-40">
+          <div>
+            <h1 className="text-5xl font-bold pb-6 pt-12">
+              Sobre nós<span className="Fish">.</span>
+            </h1>
+            <p className="pb-4">
+              Na Jelly<span className="Fish font-bold">Fish</span> Development,
+              somos mais do que uma desenvolvedora de softwares; somos
+              arquitetos digitais dedicados a transformar suas ideias em
+              soluções inovadoras.
+            </p>
+            <p className="pb-4">
+              Com uma abordagem ágil e comprometimento com a excelência,
+              oferecemos serviços de desenvolvimento mobile, desktop e web
+              personalizados especialmente para você.
+            </p>
+            <p className="pb-6">
+              Estamos prontos para levar sua visão ao{" "}
+              <span className="Fish font-bold">próximo nível</span>🚀
+            </p>
 
-        <div className='ml-12 w-5/6 border rounded-bl-3xl rounded-tr-3xl p-10 backdrop-blur-xl'>
-          <h1 className='text-2xl font-bold text-center'>Sobre nós</h1>
-          <p className='pt-5 '>Na <b>Jelly<span className='Fish select-none'>Fish</span> Development</b>, somos mais do que uma desenvolvedora de softwares; somos arquitetos digitais dedicados a transformar suas ideias em soluções inovadoras. <br /><br />Com uma abordagem ágil e comprometimento com a excelência, oferecemos serviços de desenvolvimento <b>mobile, desktop e web personalizados</b> especialmente para você.</p>
-
-          <div className='flex flex-row gap-10 items-center justify-center font-extrabold'>
-
-
-            {/* svgs celular, desktop e web */}
-            <span className='Fish select-none'><p className='font-light text-5xl mt-3 select-none'>{'{'}</p></span>
-            <div className='mt-5'>
-
-              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 20 20"><path fill="#ffffff" d="M15 0a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm.6 15.388H4.4V18a.6.6 0 0 0 .6.6h10a.6.6 0 0 0 .6-.6zM10 16a1 1 0 1 1 0 2a1 1 0 0 1 0-2m5-14.6H5a.6.6 0 0 0-.6.6v11.988h11.2V2a.6.6 0 0 0-.6-.6"></path></svg>
-            </div>
-
-            <div className='mt-5'>
-              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24"><path fill="#ffffff" d="M19 3H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h6v2H7a1 1 0 0 0 0 2h10a1 1 0 0 0 0-2h-4v-2h6a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3m1 11a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1Z"></path></svg>
-            </div>
-
-            <div className='mt-5'>
-              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 16 16"><ellipse cx="3.72" cy="4.02" fill="#ffffff" rx=".67" ry=".62"></ellipse><path fill="#ffffff" d="M6.29 4.65A.65.65 0 0 0 7 4a.67.67 0 0 0-1.38 0a.65.65 0 0 0 .67.65"></path><ellipse cx="8.87" cy="4.02" fill="#ffffff" rx=".67" ry=".63"></ellipse><path fill="#ffffff" d="M14.25 1.5H1.75A1.25 1.25 0 0 0 .5 2.75v10.5a1.25 1.25 0 0 0 1.25 1.25h12.5a1.25 1.25 0 0 0 1.25-1.25V2.75a1.25 1.25 0 0 0-1.25-1.25M1.75 2.75h12.5v2.5H1.75zm0 10.5V6.5h12.5v6.75z"></path></svg>
-            </div>
-
-            <span className='Fish select-none'><p className='font-light text-5xl mt-3 select-none'>{'}'}</p></span>
-
+            <a href="/about">
+              <Button>
+                Conheça quem somos
+                <ArrowRight className="ml-2" size={20} />
+              </Button>
+            </a>
           </div>
-
-          <p className='mt-3 text-center'><br></br> Estamos prontos para levar sua visão ao <b><span className='Fish select-none'> próximo nível</span></b> 🚀</p>
-
-          <a href="/about" className='font-bold justify-center flex flex-row mt-5'>
-            <button
-              className="ease-in-out duration-300 hover:scale-105 flex items-center bg-white rounded-lg shadow-md max-w-xs px-6 py-2 text-sm font-medium text-black hover:bg-zinc-200 focus:outline-none">
-              Conheça quem somos
-            </button>
-          </a>
-
+          <Image
+            src={Jelly}
+            height={500}
+            width={500}
+            className="jellyfish-image"
+            alt="Jelly"
+          />
         </div>
-
-        <div className='w-1/2 rounded-xl p-10'>
-        </div>
-
-      </div>
-
-
+      </motion.div>
 
       <div className="mr-12 flex flex-row pt-20 pb-20">
         {!isMobile ? <div className="w-1/2 rounded-xl p-10"></div> : <></>}
@@ -151,10 +163,10 @@ export default function Home() {
             Vamos trabalhar juntos
           </h2>
           <p className="pt-5 pb-5">
-            Nós acreditamos no poder da colaboração para criar soluções
-            digitais revolucionárias 🌟
-            <br></br>Se você tem uma visão, nós temos a ferramenta pra te
-            levar além. Venha transformar seus em realidade.{" "}
+            Nós acreditamos no poder da colaboração para criar soluções digitais
+            revolucionárias 🌟
+            <br></br>Se você tem uma visão, nós temos a ferramenta pra te levar
+            além. Venha transformar seus em realidade.{" "}
           </p>
 
           <p className="mb-5">
@@ -175,7 +187,6 @@ export default function Home() {
             <a href="https://github.com/JellyFishDevelopment">
               <button className="ease-in-out duration-300 hover:scale-105 flex items-center bg-black rounded-lg shadow-md max-w-xs px-6 py-2 text-sm font-medium text-white hover:bg-gray-950 focus:outline-none">
                 <GitHubLogoIcon className="mr-2" />
-
                 GitHub
               </button>
             </a>
@@ -193,7 +204,6 @@ export default function Home() {
 
       {/* screen 4 - footer */}
       <section className="absolute left-0 w-full color-border-footer bg-black footer-section">
-
         <div className="flex justify-center footer-section">
           <Image
             className="absolute bottom-0 z-[-100]"
@@ -203,7 +213,6 @@ export default function Home() {
             alt="sds wiki project"
           />
         </div>
-
       </section>
 
       <Texture />

@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import logo from "../../../public/jellyfishlogo.svg";
-import { Texture } from "@/components/Texture";
+import { Texture } from "@/components/textures";
 import Leticia from "../../../public/leticia.jpg";
 import Mohan from "../../../public/mohan.jpg";
 import Luiz from "../../../public/luiz.png";
@@ -12,7 +12,7 @@ import React from "react";
 
 export default function Page() {
   return (
-    <main className="">
+    <main className="px-6">
       {/* Screen 1 - Title */}
       <section className="flex flex-col items-center font-extrabold pt-10">
         

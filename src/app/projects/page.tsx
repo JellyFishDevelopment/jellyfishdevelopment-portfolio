@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Texture } from "@/components/Texture";
+import { Texture } from "@/components/textures";
 import sdsWikiProject from "../../../public/sds-wiki.png";
 import jmSiteProject from "../../../public/jm-eletrica.png";
 import lucianaProject from "../../../public/luciana-advogada.png";

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import logo from '../../../public/jellyfishlogo.svg'
-import { Texture } from "@/components/Texture";
+import { Texture } from "@/components/textures";
 import { ContactForm } from '@/components/contact-form';
 
 export default function Page() {
