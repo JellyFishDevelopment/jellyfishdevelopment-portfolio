@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import logo_footer from "../../public/jellyfish_footer.svg";
-import { Texture } from "@/components/textures";
+import { Texture } from "@/components/texture";
 import InfiniteLooper from "@/components/infinite-looper";
 import { motion } from "framer-motion";
 import {
@@ -9,11 +9,11 @@ import {
   GitHubLogoIcon,
   InstagramLogoIcon,
 } from "@radix-ui/react-icons";
-import { ArrowRight, Eye, Mail } from "lucide-react";
+import { Eye, Mail } from "lucide-react";
 import { useLayoutEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import Cards from "@/components/cards";
-import Jelly from "../../public/jelly.png";
+import { AboutSection } from "@/components/about-section";
 
 export default function Home() {
   const [isMobile, setIsMobile] = useState(false);
@@ -111,49 +111,7 @@ export default function Home() {
       </section>
 
       {/* screen 3 - about and contact */}
-      <motion.div
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: false }}
-        transition={{ duration: 1 }}
-      >
-        <div className="flex row-auto px-40">
-          <div>
-            <h1 className="text-5xl font-bold pb-6 pt-12">
-              Sobre nós<span className="Fish">.</span>
-            </h1>
-            <p className="pb-4">
-              Na Jelly<span className="Fish font-bold">Fish</span> Development,
-              somos mais do que uma desenvolvedora de softwares; somos
-              arquitetos digitais dedicados a transformar suas ideias em
-              soluções inovadoras.
-            </p>
-            <p className="pb-4">
-              Com uma abordagem ágil e comprometimento com a excelência,
-              oferecemos serviços de desenvolvimento mobile, desktop e web
-              personalizados especialmente para você.
-            </p>
-            <p className="pb-6">
-              Estamos prontos para levar sua visão ao{" "}
-              <span className="Fish font-bold">próximo nível</span>🚀
-            </p>
-
-            <a href="/about">
-              <Button>
-                Conheça quem somos
-                <ArrowRight className="ml-2" size={20} />
-              </Button>
-            </a>
-          </div>
-          <Image
-            src={Jelly}
-            height={500}
-            width={500}
-            className="jellyfish-image"
-            alt="Jelly"
-          />
-        </div>
-      </motion.div>
+      <AboutSection />
 
       <div className="mr-12 flex flex-row pt-20 pb-20">
         {!isMobile ? <div className="w-1/2 rounded-xl p-10"></div> : <></>}
