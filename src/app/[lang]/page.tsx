@@ -16,6 +16,17 @@ import { getDictionaryUseClient } from "@/dictionaries/default-dictionary-use-cl
 export default function Home({ params }: { params: { lang: Locale } }) {
   // const dict = getDictionaryServerOnly(params.lang)
   const dict = getDictionaryUseClient(params.lang)
+  interface Card {
+    title: string;
+    body: string;
+}
+
+interface Cards {
+    text: Card[];
+    button: string;
+}
+
+const cards: Cards = dict.site.page.home.screen2.cards;
   const [isMobile, setIsMobile] = useState(false);
 
   useLayoutEffect(() => {
@@ -86,7 +97,12 @@ export default function Home({ params }: { params: { lang: Locale } }) {
           </div>
 
           {/* Cards */}
-          <Cards params={{ lang: params.lang }} />
+          <Cards 
+            params={{ 
+              lang: params.lang, 
+              cards: cards
+            }}
+          />
 
 
           <div className='pt-10 pb-32 flex justify-center'>
