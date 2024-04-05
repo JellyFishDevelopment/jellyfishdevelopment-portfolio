@@ -40,7 +40,7 @@ export default function Home() {
         </p>
 
         {!isMobile ? (
-          <div className="infinite-looper min-w-0 max-w-screen-xl">
+          <div className="infinite-looper min-w-0 max-w-5xl">
             <InfiniteLooper></InfiniteLooper>
           </div>
         ) : (
