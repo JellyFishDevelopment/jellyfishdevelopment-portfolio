@@ -6,55 +6,18 @@ import whatsappLogo from "../../public/svg-tec/whatsapplogo.svg";
 
 export function Footer() {
   return (
-    <div className="pl-56 pr-56 pt-10 grid max-[768px]:grid-cols-1 max-[768px]:content-center	grid-cols-3">
-      <div className="min-[768px]:mr-40 max-[768px]:mx-auto ">
+    <div className="pl-56 pr-56 py-10 grid max-[768px]:grid-cols-1 max-[768px]:content-center">
+      <div className="flex flex-col-2 justify-between">
 
         <a href="#">
-          <Image 
-              className="ml-10 mb-10"
-              src={logo}
-              width="100"
-              alt="sds wiki project"
-            />
+          <Image
+            className="ml-10 mb-10"
+            src={logo}
+            width="100"
+            alt="sds wiki project"
+          />
         </a>
-
-      </div>
-
-      <div className="max-[768px]:my-8">
-        <h1></h1>
-        <ul className="font-normal text-center grid">
-          <li>
-            {" "}
-            <a
-              href="/"
-              className="hover:scale-105 ease-in-out duration-300 inline-block"
-            >
-              Inicio
-            </a>
-          </li>
-          <li>
-            {" "}
-            <a
-              href="/projects"
-              className="hover:scale-105 ease-in-out duration-300 inline-block mt-2"
-            >
-              Projetos
-            </a>
-          </li>
-          <li>
-            {" "}
-            <a
-              href="/contact"
-              className="hover:scale-105 ease-in-out duration-300 inline-block mt-2"
-            >
-              Contato
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div className="pr-50 flex-row min-[768px]:ml-20 max-[768px]:my-8">
-        <div className="flex gap-4 justify-center">
+        <div className="flex gap-4 place-items-center">
           <a
             href="https://www.instagram.com/jellyfishdevelopment/"
             target="_blank"
@@ -87,7 +50,42 @@ export function Footer() {
             />
           </a>
         </div>
+
+      </div>
+
+      <div className="ml-12 flex flex-col gap-4 w-full">
+
+        <div className="flex flex-row gap-10">
+          <a
+            href="/"
+            className="hover:text-muted"
+          >
+            Início
+          </a>
+          <a
+            href="/projects"
+            className="hover:text-muted"
+          >
+            Projetos
+          </a>
+          <a
+            href="/about"
+            className="hover:text-muted"
+          >
+            Quem Somos
+          </a>
+          <a
+            href="/contact"
+            className="hover:text-muted"
+          >
+            Contato
+          </a>
+        </div>
+        <div className="text-sm">
+          <p>© 2024 Jellyfish Development. All Rights Reserved</p>
+        </div>
       </div>
     </div>
+
   );
 }
