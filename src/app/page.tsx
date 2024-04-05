@@ -113,64 +113,40 @@ export default function Home() {
       {/* screen 3 - about and contact */}
       <AboutSection />
 
-      <div className="mr-12 flex flex-row pt-20 pb-20">
+      <div className="mr-12 mt-10 flex flex-col pb-20 text-center w-full">
         {!isMobile ? <div className="w-1/2 rounded-xl p-10"></div> : <></>}
 
-        <div className="w-5/6 border max-[768px]:mx-auto max-[768px]:rounded-3xl rounded-tl-3xl rounded-br-3xl p-10 backdrop-blur-xl">
-          <h2 className="text-2xl font-bold text-center">
-            Vamos trabalhar juntos
-          </h2>
-          <p className="pt-5 pb-5">
-            Nós acreditamos no poder da colaboração para criar soluções digitais
-            revolucionárias 🌟
-            <br></br>Se você tem uma visão, nós temos a ferramenta pra te levar
-            além. Venha transformar seus em realidade.{" "}
-          </p>
+        <h1 className="text-7xl font-bold text-center">
+          Vamos trabalhar juntos
+        </h1>
+        <p className="pt-5 pb-5 text-xl">
+          Nós acreditamos no poder da colaboração para criar soluções digitais
+          revolucionárias
+          <br></br>Se você tem uma visão, nós temos a ferramenta pra te levar
+          além. Venha transformar seus em realidade.{" "}
+        </p>
 
-          <p className="mb-5">
-            <b>
-              <span className="Fish select-none">Conecte-se</span>
-            </b>{" "}
-            agora conosco e embarque nesta jornada
-          </p>
 
-          <div className="flex max-[768px]:flex-col gap-5">
-            <a href="/contact" className="font-bold">
-              <button className="ease-in-out duration-300 hover:scale-105 flex items-center bg-white rounded-lg shadow-md max-w-xs px-6 py-2 text-sm font-medium text-black hover:bg-zinc-200 focus:outline-none">
-                <Mail size={16} className="mr-2" />
-                Contate-nos
-              </button>
-            </a>
+        <p className="mb-5 text-xl">
+          <b>
+            <span className="Fish select-none">Conecte-se</span>
+          </b>{" "}
+          agora conosco e embarque nesta jornada
+        </p>
 
-            <a href="https://github.com/JellyFishDevelopment">
-              <button className="ease-in-out duration-300 hover:scale-105 flex items-center bg-black rounded-lg shadow-md max-w-xs px-6 py-2 text-sm font-medium text-white hover:bg-gray-950 focus:outline-none">
-                <GitHubLogoIcon className="mr-2" />
-                GitHub
-              </button>
-            </a>
-
-            {/* button instagram */}
-            <a href="https://www.instagram.com/jellyfishdevelopment/">
-              <button className="ease-in-out duration-300 hover:scale-105 flex items-center bg-pink-800 rounded-lg shadow-md max-w-xs px-6 py-2 text-sm font-medium text-white hover:bg-pink-900 focus:outline-none">
-                <InstagramLogoIcon className="mr-2" />
-                Instagram
-              </button>
-            </a>
-          </div>
+        <div className="flex max-[768px]:flex-col gap-5 text-center justify-center">
+          <a href="/contact" className="font-bold">
+            <button className="ease-in-out duration-300 hover:scale-105 flex items-center bg-white rounded-lg shadow-md max-w-xs px-6 py-2 text-sm font-medium text-black hover:bg-zinc-200 focus:outline-none">
+              <Mail size={16} className="mr-2" />
+              Vamos conversar!
+            </button>
+          </a>
         </div>
       </div>
 
       {/* screen 4 - footer */}
-      <section className="absolute left-0 w-full color-border-footer bg-black footer-section">
-        <div className="flex justify-center footer-section">
-          <Image
-            className="absolute bottom-0 z-[-100]"
-            src={logo_footer}
-            width="750"
-            height="750"
-            alt="sds wiki project"
-          />
-        </div>
+      <section className="absolute left-0 w-full bg-black footer-section">
+
       </section>
 
       <Texture />

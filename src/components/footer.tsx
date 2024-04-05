@@ -6,7 +6,7 @@ import whatsappLogo from "../../public/svg-tec/whatsapplogo.svg";
 
 export function Footer() {
   return (
-    <div className="pl-56 pr-56 grid max-[768px]:grid-cols-1 max-[768px]:content-center	grid-cols-3 mt-10">
+    <div className="pl-56 pr-56 pt-10 grid max-[768px]:grid-cols-1 max-[768px]:content-center	grid-cols-3">
       <div className="min-[768px]:mr-40 max-[768px]:mx-auto ">
 
         <a href="#">

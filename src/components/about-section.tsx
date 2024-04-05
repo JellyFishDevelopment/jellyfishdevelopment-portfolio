@@ -12,7 +12,7 @@ export function AboutSection() {
         viewport={{ once: false }}
         transition={{ duration: 1 }}
       >
-        <div className="flex row-auto px-40">
+        <div className="flex row-auto 2xl:px-80 sm:px-40 lg:px-40 md:px-40 justify-center place-items-center items-center">
           <div>
             <h1 className="text-5xl font-bold pb-6 pt-12">
               Sobre nós<span className="Fish">.</span>

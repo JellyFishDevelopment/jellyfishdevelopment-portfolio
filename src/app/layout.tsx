@@ -52,7 +52,7 @@ export default function RootLayout({
         <Nav />
         {children}
         <Analytics />
-        <div className="border-t border bg-black">
+        <div className="bg-black">
           <Footer />
         </div>
       </body>
