@@ -113,7 +113,7 @@ export default function Home() {
       {/* screen 3 - about and contact */}
       <AboutSection />
 
-      <div className="mr-12 mt-10 flex flex-col pb-20 text-center w-full">
+      <div className="mr-12 mt-32 flex flex-col pb-20 text-center w-full">
         {!isMobile ? <div className="w-1/2 rounded-xl p-10"></div> : <></>}
 
         <h1 className="text-7xl font-bold text-center">
