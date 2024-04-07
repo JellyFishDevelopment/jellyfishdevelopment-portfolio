@@ -3,8 +3,12 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import Jelly from "../../public/jelly.png";
+import { Locale } from "@/config/i18n.config";
+import { getDictionaryUseClient } from "@/dictionaries/default-dictionary-use-client";
 
-export function AboutSection() {
+export function AboutSection({params}: {params: {lang: Locale}}) {
+  const dict = getDictionaryUseClient(params.lang)
+
   return (
       <motion.div
         initial={{ opacity: 0, y: 40 }}
@@ -15,27 +19,14 @@ export function AboutSection() {
         <div className="flex row-auto 2xl:px-[400px] sm:px-[100px] lg:px-[200px] md:px-40 justify-center place-items-center items-center">
           <div>
             <h1 className="text-5xl font-bold pb-6 pt-12">
-              Sobre nós<span className="Fish">.</span>
+              {dict.site.page.home.screen3.about.title}<span className="Fish">.</span>
             </h1>
-            <p className="pb-4">
-              Na Jelly<span className="Fish font-bold">Fish</span> Development,
-              somos mais do que uma desenvolvedora de softwares; somos
-              arquitetos digitais dedicados a transformar suas ideias em
-              soluções inovadoras.
-            </p>
-            <p className="pb-4">
-              Com uma abordagem ágil e comprometimento com a excelência,
-              oferecemos serviços de desenvolvimento mobile, desktop e web
-              personalizados especialmente para você.
-            </p>
-            <p className="pb-6">
-              Estamos prontos para levar sua visão ao{" "}
-              <span className="Fish font-bold">próximo nível</span>🚀
-            </p>
+            <span dangerouslySetInnerHTML={{__html : dict.site.page.home.screen3.about.body}}></span>
+            <p className="pb-6" dangerouslySetInnerHTML={{__html : dict.site.page.home.screen3.about.footer}}></p>
 
-            <a href="/about">
+            <a href={`/${params.lang}/projects`}>
               <Button>
-                Conheça quem somos
+                {dict.site.page.home.screen3.about.button}
                 <ArrowRight className="ml-2" size={20} />
               </Button>
             </a>

@@ -1,7 +1,10 @@
 import Image from "next/image";
 import { GitHubLogoIcon, InstagramLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
+import { Locale } from "@/config/i18n.config";
+import { getDictionaryServerOnly } from "@/dictionaries/default-dictionary-server-only";
 
-export default function Nav() {
+export default function Nav({params}: {params: {lang: Locale}}) {
+  const dict = getDictionaryServerOnly(params.lang)
 
   return (
       <header className="sticky top-0 z-50 w-full border-b border-border/10 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -23,15 +26,15 @@ export default function Nav() {
           </li>
 
           <li>
-            <a className="text-sm hover:text-muted" href="/projects">Projetos</a>
+            <a className="text-sm hover:text-muted" href={`/${params.lang}/projects`}>{dict.site.common.projects}</a>
           </li>
 
           <li>
-            <a className="text-sm hover:text-muted" href="/about">Quem Somos</a>
+            <a className="text-sm hover:text-muted" href={`/${params.lang}/about`}>{dict.site.common.about}</a>
           </li>
 
           <li>
-            <a className="text-sm hover:text-muted" href="/contact">Contato</a>
+            <a className="text-sm hover:text-muted" href={`/${params.lang}/contact`}>{dict.site.common.contact}</a>
           </li>
         </ul>
 

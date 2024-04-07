@@ -15,6 +15,7 @@ import { Button } from "@/components/ui/button";
 import Cards from "@/components/cards";
 import { Locale } from "@/config/i18n.config";
 import { getDictionaryUseClient } from "@/dictionaries/default-dictionary-use-client";
+import { AboutSection } from "@/components/about-section";
 
 export default function Home({ params }: { params: { lang: Locale } }) {
   // const dict = getDictionaryServerOnly(params.lang)
@@ -110,34 +111,24 @@ export default function Home({ params }: { params: { lang: Locale } }) {
       </section>
 
       {/* screen 3 - about and contact */}
-      <AboutSection />
+      <AboutSection params={{ lang: params.lang }}/>
 
       <div className="mr-12 mt-32 flex flex-col pb-20 text-center w-full bg-gradient-to-t from-black to-transparent">
         {!isMobile ? <div className="w-1/2 rounded-xl p-10"></div> : <></>}
 
         <h1 className="text-7xl font-bold text-center">
-          Vamos trabalhar juntos
+          {dict.site.page.home.screen3.workTogether.title}
         </h1>
-        <p className="pt-5 pb-5 text-xl">
-          Nós acreditamos no poder da colaboração para criar soluções digitais
-          revolucionárias
-          <br></br>Se você tem uma visão, nós temos a ferramenta pra te levar
-          além. Venha transformar seus em realidade.{" "}
-        </p>
+        <p className="pt-5 pb-5 text-xl" dangerouslySetInnerHTML={{__html: dict.site.page.home.screen3.workTogether.body}}></p>
 
 
-        <p className="mb-5 text-xl">
-          <b>
-            <span className="Fish select-none">Conecte-se</span>
-          </b>{" "}
-          agora conosco e embarque nesta jornada
-        </p>
+        <p className="mb-5 text-xl"  dangerouslySetInnerHTML={{__html: dict.site.page.home.screen3.workTogether.footer}}></p>
 
         <div className="flex max-[768px]:flex-col gap-5 text-center justify-center">
-          <a href="/contact" className="font-bold">
+          <a href={`/${params.lang}/contact`} className="font-bold">
             <button className="ease-in-out duration-300 hover:scale-105 flex items-center bg-white rounded-lg shadow-md max-w-xs px-6 py-2 text-sm font-medium text-black hover:bg-zinc-200 focus:outline-none">
               <Mail size={16} className="mr-2" />
-              Vamos conversar!
+              {dict.site.page.home.screen3.workTogether.button}
             </button>
           </a>
         </div>

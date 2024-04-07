@@ -16,7 +16,7 @@ export default function Page({params}: {params: {lang: Locale}}) {
   const dict = getDictionaryUseClient(params.lang)
 
   return (
-    <main className="px-6">
+    <main className="">
       {/* Screen 1 - Title */}
       <section className="flex flex-col items-center font-extrabold pt-10">
         

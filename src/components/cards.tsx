@@ -5,8 +5,12 @@ import jmSiteProject from "../../public/jm-eletrica.png";
 import lucianaProject from "../../public/luciana-advogada.png";
 import { Button } from "./ui/button";
 import { ExternalLink } from "lucide-react";
+import { Locale } from "@/config/i18n.config";
+import { getDictionaryUseClient } from "@/dictionaries/default-dictionary-use-client";
 
-export default function Cards() {
+export default function Cards({params}: {params: {lang: Locale}}) {
+  const dict = getDictionaryUseClient(params.lang)
+
   return (
     <div>
       <Spotlight className="grid gap-4 lg:grid-cols-3 items-start group">
@@ -25,24 +29,22 @@ export default function Cards() {
                 src={sdsWikiProject}
                 height={600}
                 width={600}
-                alt="sds wiki project"
+                alt={dict.site.page.home.screen2.cards.text[0].title}
               />
               {/* Text */}
               <div>
                 <h2 className="text-2xl text-slate-200 font-bold mb-1 px-3 pt-5">
-                  SDS Wiki
+                  {dict.site.page.home.screen2.cards.text[0].title}
                 </h2>
                 <p className="font-normal text-muted p-3">
-                  Site dinâmico e minimalista de busca e documentação sobre
-                  Software Defined Storage baseado em Astro, utilizando arquivos
-                  em markdown.
+                  {dict.site.page.home.screen2.cards.text[0].body}
                 </p>
 
                 <div className="grid grid-cols-7 mt-5">
                   <div>
                     <a href="https://sds-wiki.vercel.app/">
                       <Button className="hover:text-white" variant="outline">
-                        Visitar o Website
+                        {dict.site.page.home.screen2.cards.button}
                         <ExternalLink
                           className="ml-2"
                           size={16}
@@ -73,23 +75,22 @@ export default function Cards() {
                 src={jmSiteProject}
                 height={600}
                 width={600}
-                alt="sds wiki project"
+                alt={dict.site.page.home.screen2.cards.text[1].title}
               />
               {/* Text */}
               <div>
                 <h2 className="text-2xl text-slate-200 font-bold mb-1 px-3 pt-5">
-                  JM Elétrica
+                  {dict.site.page.home.screen2.cards.text[1].title}
                 </h2>
                 <p className="font-normal text-muted p-3">
-                  Site institucional sobre elétrica e soluções em energia,
-                  usando API de envio de e-mail, baseado em React.
+                  {dict.site.page.home.screen2.cards.text[1].body}
                 </p>
 
                 <div className="grid grid-cols-7 mt-11">
                   <div>
                     <a href="https://jm-eletrica.vercel.app/">
                       <Button className="hover:text-white" variant="outline">
-                        Visitar o Website
+                        {dict.site.page.home.screen2.cards.button}
                         <ExternalLink
                           className="ml-2"
                           size={16}
@@ -120,23 +121,22 @@ export default function Cards() {
                 src={lucianaProject}
                 height={600}
                 width={600}
-                alt="luciana advocacia"
+                alt={dict.site.page.home.screen2.cards.text[2].title}
               />
               {/* Text */}
               <div>
                 <h2 className="text-2xl text-slate-200 font-bold mb-1 px-3 pt-5">
-                  Luciana Advocacia
+                  {dict.site.page.home.screen2.cards.text[2].title}
                 </h2>
                 <p className="font-normal text-muted p-3">
-                  Site estático desenvolvido para assessoria e consultoria de
-                  advocacia jurídica.
+                  {dict.site.page.home.screen2.cards.text[2].body}
                 </p>
 
                 <div className="grid grid-cols-7 mt-16">
                   <div>
                     <a href="https://site-luciana-adv.vercel.app/">
                       <Button className="hover:text-white" variant="outline">
-                        Visitar o Website
+                        {dict.site.page.home.screen2.cards.button}
                         <ExternalLink
                           className="ml-2"
                           size={16}

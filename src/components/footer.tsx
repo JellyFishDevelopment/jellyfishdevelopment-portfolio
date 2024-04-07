@@ -3,8 +3,12 @@ import Image from "next/image";
 import instagramLogo from "../../public/svg-tec/instagram_logo.svg";
 import linkedinLogo from "../../public/svg-tec/linkedin_logo.svg";
 import whatsappLogo from "../../public/svg-tec/whatsapplogo.svg";
+import { Locale } from "@/config/i18n.config";
+import { getDictionaryServerOnly } from "@/dictionaries/default-dictionary-server-only";
 
-export function Footer() {
+export function Footer({params}: {params: {lang: Locale}}) {
+  const dict = getDictionaryServerOnly(params.lang)
+
   return (
     <div className="pl-56 pr-56 py-10 grid max-[768px]:grid-cols-1 max-[768px]:content-center">
       <div className="flex flex-col-2 justify-between">
@@ -57,28 +61,28 @@ export function Footer() {
 
         <div className="flex flex-row gap-10">
           <a
-            href="/"
+            href={`/${params.lang}/`}
             className="hover:text-muted"
           >
-            Início
+            {dict.site.common.home}
           </a>
           <a
-            href="/projects"
+            href={`/${params.lang}/projects`}
             className="hover:text-muted"
           >
-            Projetos
+            {dict.site.common.projects}
           </a>
           <a
-            href="/about"
+            href={`/${params.lang}/about`}
             className="hover:text-muted"
           >
-            Quem Somos
+            {dict.site.common.about}
           </a>
           <a
-            href="/contact"
+            href={`/${params.lang}/contact`}
             className="hover:text-muted"
           >
-            Contato
+            {dict.site.common.contact}
           </a>
         </div>
         <div className="text-sm">
