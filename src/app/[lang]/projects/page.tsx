@@ -1,20 +1,24 @@
 import Image from "next/image";
 import { Texture } from "@/components/texture";
-import sdsWikiProject from "../../../public/sds-wiki.png";
-import jmSiteProject from "../../../public/jm-eletrica.png";
-import lucianaProject from "../../../public/luciana-advogada.png";
-import astrologo from "../../../public/svg-tec/astrologo.svg";
-import tslogo from "../../../public/svg-tec/tslogo.svg";
-import twlogo from "../../../public/svg-tec/twlogo.svg";
-import mdlogo from "../../../public/svg-tec/markdownlogo.svg";
-import reactlogo from "../../../public/svg-tec/reactlogo.svg";
-import phplogo from "../../../public/svg-tec/phplogo.svg";
-import vitelogo from "../../../public/svg-tec/vitelogo.svg";
-import jslogo from "../../../public/svg-tec/jslogo.svg";
-import logo from "../../../public/jellyfishlogo.svg";
+import sdsWikiProject from "../../../../public/sds-wiki.png";
+import jmSiteProject from "../../../../public/jm-eletrica.png";
+import lucianaProject from "../../../../public/luciana-advogada.png";
+import astrologo from "../../../../public/svg-tec/astrologo.svg";
+import tslogo from "../../../../public/svg-tec/tslogo.svg";
+import twlogo from "../../../../public/svg-tec/twlogo.svg";
+import mdlogo from "../../../../public/svg-tec/markdownlogo.svg";
+import reactlogo from "../../../../public/svg-tec/reactlogo.svg";
+import phplogo from "../../../../public/svg-tec/phplogo.svg";
+import vitelogo from "../../../../public/svg-tec/vitelogo.svg";
+import jslogo from "../../../../public/svg-tec/jslogo.svg";
+import logo from "../../../../public/jellyfishlogo.svg";
+import { Locale } from "@/config/i18n.config";
+import { getDictionaryServerOnly } from "@/dictionaries/default-dictionary-server-only";
 
 
-export default function Page() {
+export default function Page({params}: {params: {lang: Locale}}) {
+  const dict = getDictionaryServerOnly(params.lang)
+
   return (
     <>
       {/* screen 1 - title */}
@@ -29,7 +33,7 @@ export default function Page() {
       </a>
 
         <h1 className="header-title text-6xl font-extrabold text-center pt-16">
-          <span className="Fish select-none">Projects</span>.
+          <span className="Fish select-none">{dict.site.common.projects}</span>.
         </h1>
         <div className="flex grid-cols-3 pt-5">
           <svg
@@ -41,7 +45,7 @@ export default function Page() {
             <path fill="#ffffff" d="m14 17l-5-5l5-5z"></path>
           </svg>
           <h1 className="header-title text-3xl font-extrabold text-center">
-            Front-end/Web
+            {dict.site.page.projects.category}
           </h1>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -61,7 +65,7 @@ export default function Page() {
               src={sdsWikiProject}
               height={500}
               width={500}
-              alt="sds wiki project"
+              alt={dict.site.page.projects.projects[0].title}
             />
           </div>
           <div className="grid grid-cols-5 py-5 gap-5 justify-items-center">
@@ -92,11 +96,10 @@ export default function Page() {
           </div>
 
           <h1 className="header-title text-3xl font-extrabold text-center">
-            Site - SDS Wiki
+            {dict.site.page.projects.projects[0].title}
           </h1>
           <h1 className="font-normal w-auto text-slate-200">
-            Site de busca e documentação sobre Software Defined Storage baseado
-            em Astro, utilizando arquivos em markdown.
+            {dict.site.page.projects.projects[0].description}
           </h1>
         </section>
 
@@ -108,7 +111,7 @@ export default function Page() {
               src={jmSiteProject}
               height={500}
               width={500}
-              alt="sds wiki project"
+              alt={dict.site.page.projects.projects[1].title}
             />
           </div>
           <div className="grid grid-cols-5 py-5 gap-5 justify-items-center">
@@ -139,11 +142,10 @@ export default function Page() {
           </div>
 
           <h1 className="header-title text-3xl font-extrabold text-center">
-            Site - JM Engenharia Elétrica
+            {dict.site.page.projects.projects[1].title}
           </h1>
           <h1 className="font-normal w-auto text-slate-200">
-            Site institucional sobre elétrica e soluções em energia, usando API
-            de envio de e-mail, baseado em React.
+            {dict.site.page.projects.projects[1].description}
           </h1>
         </section>
 
@@ -155,7 +157,7 @@ export default function Page() {
               src={lucianaProject}
               height={500}
               width={500}
-              alt="sds wiki project"
+              alt={dict.site.page.projects.projects[2].title}
             />
           </div>
           <div className="grid grid-cols-4 py-5 gap-5 justify-items-center">
@@ -214,11 +216,10 @@ export default function Page() {
           </div>
 
           <h1 className="header-title text-3xl font-extrabold text-center">
-            Site - Luciana Advocacia e Consultoria
+            {dict.site.page.projects.projects[2].title}
           </h1>
           <h1 className="font-normal w-auto text-slate-200">
-            Site estático dedicado à Consultoria Jurídica, projetado para
-            fornecer informações sobre os serviços jurídicos oferecidos.
+            {dict.site.page.projects.projects[2].description}
           </h1>
         </section>
       </section>

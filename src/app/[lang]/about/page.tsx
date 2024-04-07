@@ -1,16 +1,20 @@
 "use client";
 import Image from "next/image";
-import logo from "../../../public/jellyfishlogo.svg";
+import logo from "../../../../public/jellyfishlogo.svg";
 import { Texture } from "@/components/texture";
-import Leticia from "../../../public/leticia.jpg";
-import Mohan from "../../../public/mohan.jpg";
-import Luiz from "../../../public/luiz.png";
-import Felipe from "../../../public/felipe.jpg";
-import logoLinkedin from "../../../public/svg-tec/linkedin_logo.svg";
-import logoGithub from "../../../public/svg-tec/githublogo.svg";
+import Leticia from "../../../../public/leticia.jpg";
+import Mohan from "../../../../public/mohan.jpg";
+import Luiz from "../../../../public/luiz.png";
+import Felipe from "../../../../public/felipe.jpg";
+import logoLinkedin from "../../../../public/svg-tec/linkedin_logo.svg";
+import logoGithub from "../../../../public/svg-tec/githublogo.svg";
 import React from "react";
+import { Locale } from "@/config/i18n.config";
+import { getDictionaryUseClient } from "@/dictionaries/default-dictionary-use-client";
 
-export default function Page() {
+export default function Page({params}: {params: {lang: Locale}}) {
+  const dict = getDictionaryUseClient(params.lang)
+
   return (
     <main className="px-6">
       {/* Screen 1 - Title */}
@@ -25,18 +29,13 @@ export default function Page() {
           />
         </a>
 
-        <h1 className="header-title text-8xl font-extrabold text-center pt-10">
-          Quem<span className="Fish">Somos</span>
-        </h1>
+        <h1 className="header-title text-8xl font-extrabold text-center pt-10" dangerouslySetInnerHTML={{ __html: dict.site.page.about.title }}></h1>
 
-        <p className="text-neutral-400 pt-5 font-normal">
-          o time por trás da excelência e inovação que <strong>acontece</strong>{" "}
-          💡
-        </p>
+        <p className="text-neutral-400 pt-5 font-normal" dangerouslySetInnerHTML={{ __html: dict.site.page.about.subtitle }}></p>
 
         <div className="p-11">
           <label className="text-white text-2xl font-extrabold rounded-3xl border-2 px-20 py-5 select-none">
-            Idealizadores
+            {dict.site.page.about.label}
           </label>
         </div>
       </section>
@@ -51,14 +50,14 @@ export default function Page() {
               src={Leticia}
               height={200}
               width={200}
-              alt="sds wiki project"
+              alt={dict.site.page.about.cards[0].name}
             />
 
             <h5 className="mb-1 text-xl font-medium text-white">
-              Leticia Boza
+              {dict.site.page.about.cards[0].name}
             </h5>
             <span className="text-sm text-center text-gray-300">
-              QA, Product Owner, Front-End Developer
+              {dict.site.page.about.cards[0].bio}
             </span>
             <div className="flex">
               <a
@@ -83,14 +82,14 @@ export default function Page() {
               src={Mohan}
               height={200}
               width={200}
-              alt="sds wiki project"
+              alt={dict.site.page.about.cards[1].name}
             />
 
             <h5 className="mb-1 text-xl font-mediumtext-white">
-              Mohan Elias
+              {dict.site.page.about.cards[1].name}
             </h5>
             <span className="text-sm text-gray-300">
-              Front-end Developer
+              {dict.site.page.about.cards[1].bio}
             </span>
             <div className="flex">
               <a href="https://www.linkedin.com/in/mohanelias/" target="_blank">
@@ -113,14 +112,14 @@ export default function Page() {
               src={Luiz}
               height={200}
               width={200}
-              alt="sds wiki project"
+              alt={dict.site.page.about.cards[2].name}
             />
 
             <h5 className="mb-1 text-xl font-medium text-white">
-              Luiz Mateus
+              {dict.site.page.about.cards[2].name}
             </h5>
             <span className="text-sm text-gray-300">
-              DevOps, Infra, Back-End Developer
+              {dict.site.page.about.cards[2].bio}
             </span>
             <div className="flex">
               <a
@@ -146,14 +145,14 @@ export default function Page() {
               src={Felipe}
               height={200}
               width={200}
-              alt="sds wiki project"
+              alt={dict.site.page.about.cards[3].name}
             />
 
             <h5 className="mb-1 text-xl font-medium text-white">
-              Felipe Souza
+              {dict.site.page.about.cards[3].name}
             </h5>
             <span className="text-sm text-gray-300">
-              Back-End Developer, Data Base
+              {dict.site.page.about.cards[3].bio}
             </span>
             <div className="flex">
               <a

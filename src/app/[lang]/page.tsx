@@ -13,9 +13,12 @@ import { Eye, Mail } from "lucide-react";
 import { useLayoutEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import Cards from "@/components/cards";
-import { AboutSection } from "@/components/about-section";
+import { Locale } from "@/config/i18n.config";
+import { getDictionaryUseClient } from "@/dictionaries/default-dictionary-use-client";
 
-export default function Home() {
+export default function Home({ params }: { params: { lang: Locale } }) {
+  // const dict = getDictionaryServerOnly(params.lang)
+  const dict = getDictionaryUseClient(params.lang)
   const [isMobile, setIsMobile] = useState(false);
 
   useLayoutEffect(() => {
@@ -24,19 +27,18 @@ export default function Home() {
     }
     handleResize();
   }, []);
-
   return (
     <>
       {/* screen 1 - title */}
       <section className="flex justify-center flex-col items-center font-extrabold pt-16">
+
         <h1 className="select-none header-title font-extrabold max-[425px]:text-xl max-[768px]:text-3xl text-8xl text-center pt-16">
           Jelly<span className="Fish">Fish</span>
           <span className="text-4xl">.dev</span>
         </h1>
 
         <p className="text-neutral-400 pt-5 font-normal max-[768px]:text-sm max-[768px]:text-center">
-          Com você, somos capazes de moldar o futuro digital de forma inovadora
-          e envolvente ✨
+          {dict.site.page.home.screen1.slogan}
         </p>
 
         {!isMobile ? (
@@ -48,13 +50,13 @@ export default function Home() {
         )}
 
         <div className="flex flex-row gap-4 mt-10">
-          <a href="/projects">
-            <Button>Nossos serviços</Button>
+          <a href={`/${params.lang}/projects`}>
+            <Button>{dict.site.page.home.screen1.ourServicesButton}</Button>
           </a>
           <a href="https://github.com/JellyFishDevelopment">
             <Button variant={"outline"} className="hover:text-white">
               <GitHubLogoIcon className="w-4 h-4 mr-2" />
-              GitHub
+              {dict.site.common.github}
             </Button>
           </a>
         </div>
@@ -69,6 +71,7 @@ export default function Home() {
             </Button>
           </a>
         </div>
+
       </section>
 
       {/* screen 2 - projects */}
@@ -77,12 +80,10 @@ export default function Home() {
         className="pt-36 flex flex-col items-center justify-center font-extrabold"
       >
         <h3 className="text-5xl leading-tight">
-          Projetos<span className="Fish select-none">.</span>
+          {dict.site.common.projects}<span className="Fish select-none">.</span>
         </h3>
 
-        <h4 className="text-base text-muted text-center font-normal mt-3 mb-8">
-          Nossos últimos projetos realizados
-        </h4>
+        <h4 className="text-base text-muted text-center font-normal mt-3 mb-8">{dict.site.page.home.screen2.lastProjects}</h4>
 
         {/* Cards */}
         <motion.div
@@ -94,16 +95,14 @@ export default function Home() {
           <div className="grid grid-cols-2"></div>
 
           {/* Cards */}
-          <Cards />
+          <Cards params={{ lang: params.lang }} />
 
-          <div className="pt-10 pb-32 flex justify-center">
-            <a
-              href="/projects"
-              className="text-white text-2xl font-extrabold ease-in-out duration-300 hover:scale-105"
-            >
+
+          <div className='pt-10 pb-32 flex justify-center'>
+            <a href={`/${params.lang}/projects`} className='text-white text-2xl font-extrabold ease-in-out duration-300 hover:scale-105'>
               <Button className="w-80">
                 <Eye strokeWidth={1} className="mr-2" />
-                Veja mais
+                {dict.site.page.home.screen2.moreButton}
               </Button>
             </a>
           </div>

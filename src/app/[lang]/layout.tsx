@@ -5,12 +5,18 @@ import { Analytics } from '@vercel/analytics/react'
 
 import { Footer } from "@/components/footer"
 import Nav from '@/components/navbar'
+import { i18n, Locale } from '@/config/i18n.config'
 
 const siteId = Number(process.env.HORJAR_ID)
 const hotjarVersion = Number(process.env.HORJAR_V)
 const google_tag = process.env.GOOGLE_TAG
 
 const inter = Inter({ subsets: ['latin'] })
+
+export async function generateStaticParams() {
+  const language = i18n.locales.map((lang) => ({lang}))
+  return language
+}
 
 export const metadata: Metadata = {
   title: 'JellyFish Development',
@@ -19,11 +25,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  params
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
+  params: {lang: string}
 }) {
   return (
-    <html lang="en">
+    <html lang={params.lang}>
       <head>
         <script dangerouslySetInnerHTML={{ __html: `
                 (function(h,o,t,j,a,r){
@@ -49,11 +57,11 @@ export default function RootLayout({
           />
       </head>
       <body className={inter.className}>
-        <Nav />
+        <Nav params={{lang: params.lang as Locale}}/>
         {children}
         <Analytics />
-        <div className="bg-black">
-          <Footer />
+        <div className="border-t border bg-black">
+          <Footer params={{lang: params.lang as Locale}}/>
         </div>
       </body>
     </html>
