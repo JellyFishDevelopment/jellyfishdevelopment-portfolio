@@ -40,13 +40,13 @@ export default function Nav({params}: {params: {lang: Locale}}) {
 
         <ul className="flex flex-row place-content-center items-center gap-5">
           <li className="flex flex-row place-content-center items-center gap-5">
-            <a href="https://github.com/JellyFishDevelopment">
+            <a href="https://github.com/JellyFishDevelopment" target="_blank">
               <GitHubLogoIcon />
             </a>
             <a href="#">
               <LinkedInLogoIcon/>
             </a>
-            <a href="https://www.instagram.com/jellyfishdevelopment/">
+            <a href="https://www.instagram.com/jellyfishdevelopment/" target="_blank">
               <InstagramLogoIcon />
             </a>
           </li>
