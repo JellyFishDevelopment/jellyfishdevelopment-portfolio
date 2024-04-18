@@ -61,7 +61,7 @@ export default function Page({params}: {params: {lang: Locale}}) {
         <section className="py-10 grid justify-items-center">
           <div>
             <Image
-              className="rounded-lg border "
+              className="rounded-lg border border-jelly_border"
               src={sdsWikiProject}
               height={500}
               width={500}
@@ -107,7 +107,7 @@ export default function Page({params}: {params: {lang: Locale}}) {
         <section className="py-10 grid justify-items-center">
           <div>
             <Image
-              className="rounded-lg border "
+              className="rounded-lg border border-jelly_border"
               src={jmSiteProject}
               height={500}
               width={500}
@@ -153,7 +153,7 @@ export default function Page({params}: {params: {lang: Locale}}) {
         <section className="py-10 grid justify-items-center">
           <div>
             <Image
-              className="rounded-lg border "
+              className="rounded-lg border border-jelly_border"
               src={lucianaProject}
               height={500}
               width={500}
