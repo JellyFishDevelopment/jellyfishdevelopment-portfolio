@@ -22,7 +22,7 @@ export default function Page({params}: {params: {lang: Locale}}) {
   return (
     <>
       {/* screen 1 - title */}
-      <section className="flex flex-col items-center font-extrabold pt-16">
+      <section className="flex flex-col items-center font-extrabold pt-16 bg-gradient-to-t from-black to-transparent">
 
       <a href="#">
         <Image 

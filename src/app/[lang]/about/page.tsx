@@ -41,7 +41,7 @@ export default function Page({params}: {params: {lang: Locale}}) {
       </section>
 
       {/* Screen 2 - Cards */}
-      <div className="pb-16 flex flex-row justify-center gap-4">
+      <div className="pb-16 flex flex-row justify-center gap-4 lg:px-4 bg-gradient-to-t from-black to-transparent">
         {/* Leticia */}
         <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow card-idealizadores transition hover:-translate-y-2 hover:shadow-xl">
           <div className="flex flex-col items-center pb-11 pt-10 ">
