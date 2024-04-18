@@ -27,8 +27,8 @@ export default function Page({ params }: { params: { lang: Locale } }) {
         <p className="text-neutral-400 pt-5 font-normal" dangerouslySetInnerHTML={{ __html: dict.site.page.contact.description }}></p>
       </section>
 
-      <div className='flex justify-center py-10'>
-        <section className='card-idealizadores px-20 py-10 border rounded-3xl w-4/6'>
+      <div className='flex justify-center py-10 bg-gradient-to-t from-black to-transparent'>
+        <section className='card-idealizadores px-10 py-10 border rounded-3xl w-2/6'>
           <ContactForm params={{ lang: params.lang }} />
         </section>
 
