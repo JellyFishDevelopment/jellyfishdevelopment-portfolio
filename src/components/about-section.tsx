@@ -24,7 +24,7 @@ export function AboutSection({params}: {params: {lang: Locale}}) {
             <span dangerouslySetInnerHTML={{__html : dict.site.page.home.screen3.about.body}}></span>
             <p className="pb-6" dangerouslySetInnerHTML={{__html : dict.site.page.home.screen3.about.footer}}></p>
 
-            <a href={`/${params.lang}/projects`}>
+            <a href={`/${params.lang}/about`}>
               <Button>
                 {dict.site.page.home.screen3.about.button}
                 <ArrowRight className="ml-2" size={20} />

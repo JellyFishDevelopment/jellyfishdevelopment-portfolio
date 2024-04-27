@@ -19,6 +19,9 @@ const config = {
     },
     extend: {
       colors: {
+        jelly: '#2a1a1e',
+        jelly_light: '#926171',
+        jelly_border: '#412b32',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

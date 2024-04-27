@@ -60,7 +60,7 @@ export default function RootLayout({
         <Nav params={{lang: params.lang as Locale}}/>
         {children}
         <Analytics />
-        <div className="border-t border bg-black">
+        <div className="bg-black">
           <Footer params={{lang: params.lang as Locale}}/>
         </div>
       </body>
