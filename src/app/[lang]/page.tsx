@@ -16,6 +16,7 @@ import Cards from "@/components/cards";
 import { Locale } from "@/config/i18n.config";
 import { getDictionaryUseClient } from "@/dictionaries/default-dictionary-use-client";
 import { AboutSection } from "@/components/about-section";
+import { pages } from "next/dist/build/templates/app-page";
 
 export default function Home({ params }: { params: { lang: Locale } }) {
   // const dict = getDictionaryServerOnly(params.lang)
@@ -64,7 +65,7 @@ export default function Home({ params }: { params: { lang: Locale } }) {
         <div className="pt-12">
           <a href="#projetos">
             <Button variant={"ghost"} className="hover:text-white">
-              Conheça mais do nosso trabalho
+              {dict.site.page.home.screen1.moreButton}
               <ChevronDownIcon
                 strokeWidth={0.75}
                 className="animate-bounce ml-2"
