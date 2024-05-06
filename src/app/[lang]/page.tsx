@@ -53,7 +53,7 @@ export default function Home({ params }: { params: { lang: Locale } }) {
             <Button>{dict.site.page.home.screen1.ourServicesButton}</Button>
           </a>
           <a href="https://github.com/JellyFishDevelopment">
-            <Button variant={"outline"} className="hover:text-white">
+            <Button variant={"outline"} className="border-jelly_border hover:text-white">
               <GitHubLogoIcon className="w-4 h-4 mr-2" />
               {dict.site.common.github}
             </Button>

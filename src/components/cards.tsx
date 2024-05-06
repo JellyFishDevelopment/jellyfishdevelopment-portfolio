@@ -43,7 +43,7 @@ export default function Cards({params}: {params: {lang: Locale}}) {
                 <div className="grid grid-cols-7 mt-5">
                   <div>
                     <a href="https://sds-wiki.vercel.app/">
-                      <Button className="hover:text-white" variant="outline">
+                      <Button className="border-jelly_border hover:text-white" variant="outline">
                         {dict.site.page.home.screen2.cards.button}
                         <ExternalLink
                           className="ml-2"
@@ -89,7 +89,7 @@ export default function Cards({params}: {params: {lang: Locale}}) {
                 <div className="grid grid-cols-7 mt-11">
                   <div>
                     <a href="https://jm-eletrica.vercel.app/">
-                      <Button className="hover:text-white" variant="outline">
+                      <Button className="border-jelly_border hover:text-white" variant="outline">
                         {dict.site.page.home.screen2.cards.button}
                         <ExternalLink
                           className="ml-2"
@@ -135,7 +135,7 @@ export default function Cards({params}: {params: {lang: Locale}}) {
                 <div className="grid grid-cols-7 mt-16">
                   <div>
                     <a href="https://site-luciana-adv.vercel.app/">
-                      <Button className="hover:text-white" variant="outline">
+                      <Button className="border-jelly_border hover:text-white" variant="outline">
                         {dict.site.page.home.screen2.cards.button}
                         <ExternalLink
                           className="ml-2"
