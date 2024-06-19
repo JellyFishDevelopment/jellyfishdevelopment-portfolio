@@ -6,3 +6,27 @@
         <a href="jellyfishdevelopment@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"></a>
   <br>
 </p>
+
+# Bem-vindos ao Portfólio da JellyFish.dev 🚀
+
+Na JellyFish Development, nós vivemos e respiramos inovação. Nosso portfólio é o lar de projetos que refletem nossa paixão por transformar ideias em realidade digital. Explore nosso repositório e descubra o conteúdo necessário para apresentar nosso trabalho com orgulho e confiança.
+
+## Sobre Nós 💡
+
+Somos uma equipe apaixonada, comprometida em fornecer soluções inteligentes e ágeis para nossos clientes. Desde websites dinâmicos até aplicativos móveis intuitivos, cada projeto em nosso portfólio é uma demonstração do nosso compromisso com a excelência e inovação.
+
+## Nossos Valores 🌟
+
+- **Inovação Constante**: Estamos sempre buscando novas maneiras de elevar o padrão e superar expectativas.
+  
+- **Compromisso com o Cliente**: O sucesso dos nossos clientes é o nosso sucesso. Trabalhamos lado a lado para alcançar resultados extraordinários.
+
+- **Personalização e Excelência**: Cada projeto é tratado com cuidado e atenção aos detalhes, garantindo que seja uma verdadeira expressão de nossos valores.
+
+## Explore Nosso Portfólio 🌐
+
+Dê uma olhada em nosso portfólio e descubra como estamos moldando o futuro digital. Cada projeto é uma história única de criatividade, inovação e compromisso com a qualidade.
+
+## Entre em Contato 📧
+
+Estamos ansiosos para colaborar com você em seu próximo projeto. Entre em contato conosco para começarmos a transformar suas ideias em **feitos**.
