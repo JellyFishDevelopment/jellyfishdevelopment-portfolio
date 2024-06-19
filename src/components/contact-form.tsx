@@ -66,9 +66,9 @@ export function ContactForm({ params }: { params: { lang: Locale } }) {
       </div>
 
       <a href={`/${params.lang}/projects`}></a>
-      <div className="text-center pt-4">
-        <a type="submit" className="text-white">
-          <Button className="w-72 text-lg font-regular">
+      <div className="text-center w-full pt-4">
+        <a type="submit" className="text-white w-full">
+          <Button className="max-[425px]:w-full w-72 text-lg font-regular">
             <Forward className="mr-2" strokeWidth={1} />
             {dict.site.component.contactForm.submitButton}
           </Button>

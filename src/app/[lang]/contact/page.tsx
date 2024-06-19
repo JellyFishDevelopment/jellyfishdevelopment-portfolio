@@ -16,13 +16,13 @@ export default function Page({ params }: { params: { lang: Locale } }) {
           <Image src={logo} width="80" alt="logo" />
         </a>
 
-        <h1 className="header-title text-6xl font-extrabold text-center pt-10">
+        <h1 className="header-title max-[425px]:text-4xl text-6xl font-extrabold text-center pt-10">
           {dict.site.common.contact}
           <span className="Fish select-none">.</span>
         </h1>
 
         <p
-          className="text-neutral-400 pt-5 font-normal"
+          className="text-neutral-400 pt-5 max-[425px]:text-sm font-normal text-center"
           dangerouslySetInnerHTML={{
             __html: dict.site.page.contact.description,
           }}
@@ -30,7 +30,7 @@ export default function Page({ params }: { params: { lang: Locale } }) {
       </section>
 
       <div className="flex justify-center py-10 bg-gradient-to-t from-black to-transparent">
-        <section className="card-idealizadores px-10 py-10 border rounded-3xl w-2/6">
+        <section className="card-idealizadores px-10 py-10 border rounded-3xl max-[425px]:w-3/4 w-2/6">
           <ContactForm params={{ lang: params.lang }} />
         </section>
       </div>
