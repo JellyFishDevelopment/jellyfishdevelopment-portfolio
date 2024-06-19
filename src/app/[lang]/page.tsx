@@ -2,10 +2,7 @@
 import { Texture } from "@/components/texture";
 import InfiniteLooper from "@/components/infinite-looper";
 import { motion } from "framer-motion";
-import {
-  ChevronDownIcon,
-  GitHubLogoIcon,
-} from "@radix-ui/react-icons";
+import { ChevronDownIcon, GitHubLogoIcon } from "@radix-ui/react-icons";
 import { Eye, Mail } from "lucide-react";
 import { useLayoutEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -17,7 +14,7 @@ import { pages } from "next/dist/build/templates/app-page";
 
 export default function Home({ params }: { params: { lang: Locale } }) {
   // const dict = getDictionaryServerOnly(params.lang)
-  const dict = getDictionaryUseClient(params.lang)
+  const dict = getDictionaryUseClient(params.lang);
   const [isMobile, setIsMobile] = useState(false);
 
   useLayoutEffect(() => {
@@ -30,10 +27,9 @@ export default function Home({ params }: { params: { lang: Locale } }) {
     <>
       {/* screen 1 - title */}
       <section className="flex justify-center flex-col items-center font-extrabold pt-16">
-
         <h1 className="select-none header-title font-extrabold max-[425px]:text-xl max-[768px]:text-3xl text-8xl text-center pt-16">
           Jelly<span className="Fish">Fish</span>
-          <span className="text-4xl">.dev</span>
+          <span className="max-[425px]:text-lg text-4xl">.dev</span>
         </h1>
 
         <p className="text-neutral-400 pt-5 font-normal max-[768px]:text-sm max-[768px]:text-center">
@@ -53,7 +49,10 @@ export default function Home({ params }: { params: { lang: Locale } }) {
             <Button>{dict.site.page.home.screen1.ourServicesButton}</Button>
           </a>
           <a href="https://github.com/JellyFishDevelopment">
-            <Button variant={"outline"} className="border-jelly_border hover:text-white">
+            <Button
+              variant={"outline"}
+              className="border-jelly_border hover:text-white"
+            >
               <GitHubLogoIcon className="w-4 h-4 mr-2" />
               {dict.site.common.github}
             </Button>
@@ -70,7 +69,6 @@ export default function Home({ params }: { params: { lang: Locale } }) {
             </Button>
           </a>
         </div>
-
       </section>
 
       {/* screen 2 - projects */}
@@ -79,10 +77,13 @@ export default function Home({ params }: { params: { lang: Locale } }) {
         className="pt-36 flex flex-col items-center justify-center font-extrabold"
       >
         <h3 className="text-5xl leading-tight">
-          {dict.site.common.projects}<span className="Fish select-none">.</span>
+          {dict.site.common.projects}
+          <span className="Fish select-none">.</span>
         </h3>
 
-        <h4 className="text-base text-muted text-center font-normal mt-3 mb-8">{dict.site.page.home.screen2.lastProjects}</h4>
+        <h4 className="text-base text-muted text-center font-normal mt-3 mb-8">
+          {dict.site.page.home.screen2.lastProjects}
+        </h4>
 
         {/* Cards */}
         <motion.div
@@ -96,10 +97,12 @@ export default function Home({ params }: { params: { lang: Locale } }) {
           {/* Cards */}
           <Cards params={{ lang: params.lang }} />
 
-
-          <div className='pt-10 pb-32 flex justify-center'>
-            <a href={`/${params.lang}/projects`} className='text-white text-2xl font-extrabold ease-in-out duration-300 hover:scale-105'>
-              <Button className="w-80">
+          <div className="pt-10 pb-32 flex justify-center">
+            <a
+              href={`/${params.lang}/projects`}
+              className="text-white text-2xl font-extrabold ease-in-out duration-300 hover:scale-105"
+            >
+              <Button className="max-[425px]:w-40 w-80">
                 <Eye strokeWidth={1} className="mr-2" />
                 {dict.site.page.home.screen2.moreButton}
               </Button>
@@ -109,20 +112,29 @@ export default function Home({ params }: { params: { lang: Locale } }) {
       </section>
 
       {/* screen 3 - about and contact */}
-      <AboutSection params={{ lang: params.lang }}/>
+      <AboutSection params={{ lang: params.lang }} />
 
       <div className="mr-12 mt-32 flex flex-col pb-20 text-center w-full bg-gradient-to-t from-black to-transparent">
         {!isMobile ? <div className="w-1/2 rounded-xl p-10"></div> : <></>}
 
-        <h1 className="text-7xl font-bold text-center">
+        <h1 className="max-[425px]:text-3xl text-7xl font-bold text-center">
           {dict.site.page.home.screen3.workTogether.title}
         </h1>
-        <p className="pt-5 pb-5 text-xl" dangerouslySetInnerHTML={{__html: dict.site.page.home.screen3.workTogether.body}}></p>
+        <p
+          className="max-[425px]:text-base pt-5 pb-5 text-xl"
+          dangerouslySetInnerHTML={{
+            __html: dict.site.page.home.screen3.workTogether.body,
+          }}
+        ></p>
 
+        <p
+          className="max-[425px]:text-base mb-5 text-xl"
+          dangerouslySetInnerHTML={{
+            __html: dict.site.page.home.screen3.workTogether.footer,
+          }}
+        ></p>
 
-        <p className="mb-5 text-xl"  dangerouslySetInnerHTML={{__html: dict.site.page.home.screen3.workTogether.footer}}></p>
-
-        <div className="flex max-[768px]:flex-col gap-5 text-center justify-center">
+        <div className="flex max-[425px]:mx-auto max-[768px]:flex-col gap-5 text-center justify-center">
           <a href={`/${params.lang}/contact`} className="font-bold">
             <button className="ease-in-out duration-300 hover:scale-105 flex items-center bg-white rounded-lg shadow-md max-w-xs px-6 py-2 text-sm font-medium text-black hover:bg-zinc-200 focus:outline-none">
               <Mail size={16} className="mr-2" />

@@ -8,12 +8,12 @@ import { ExternalLink } from "lucide-react";
 import { Locale } from "@/config/i18n.config";
 import { getDictionaryUseClient } from "@/dictionaries/default-dictionary-use-client";
 
-export default function Cards({params}: {params: {lang: Locale}}) {
-  const dict = getDictionaryUseClient(params.lang)
+export default function Cards({ params }: { params: { lang: Locale } }) {
+  const dict = getDictionaryUseClient(params.lang);
 
   return (
     <div>
-      <Spotlight className="grid gap-4 lg:grid-cols-3 items-start group">
+      <Spotlight className="grid gap-4 lg:grid-cols-3 items-start group max-[425px]:justify-center">
         <SpotlightCard>
           <div className="relative h-full p-6 rounded-[inherit] z-20 overflow-hidden">
             {/* Radial gradient */}
@@ -43,7 +43,10 @@ export default function Cards({params}: {params: {lang: Locale}}) {
                 <div className="grid grid-cols-7 mt-5">
                   <div>
                     <a href="https://sds-wiki.vercel.app/">
-                      <Button className="border-jelly_border hover:text-white" variant="outline">
+                      <Button
+                        className="border-jelly_border hover:text-white"
+                        variant="outline"
+                      >
                         {dict.site.page.home.screen2.cards.button}
                         <ExternalLink
                           className="ml-2"
@@ -89,7 +92,10 @@ export default function Cards({params}: {params: {lang: Locale}}) {
                 <div className="grid grid-cols-7 mt-11">
                   <div>
                     <a href="https://jm-eletrica.vercel.app/">
-                      <Button className="border-jelly_border hover:text-white" variant="outline">
+                      <Button
+                        className="border-jelly_border hover:text-white"
+                        variant="outline"
+                      >
                         {dict.site.page.home.screen2.cards.button}
                         <ExternalLink
                           className="ml-2"
@@ -135,7 +141,10 @@ export default function Cards({params}: {params: {lang: Locale}}) {
                 <div className="grid grid-cols-7 mt-16">
                   <div>
                     <a href="https://site-luciana-adv.vercel.app/">
-                      <Button className="border-jelly_border hover:text-white" variant="outline">
+                      <Button
+                        className="border-jelly_border hover:text-white"
+                        variant="outline"
+                      >
                         {dict.site.page.home.screen2.cards.button}
                         <ExternalLink
                           className="ml-2"
