@@ -15,27 +15,21 @@ import logo from "../../../../public/jellyfishlogo.svg";
 import { Locale } from "@/config/i18n.config";
 import { getDictionaryServerOnly } from "@/dictionaries/default-dictionary-server-only";
 
-
-export default function Page({params}: {params: {lang: Locale}}) {
-  const dict = getDictionaryServerOnly(params.lang)
+export default function Page({ params }: { params: { lang: Locale } }) {
+  const dict = getDictionaryServerOnly(params.lang);
 
   return (
     <>
       {/* screen 1 - title */}
       <section className="flex flex-col items-center font-extrabold pt-16 bg-gradient-to-t from-black to-transparent">
+        <a href="#">
+          <Image src={logo} width="80" alt="logo" />
+        </a>
 
-      <a href="#">
-        <Image 
-          src={logo}
-          width="80"
-          alt="logo"
-        />
-      </a>
-
-        <h1 className="header-title text-6xl font-extrabold text-center pt-16">
+        <h1 className="header-title max-[425px]:text-4xl text-6xl font-extrabold text-center pt-16">
           <span className="Fish select-none">{dict.site.common.projects}</span>.
         </h1>
-        <div className="flex grid-cols-3 pt-5">
+        <div className="flex grid-cols-3 pt-5 items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="40"
@@ -44,7 +38,7 @@ export default function Page({params}: {params: {lang: Locale}}) {
           >
             <path fill="#ffffff" d="m14 17l-5-5l5-5z"></path>
           </svg>
-          <h1 className="header-title text-3xl font-extrabold text-center">
+          <h1 className="header-title max-[425px]:text-xl  text-3xl font-extrabold text-center">
             {dict.site.page.projects.category}
           </h1>
           <svg
@@ -58,7 +52,7 @@ export default function Page({params}: {params: {lang: Locale}}) {
         </div>
 
         {/* Projects */}
-        <section className="py-10 grid justify-items-center">
+        <section className="py-10 max-[425px]:m-8 grid justify-items-center">
           <div>
             <Image
               className="rounded-lg border border-jelly_border"
@@ -104,7 +98,7 @@ export default function Page({params}: {params: {lang: Locale}}) {
         </section>
 
         {/* Projects */}
-        <section className="py-10 grid justify-items-center">
+        <section className="py-10 max-[425px]:m-8 grid justify-items-center">
           <div>
             <Image
               className="rounded-lg border border-jelly_border"
@@ -150,7 +144,7 @@ export default function Page({params}: {params: {lang: Locale}}) {
         </section>
 
         {/* Projects */}
-        <section className="py-10 grid justify-items-center">
+        <section className="py-10 max-[425px]:m-8 grid justify-items-center">
           <div>
             <Image
               className="rounded-lg border border-jelly_border"
