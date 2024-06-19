@@ -192,6 +192,14 @@ hr {
   }
 }
 
+@media only screen and (max-width: 425px) {
+  body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
 .card-idealizadores {
   background: #412b32;
   border-color: #926171;
@@ -248,12 +256,20 @@ hr {
   }
 } */
 
-
 /* jellyfish-image floater */
 @keyframes float {
-  0%{transform: translateY(0);transition: ease 0.5s;}
-  50%{transform: translateY(-20px);transition: ease 0.5s;}
-  100%{transform: translateY(0px);transition: ease 0.5s;}
+  0% {
+    transform: translateY(0);
+    transition: ease 0.5s;
+  }
+  50% {
+    transform: translateY(-20px);
+    transition: ease 0.5s;
+  }
+  100% {
+    transform: translateY(0px);
+    transition: ease 0.5s;
+  }
 }
 
 .jellyfish-image {

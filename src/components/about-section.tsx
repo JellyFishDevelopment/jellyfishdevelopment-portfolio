@@ -17,7 +17,7 @@ export function AboutSection({ params }: { params: { lang: Locale } }) {
       transition={{ duration: 1 }}
     >
       <div className="flex max-[425px]:flex-col row-auto 2xl:px-[400px] sm:px-[100px] lg:px-[200px] md:px-40 justify-center place-items-center items-center">
-        <div>
+        <div className="max-[425px]:mx-8">
           <h1 className="text-5xl font-bold pb-6 pt-12">
             {dict.site.page.home.screen3.about.title}
             <span className="Fish">.</span>

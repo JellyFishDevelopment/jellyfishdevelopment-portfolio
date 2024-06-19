@@ -114,10 +114,10 @@ export default function Home({ params }: { params: { lang: Locale } }) {
       {/* screen 3 - about and contact */}
       <AboutSection params={{ lang: params.lang }} />
 
-      <div className="mr-12 mt-32 flex flex-col pb-20 text-center w-full bg-gradient-to-t from-black to-transparent">
+      <div className=" mr-12 mt-32 flex flex-col pb-20 text-center w-full bg-gradient-to-t from-black to-transparent">
         {!isMobile ? <div className="w-1/2 rounded-xl p-10"></div> : <></>}
 
-        <h1 className="max-[425px]:text-3xl text-7xl font-bold text-center">
+        <h1 className="max-[425px]:text-3xl max-[425px]:mx-8 text-7xl font-bold text-center">
           {dict.site.page.home.screen3.workTogether.title}
         </h1>
         <p
@@ -128,13 +128,13 @@ export default function Home({ params }: { params: { lang: Locale } }) {
         ></p>
 
         <p
-          className="max-[425px]:text-base mb-5 text-xl"
+          className="max-[425px]:text-base mb-5 text-xl max-[425px]:mx-8"
           dangerouslySetInnerHTML={{
             __html: dict.site.page.home.screen3.workTogether.footer,
           }}
         ></p>
 
-        <div className="flex max-[425px]:mx-auto max-[768px]:flex-col gap-5 text-center justify-center">
+        <div className="flex max-[425px]:mx-auto max-[425px]:mx-8 max-[768px]:flex-col gap-5 text-center justify-center">
           <a href={`/${params.lang}/contact`} className="font-bold">
             <button className="ease-in-out duration-300 hover:scale-105 flex items-center bg-white rounded-lg shadow-md max-w-xs px-6 py-2 text-sm font-medium text-black hover:bg-zinc-200 focus:outline-none">
               <Mail size={16} className="mr-2" />

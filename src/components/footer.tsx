@@ -10,7 +10,7 @@ export function Footer({ params }: { params: { lang: Locale } }) {
   const dict = getDictionaryServerOnly(params.lang);
 
   return (
-    <div className="max-[425px]:p-0 max-[425px]:p-4 pl-56 pr-56 py-10 grid max-[768px]:grid-cols-1 max-[768px]:content-center">
+    <div className="max-[425px]:p-0  max-[425px]:p-4 pl-56 pr-56 py-10 grid max-[768px]:grid-cols-1 max-[768px]:content-center">
       <div className="flex max-[425px]:flex-col flex-col-2 justify-between">
         <a href="#">
           <Image
