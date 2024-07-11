@@ -77,7 +77,10 @@ export default function NavBar({ dict, lang }: NavBarProps) {
             <a href="https://github.com/JellyFishDevelopment" target="_blank">
               <GitHubLogoIcon />
             </a>
-            <a href="#">
+            <a
+              href="https://www.linkedin.com/company/jellyfish-dev"
+              target="_blank"
+            >
               <LinkedInLogoIcon />
             </a>
             <a

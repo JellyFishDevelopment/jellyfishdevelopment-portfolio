@@ -33,7 +33,10 @@ export function Footer({ params }: { params: { lang: Locale } }) {
               alt="instagram logo"
             />
           </a>
-          <a href="https://www.linkedin.com/in/leticiaboza/" target="_blank">
+          <a
+            href="https://www.linkedin.com/company/jellyfish-dev"
+            target="_blank"
+          >
             <Image
               className="hover:scale-105 max-[425px]:w-[20px] ease-in-out duration-300"
               src={linkedinLogo}
