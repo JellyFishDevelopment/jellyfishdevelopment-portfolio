@@ -6,7 +6,8 @@ import lucianaProject from "@/../public/luciana-advogada.png";
 import imoveisProject from "@/../public/imoveis.png"
 import astrologo from "../../../../public/svg-tec/astrologo.svg";
 import nextjslogo from "../../../../public/svg-tec/nextjslogo.svg";
-import pythonlogo from "../../../../public/svg-tec/pythonlogo.svg";
+import djangologo from "@/../public/svg-tec/djangologo.svg";
+import mysqllogo from "@/../public/svg-tec/mysqllogo.svg";
 import tslogo from "../../../../public/svg-tec/tslogo.svg";
 import twlogo from "../../../../public/svg-tec/twlogo.svg";
 import mdlogo from "../../../../public/svg-tec/markdownlogo.svg";
@@ -290,10 +291,6 @@ export default function Page({ params }: { params: { lang: Locale } }) {
                   </div>
 
                   <div className="transition ease-in-out duration-500 react-logo hover:-translate-y-2">
-                    <Image src={tslogo} width={40} height={40} alt="TS logo" />
-                  </div>
-
-                  <div className="transition ease-in-out duration-500 react-logo hover:-translate-y-2">
                     <Image
                       src={twlogo}
                       width={40}
@@ -304,10 +301,19 @@ export default function Page({ params }: { params: { lang: Locale } }) {
 
                   <div className="transition ease-in-out duration-500 react-logo hover:-translate-y-2">
                     <Image
-                      src={pythonlogo}
+                      src={djangologo}
                       width={40}
                       height={40}
-                      alt="markdown logo"
+                      alt="django logo"
+                    />
+                  </div>
+
+                  <div className="transition ease-in-out duration-500 react-logo hover:-translate-y-2">
+                    <Image
+                      src={mysqllogo}
+                      width={40}
+                      height={40}
+                      alt="mysql logo"
                     />
                   </div>
                 </div>
