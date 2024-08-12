@@ -2,8 +2,11 @@ import Image from "next/image";
 import { Texture } from "@/components/texture";
 import sdsWikiProject from "../../../../public/sds-wiki.png";
 import jmSiteProject from "../../../../public/jm-eletrica.png";
-import lucianaProject from "../../../../public/luciana-advogada.png";
+import lucianaProject from "@/../public/luciana-advogada.png";
+import imoveisProject from "@/../public/imoveis.png"
 import astrologo from "../../../../public/svg-tec/astrologo.svg";
+import nextjslogo from "../../../../public/svg-tec/nextjslogo.svg";
+import pythonlogo from "../../../../public/svg-tec/pythonlogo.svg";
 import tslogo from "../../../../public/svg-tec/tslogo.svg";
 import twlogo from "../../../../public/svg-tec/twlogo.svg";
 import mdlogo from "../../../../public/svg-tec/markdownlogo.svg";
@@ -44,7 +47,7 @@ export default function Page({ params }: { params: { lang: Locale } }) {
 
         {/* Projects */}
         <Carousel
-          className="w-full max-w-lg"
+          className="w-4/5 lg:w-full max-w-lg"
           opts={{
             align: "center",
             loop: true,
@@ -175,7 +178,7 @@ export default function Page({ params }: { params: { lang: Locale } }) {
               </section>
             </CarouselItem>
             <CarouselItem>
-              <section className="py-10 max-[425px]:m-8 grid justify-items-center">
+              <section className="py-10 grid justify-items-center">
                 <div>
                   <h1 className="header-title text-3xl font-extrabold text-center mb-2">
                     {dict.site.page.projects.projects[2].title}
@@ -253,9 +256,71 @@ export default function Page({ params }: { params: { lang: Locale } }) {
                 </h1>
               </section>
             </CarouselItem>
+            <CarouselItem>
+              <section className="py-10 grid justify-items-center">
+                <div>
+                  <h1 className="header-title text-3xl font-extrabold text-center mb-2">
+                    {dict.site.page.projects.projects[3].title}
+                  </h1>
+                  <Image
+                    className="rounded-lg border border-jelly_border"
+                    src={imoveisProject}
+                    height={500}
+                    width={500}
+                    alt={dict.site.page.projects.projects[3].title}
+                  />
+                </div>
+                <div className="grid grid-cols-5 py-5 gap-5 justify-items-center">
+                  <div className="transition ease-in-out duration-500 react-logo hover:-translate-y-2">
+                    <Image
+                      src={nextjslogo}
+                      width={40}
+                      height={40}
+                      alt="astro logo"
+                    />
+                  </div>
+
+                  <div className="transition ease-in-out duration-500 react-logo hover:-translate-y-2">
+                    <Image
+                      src={reactlogo}
+                      width={40}
+                      height={40}
+                      alt="markdown logo"
+                    />
+                  </div>
+
+                  <div className="transition ease-in-out duration-500 react-logo hover:-translate-y-2">
+                    <Image src={tslogo} width={40} height={40} alt="TS logo" />
+                  </div>
+
+                  <div className="transition ease-in-out duration-500 react-logo hover:-translate-y-2">
+                    <Image
+                      src={twlogo}
+                      width={40}
+                      height={40}
+                      alt="TailWind logo"
+                    />
+                  </div>
+
+                  <div className="transition ease-in-out duration-500 react-logo hover:-translate-y-2">
+                    <Image
+                      src={pythonlogo}
+                      width={40}
+                      height={40}
+                      alt="markdown logo"
+                    />
+                  </div>
+                </div>
+
+
+                <h1 className="font-normal w-auto text-slate-200 text-center">
+                  {dict.site.page.projects.projects[3].description}
+                </h1>
+              </section>
+            </CarouselItem>
           </CarouselContent>
-          <CarouselPrevious className="border-jelly_border" />
-          <CarouselNext className="border-jelly_border" />
+          <CarouselPrevious className="border-jelly_border hidden lg:flex" />
+          <CarouselNext className="border-jelly_border hidden lg:flex" />
         </Carousel>
 
         {/* Projects */}

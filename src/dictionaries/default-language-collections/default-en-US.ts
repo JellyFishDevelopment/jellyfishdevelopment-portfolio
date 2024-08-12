@@ -61,17 +61,21 @@ export const enUS = {
                 category: 'Front-end/Web',
                 projects: [
                     {
-                        title: 'Site - SDS Wiki',
+                        title: 'SDS Wiki',
                         description: 'Search and documentation website about Software Defined Storage based on Astro, using markdown files.'
                     },
                     {
-                        title: 'Site - JM Electrical Engineering',
+                        title: 'JM Electrical Eng.',
                         description: 'Institutional website about electrical and energy solutions, using email sending API, based on React.'
                     },
                     {
-                        title: 'Site - Luciana Advocacy and Consulting',
+                        title: 'Luciana Advocacy',
                         description: 'Static website dedicated to Legal Consulting, designed to provide information about the legal services offered.'
-                    }
+                    },
+                    {
+                        title: 'Real Estate System',
+                        description: 'Dynamic solution for managing properties, real estate agencies, and their respective agents. It includes advanced filters and report generation features to streamline operations.'
+                    },
                 ]
             },
             about: {

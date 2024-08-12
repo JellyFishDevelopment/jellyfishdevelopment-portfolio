@@ -69,16 +69,20 @@ export const ptBR = {
                 category: 'Front-end/Web',
                 projects: [
                     {
-                        title: 'Site - SDS Wiki',
+                        title: 'SDS Wiki',
                         description: 'Site de busca e documentação sobre Software Defined Storage baseado em Astro, utilizando arquivos em markdown.'
                     },
                     {
-                        title: 'Site - JM Engenharia Elétrica',
+                        title: 'JM Eng. Elétrica',
                         description: 'Site institucional sobre elétrica e soluções em energia, usando API de envio de e-mail, baseado em React.'
                     },
                     {
-                        title: 'Site - Luciana Advocacia e Consultoria',
+                        title: 'Luciana Advocacia',
                         description: 'Site estático dedicado à Consultoria Jurídica, projetado para fornecer informações sobre os serviços jurídicos oferecidos.'
+                    },
+                    {
+                        title: 'Sistema Imobiliário',
+                        description: 'Sistema dinâmico para gerenciar imóveiss, imobiliárias com seus devidos corretores com filtros e geração de rellatório'
                     },
                 ]
             },
