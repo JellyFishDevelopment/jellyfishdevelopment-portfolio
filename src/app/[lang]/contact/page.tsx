@@ -29,8 +29,8 @@ export default function Page({ params }: { params: { lang: Locale } }) {
         ></p>
       </section>
 
-      <div className="flex justify-center py-10 bg-gradient-to-t from-black to-transparent">
-        <section className="card-idealizadores px-10 py-10 border rounded-3xl max-[425px]:w-3/4 w-2/6">
+      <div className="flex justify-center py-4 bg-gradient-to-t from-black to-transparent">
+        <section className="card-idealizadores lg:px-10 px-3 py-5 border rounded-3xl max-[425px]:w-3/4 w-4/6">
           <ContactForm params={{ lang: params.lang }} />
         </section>
       </div>
