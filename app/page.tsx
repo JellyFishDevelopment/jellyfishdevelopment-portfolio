@@ -9,10 +9,10 @@ export default function Home() {
       <nav className="fixed top-0 left-0 w-full flex justify-between items-center gap-4 p-4 border-b bg-background">
         <div className="flex gap-4 ">
           <h1>Jellyfish</h1>
-          <Link href="/">Projetos</Link>
-          <Link href="/about">Sobre</Link>
-          <Link href="/contact">Contato</Link>
-          <Link href="/faq">FAQ</Link>
+          <Link href="#">Projetos</Link>
+          <Link href="#">Sobre</Link>
+          <Link href="#">Contato</Link>
+          <Link href="#">FAQ</Link>
         </div>
         <div className="flex gap-4">
           <Button className="bg-rose-700 hover:bg-rose-800 text-white py-6 rounded-md">
