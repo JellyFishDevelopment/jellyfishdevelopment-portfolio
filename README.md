@@ -1,32 +1,36 @@
-<p align="center">
-    <a href="https://github.com/JellyFishDevelopment/.github"><img align="center" src="https://i.imgur.com/nmEKoMF.png" width="400"></a>
-    <br><br>
-        <a href="https://wa.me/5513991063173"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"></a>
-        <a href="https://instagram.com/jellyfishdevelopment?igshid=YTQwZjQ0NmI0OA=="><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"></a>
-        <a href="jellyfishdevelopment@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"></a>
-  <br>
-</p>
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-# Bem-vindos ao Portfólio da JellyFish.dev 🚀
+## Getting Started
 
-Na JellyFish Development, nós vivemos e respiramos inovação. Nosso portfólio é o lar de projetos que refletem nossa paixão por transformar ideias em realidade digital. Explore nosso repositório e descubra o conteúdo necessário para apresentar nosso trabalho com orgulho e confiança.
+First, run the development server:
 
-## Sobre Nós 💡
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-Somos uma equipe apaixonada, comprometida em fornecer soluções inteligentes e ágeis para nossos clientes. Desde websites dinâmicos até aplicativos móveis intuitivos, cada projeto em nosso portfólio é uma demonstração do nosso compromisso com a excelência e inovação.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Nossos Valores 🌟
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-- **Inovação Constante**: Estamos sempre buscando novas maneiras de elevar o padrão e superar expectativas.
-  
-- **Compromisso com o Cliente**: O sucesso dos nossos clientes é o nosso sucesso. Trabalhamos lado a lado para alcançar resultados extraordinários.
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-- **Personalização e Excelência**: Cada projeto é tratado com cuidado e atenção aos detalhes, garantindo que seja uma verdadeira expressão de nossos valores.
+## Learn More
 
-## Explore Nosso Portfólio 🌐
+To learn more about Next.js, take a look at the following resources:
 
-Dê uma olhada em nosso portfólio e descubra como estamos moldando o futuro digital. Cada projeto é uma história única de criatividade, inovação e compromisso com a qualidade.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## Entre em Contato 📧
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-Estamos ansiosos para colaborar com você em seu próximo projeto. Entre em contato conosco para começarmos a transformar suas ideias em **feitos**.
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
